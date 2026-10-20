@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "points": [
+    {
+      "id": "default",
+      "n": 4096,
+      "batch": 16,
+      "concurrency": 1
+    },
+    {
+      "id": "n256",
+      "n": 256,
+      "batch": 16,
+      "concurrency": 1
+    },
+    {
+      "id": "n16384",
+      "n": 16384,
+      "batch": 16,
+      "concurrency": 1
+    },
+    {
+      "id": "b1",
+      "n": 4096,
+      "batch": 1,
+      "concurrency": 1
+    },
+    {
+      "id": "b128",
+      "n": 4096,
+      "batch": 128,
+      "concurrency": 1
+    },
+    {
+      "id": "c4",
+      "n": 4096,
+      "batch": 16,
+      "concurrency": 4
+    },
+    {
+      "id": "c16",
+      "n": 4096,
+      "batch": 16,
+      "concurrency": 16
+    }
+  ],
+  "modes": {
+    "smoke": {
+      "repetitions": 2,
+      "warmup_seconds": 0.05,
+      "measurement_seconds": 0.15
+    },
+    "full": {
+      "repetitions": 10,
+      "warmup_seconds": 5,
+      "measurement_seconds": 30
+    }
+  },
+  "random_seed": 20261017,
+  "rpc_deadline_seconds": 10,
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 20261017,
+    "rng": "Python random.Random",
+    "quantile": "linear"
+  }
+}

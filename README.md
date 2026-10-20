@@ -2,7 +2,7 @@
 
 Data and analysis scripts for comparing P4Runtime controller interfaces. The SDK evaluated here is [p4runtime-go-controller v2.0.1](https://github.com/zhh2001/p4runtime-go-controller/releases/tag/v2.0.1).
 
-The first dataset covers RPC performance on BMv2. It contains seven parameter points, six software configurations and ten repetition blocks. Each point has 240 measurement rows, 312 metric summaries and eight paired throughput summaries. The CSV files preserve the recorded values and file hashes.
+The RPC dataset covers performance on BMv2. It contains seven parameter points, six software configurations and ten repetition blocks. Each point has 240 measurement rows, 312 metric summaries and eight paired throughput summaries. The CSV files preserve the recorded values and file hashes.
 
 ## Recompute the statistics
 
@@ -31,9 +31,23 @@ Run the analysis tests with:
 | Workload, software versions and statistics | [RPC method](docs/rpc-method.md) |
 | CSV columns and units | [Data dictionary](docs/data-dictionary.md) |
 | Statistical reanalysis | [recompute_rpc.py](scripts/recompute_rpc.py) |
+| Benchmark setup, execution and validation | [Run the RPC comparison](docs/running-rpc.md) |
+| Fixed workloads and dependency versions | [config](config) |
+| Drivers and request validation | [experiments/performance](experiments/performance) |
 
-This batch supports statistical reanalysis from per-round measurements. Benchmark runners, per-request traces and the remaining experiment groups will be added in subsequent batches.
+## Run new measurements
+
+On Linux x86_64 with Python 3.12, Go, a C compiler, p4c and BMv2 installed:
+
+```sh
+python3 scripts/bootstrap_rpc.py
+python3 scripts/run_rpc.py --points all --output results/rpc-smoke
+```
+
+Setup installs the pinned clients and builds the drivers. The default run validates all seven parameter points with short measurement windows. Use `--mode full` for ten rounds with the published five-second warmup and 30-second measurement windows. See [Run the RPC comparison](docs/running-rpc.md) for prerequisites, outputs and checks.
+
+The repository supports statistical reanalysis and new RPC measurements. The original per-request traces and remaining experiment groups will be added in subsequent batches.
 
 ## License
 
-Scripts and documentation use Apache-2.0. Experimental data and derived figures use CC BY 4.0. See [LICENSE.md](LICENSE.md).
+Source code and documentation use Apache-2.0. Experimental data and derived figures use CC BY 4.0. See [LICENSE.md](LICENSE.md).

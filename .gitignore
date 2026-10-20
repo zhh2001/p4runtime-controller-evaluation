@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .venv/
 /results/
+/.runtime/
+/experiments/performance/bin/
+/experiments/performance/fixtures/control.json
+/experiments/performance/fixtures/control.p4info.txt
+/experiments/performance/fixtures/control.compiler.txtpb
+/experiments/performance/fixtures/compatibility.json

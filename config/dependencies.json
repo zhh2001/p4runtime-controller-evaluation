@@ -1,0 +1,35 @@
+{
+  "go_toolchain": "go1.26.9",
+  "python": "3.12",
+  "platform": "Linux x86_64",
+  "sources": [
+    {
+      "name": "p4runtime-go-controller",
+      "repository": "https://github.com/zhh2001/p4runtime-go-controller",
+      "commit": "3f2def2b28c098961078ce64e9d86ab3c79e6ccb",
+      "url": "https://codeload.github.com/zhh2001/p4runtime-go-controller/tar.gz/3f2def2b28c098961078ce64e9d86ab3c79e6ccb",
+      "sha256": "002b89928b15ade5f065cc888f3a4351b83bdec71ff3476948ccf693727d023f"
+    },
+    {
+      "name": "p4runtime-go-client",
+      "repository": "https://github.com/antoninbas/p4runtime-go-client",
+      "commit": "de3748d9d85953f1fa7093ca441aca53dfc9008b",
+      "url": "https://codeload.github.com/antoninbas/p4runtime-go-client/tar.gz/de3748d9d85953f1fa7093ca441aca53dfc9008b",
+      "sha256": "c9c4ce41c75a3c005e6bfa0bc666ce3cd3b38e17d4e47ed8751e0658ae6235be"
+    },
+    {
+      "name": "finsy",
+      "repository": "https://github.com/byllyfish/finsy",
+      "commit": "491a6e2ac67473ec2ee9a94601f6107ae5d76e7b",
+      "url": "https://codeload.github.com/byllyfish/finsy/tar.gz/491a6e2ac67473ec2ee9a94601f6107ae5d76e7b",
+      "sha256": "a6a4174c5aaad56b6d808e8afb06c53d6a56241824ae23bb629ce10b5f704726"
+    },
+    {
+      "name": "p4runtime-shell",
+      "repository": "https://github.com/p4lang/p4runtime-shell",
+      "commit": "5641d39c1778c79f726da7e216b2c7e134af4a47",
+      "url": "https://codeload.github.com/p4lang/p4runtime-shell/tar.gz/5641d39c1778c79f726da7e216b2c7e134af4a47",
+      "sha256": "cf72eda8b1c91a3ef4dcc723d0e2e90e43d07e89166be222473910d9396e0adf"
+    }
+  ]
+}

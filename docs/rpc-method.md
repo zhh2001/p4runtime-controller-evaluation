@@ -47,6 +47,8 @@ Per-round latency percentiles use nearest rank. Across-round summaries of those 
 
 The reanalysis script recomputes the across-round statistics from the saved measurement rows. Per-request timing and full-state readback belong to the benchmark execution records.
 
+The [execution guide](running-rpc.md) describes how to install the pinned clients, validate the workloads and collect new measurements. The exported request drivers and workload runner match the frozen sources from all seven formal parameter points.
+
 ## Sources
 
 - [p4runtime-go-controller v2.0.1](https://github.com/zhh2001/p4runtime-go-controller/tree/3f2def2b28c098961078ce64e9d86ab3c79e6ccb)
