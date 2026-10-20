@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "dataset": "RPC performance",
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "operations": [
+    "insert",
+    "modify",
+    "read_one",
+    "read_all"
+  ],
+  "metrics": [
+    "successful_rpcs_per_second",
+    "confirmed_updates_per_second",
+    "read_entities_per_second",
+    "p50_ns",
+    "p95_ns",
+    "p99_ns",
+    "build_mean_ns",
+    "call_mean_ns",
+    "call_p99_ns",
+    "client_cpu_core_percent",
+    "client_peak_rss_kib",
+    "target_cpu_core_percent",
+    "target_peak_rss_kib"
+  ],
+  "repetitions": 10,
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 20261017,
+    "rng": "Python random.Random",
+    "quantile": "linear"
+  },
+  "points": [
+    {
+      "id": "default",
+      "n": 4096,
+      "batch": 16,
+      "concurrency": 1,
+      "source_run": "baseline-8gib-20261018",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    },
+    {
+      "id": "n256",
+      "n": 256,
+      "batch": 16,
+      "concurrency": 1,
+      "source_run": "n256-8gib-20261018",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    },
+    {
+      "id": "n16384",
+      "n": 16384,
+      "batch": 16,
+      "concurrency": 1,
+      "source_run": "n16384-8gib-20261018-175743-restart",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    },
+    {
+      "id": "b1",
+      "n": 4096,
+      "batch": 1,
+      "concurrency": 1,
+      "source_run": "b1-8gib-20261018-175743",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    },
+    {
+      "id": "b128",
+      "n": 4096,
+      "batch": 128,
+      "concurrency": 1,
+      "source_run": "b128-8gib-20261018-175743",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    },
+    {
+      "id": "c4",
+      "n": 4096,
+      "batch": 16,
+      "concurrency": 4,
+      "source_run": "c4-8gib-20261019-000156",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    },
+    {
+      "id": "c16",
+      "n": 4096,
+      "batch": 16,
+      "concurrency": 16,
+      "source_run": "c16-8gib-20261019-000156",
+      "profile_order": [
+        [
+          "raw-current",
+          "shell",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "shell",
+          "legacy",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "raw-current",
+          "sdk",
+          "legacy",
+          "shell",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "legacy",
+          "raw-legacy",
+          "finsy",
+          "shell",
+          "raw-current"
+        ],
+        [
+          "shell",
+          "sdk",
+          "legacy",
+          "raw-current",
+          "finsy",
+          "raw-legacy"
+        ],
+        [
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "sdk",
+          "raw-current",
+          "legacy"
+        ],
+        [
+          "sdk",
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "legacy",
+          "finsy",
+          "sdk",
+          "raw-current",
+          "shell",
+          "raw-legacy"
+        ],
+        [
+          "sdk",
+          "finsy",
+          "raw-current",
+          "raw-legacy",
+          "shell",
+          "legacy"
+        ],
+        [
+          "raw-current",
+          "finsy",
+          "raw-legacy",
+          "sdk",
+          "shell",
+          "legacy"
+        ]
+      ]
+    }
+  ],
+  "files": {
+    "data/rpc/default/measurement-rounds.csv": {
+      "sha256": "2c78e0bfe5d9b95ac7262adc8652b493ea637465f25c1904b11e4b71fe4d8f66",
+      "bytes": 66074,
+      "rows": 240,
+      "source": "results/performance/baseline-8gib-20261018/measurement-rounds.csv"
+    },
+    "data/rpc/default/round-statistics.csv": {
+      "sha256": "6e904c2a6c8fef0105a161dcc5ca587285a2128da310e650fa24898829b2e4fd",
+      "bytes": 46987,
+      "rows": 312,
+      "source": "results/performance/baseline-8gib-20261018/round-statistics.csv"
+    },
+    "data/rpc/default/paired-ratios.csv": {
+      "sha256": "b5b8e66b6f2fc675c24bec83b5896081f9f10a4803c37e91892f243d1c4c2648",
+      "bytes": 1829,
+      "rows": 8,
+      "source": "results/performance/baseline-8gib-20261018/paired-ratios.csv"
+    },
+    "data/rpc/n256/measurement-rounds.csv": {
+      "sha256": "2afcc98d682f036a857a2aebc23475482f0776eadcd67426861fe22670e87dd9",
+      "bytes": 63769,
+      "rows": 240,
+      "source": "results/performance/n256-8gib-20261018/measurement-rounds.csv"
+    },
+    "data/rpc/n256/round-statistics.csv": {
+      "sha256": "219a5e445360f75ec7047f095449ddc2d49566f3263184ff6b872d07d8f83039",
+      "bytes": 46177,
+      "rows": 312,
+      "source": "results/performance/n256-8gib-20261018/round-statistics.csv"
+    },
+    "data/rpc/n256/paired-ratios.csv": {
+      "sha256": "23c697207b1bcd5384d6f859c01fac8f8c062991b87f231b23a9780fdafa23ac",
+      "bytes": 1825,
+      "rows": 8,
+      "source": "results/performance/n256-8gib-20261018/paired-ratios.csv"
+    },
+    "data/rpc/n16384/measurement-rounds.csv": {
+      "sha256": "7e4ad5aeab08ebd92c8fb493031962dec00bc5738dc880ad571d757a02d0fa3a",
+      "bytes": 66900,
+      "rows": 240,
+      "source": "results/performance/n16384-8gib-20261018-175743-restart/measurement-rounds.csv"
+    },
+    "data/rpc/n16384/round-statistics.csv": {
+      "sha256": "31b56cf847e3806657c55325687c7f896bd5011d1396aab085a911eb5fc263f7",
+      "bytes": 47146,
+      "rows": 312,
+      "source": "results/performance/n16384-8gib-20261018-175743-restart/round-statistics.csv"
+    },
+    "data/rpc/n16384/paired-ratios.csv": {
+      "sha256": "fa781e064f5dfaf59026b15556bbbed35153c5e0979e6e0c7b45bd42f86b477d",
+      "bytes": 1826,
+      "rows": 8,
+      "source": "results/performance/n16384-8gib-20261018-175743-restart/paired-ratios.csv"
+    },
+    "data/rpc/b1/measurement-rounds.csv": {
+      "sha256": "7492882d9702f9e7fa91df7f679b23bafb38b53ce880853dea77085870706edb",
+      "bytes": 65980,
+      "rows": 240,
+      "source": "results/performance/b1-8gib-20261018-175743/measurement-rounds.csv"
+    },
+    "data/rpc/b1/round-statistics.csv": {
+      "sha256": "458fe24f48ec8a01fd16d6d7c83d8bbdb3d955bac62de8a82be21cb9ff0054e1",
+      "bytes": 47026,
+      "rows": 312,
+      "source": "results/performance/b1-8gib-20261018-175743/round-statistics.csv"
+    },
+    "data/rpc/b1/paired-ratios.csv": {
+      "sha256": "5c3cd5e89f7193a07b32f34e6020add4874fc0628cb026cbbdf53175d2decf65",
+      "bytes": 1826,
+      "rows": 8,
+      "source": "results/performance/b1-8gib-20261018-175743/paired-ratios.csv"
+    },
+    "data/rpc/b128/measurement-rounds.csv": {
+      "sha256": "54790eb44277fb87b80a794d84567dc51a2c7a3f78ff96502ea0660cd0131e89",
+      "bytes": 67019,
+      "rows": 240,
+      "source": "results/performance/b128-8gib-20261018-175743/measurement-rounds.csv"
+    },
+    "data/rpc/b128/round-statistics.csv": {
+      "sha256": "370efd133b1f444019ab930773a482c55bb5c14b88ae118932f685d00de370be",
+      "bytes": 47058,
+      "rows": 312,
+      "source": "results/performance/b128-8gib-20261018-175743/round-statistics.csv"
+    },
+    "data/rpc/b128/paired-ratios.csv": {
+      "sha256": "eda7084ae5bd93fc316016e68b61bf7639c73b3f2c856afd39c4792e1a987c85",
+      "bytes": 1823,
+      "rows": 8,
+      "source": "results/performance/b128-8gib-20261018-175743/paired-ratios.csv"
+    },
+    "data/rpc/c4/measurement-rounds.csv": {
+      "sha256": "6458b385159b0c21c9215a8092b898d90bb9f9b8dabbbf2d359273d353192368",
+      "bytes": 67244,
+      "rows": 240,
+      "source": "results/performance/c4-8gib-20261019-000156/measurement-rounds.csv"
+    },
+    "data/rpc/c4/round-statistics.csv": {
+      "sha256": "3dec8865b941b950ee1ca8ca0e0a2eca7e38c0fa71fdbe8e512da7852efb6394",
+      "bytes": 47398,
+      "rows": 312,
+      "source": "results/performance/c4-8gib-20261019-000156/round-statistics.csv"
+    },
+    "data/rpc/c4/paired-ratios.csv": {
+      "sha256": "34456f52e3e7e0d2bc087480f0f547eaaa0b7335d9b869f2e3f227884e83f6ea",
+      "bytes": 1824,
+      "rows": 8,
+      "source": "results/performance/c4-8gib-20261019-000156/paired-ratios.csv"
+    },
+    "data/rpc/c16/measurement-rounds.csv": {
+      "sha256": "d441147f7abfae20757d6cf81334809bd2bb8e6acf483106c8f8feb3401aab61",
+      "bytes": 68681,
+      "rows": 240,
+      "source": "results/performance/c16-8gib-20261019-000156/measurement-rounds.csv"
+    },
+    "data/rpc/c16/round-statistics.csv": {
+      "sha256": "59a9177fbbbcad6a00e4bb493e9971df309e3783d2456732a52925d3aeb68f4a",
+      "bytes": 47825,
+      "rows": 312,
+      "source": "results/performance/c16-8gib-20261019-000156/round-statistics.csv"
+    },
+    "data/rpc/c16/paired-ratios.csv": {
+      "sha256": "e5e3a1d9dd21afe675514d26e37e3892b5db7a31ec0694d48f6e2b0e8f23b54c",
+      "bytes": 1824,
+      "rows": 8,
+      "source": "results/performance/c16-8gib-20261019-000156/paired-ratios.csv"
+    }
+  }
+}
