@@ -16,7 +16,7 @@ Each configuration sends P4Runtime requests to BMv2 over loopback. The workload 
 | c4 | 4,096 | 16 | 4 |
 | c16 | 4,096 | 16 | 16 |
 
-INSERT starts with an empty table and ends after inserting all N entries. MODIFY alternates action values on a populated table. Read-one selects one entry. Read-all reads the complete table with one worker. Consequently, C applies to INSERT, MODIFY and Read-one, while Read-all uses C=1 at every point.
+INSERT starts with an empty table and ends after inserting all N entries. MODIFY alternates action values on a populated table. Read-one selects one entry. All four operations use C workers. Each Read-all call reads the complete table, so concurrent Read-all workers each collect all N entries.
 
 MODIFY and both Read workloads use a five-second warmup followed by a 30-second measurement window. INSERT is a finite operation with no warmup. Workers issue closed-loop requests. At C greater than one, workers use disjoint key partitions for writes.
 
@@ -48,6 +48,8 @@ Per-round latency percentiles use nearest rank. Across-round summaries of those 
 The reanalysis script recomputes the across-round statistics from the saved measurement rows. Per-request timing and full-state readback belong to the benchmark execution records.
 
 The [execution guide](running-rpc.md) describes how to install the pinned clients, validate the workloads and collect new measurements. The exported request drivers and workload runner match the frozen sources from all seven formal parameter points.
+
+The [original trace archives](rpc-traces.md) provide request records, resource samples and full table readbacks for every measurement and warmup phase. Their verifier reconstructs table state and independently recomputes the per-round metrics with NumPy before comparing them with the saved CSV rows.
 
 ## Sources
 

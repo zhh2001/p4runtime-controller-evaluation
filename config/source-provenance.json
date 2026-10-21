@@ -67,8 +67,8 @@
     },
     "fixtures/control.p4": {
       "formal_sha256": "34f7971c28db7828c851a73dfd418fc51477f4fdcf91e7809416a3ff96180dc7",
-      "export_sha256": "34f7971c28db7828c851a73dfd418fc51477f4fdcf91e7809416a3ff96180dc7",
-      "unchanged": true
+      "export_sha256": "ab1e959eb90bfa0c0ee454aa739cd8d1131b6b6e5d7ee0f2a5dc0024ecb9142c",
+      "unchanged": false
     },
     "fixtures/audit-samples.json": {
       "formal_sha256": "e5ad702130b90869c795ab65383abac503f90a2b9ed16fb1019ff6bfe375e7be",
@@ -137,7 +137,8 @@
     "prepare.py": "Compile relative fixture names from their directory.",
     "go-sdk/go.mod": "Resolve the pinned SDK from the local runtime source directory.",
     "go-legacy/go.mod": "Resolve the pinned legacy client from the local runtime source directory.",
-    "infra.py": "Extract status, trace and owned-target helpers, and use a distinct IPC filename prefix."
+    "infra.py": "Extract status, trace and owned-target helpers, and use a distinct IPC filename prefix.",
+    "fixtures/control.p4": "Expand block formatting. P4 statements are unchanged."
   },
   "statistics_source": {
     "path": "experiments/performance/analyze_formal.py",

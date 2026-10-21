@@ -63,7 +63,7 @@ Statistics use the same calculation functions as the formal runs, including the 
 
 ## Source correspondence
 
-[source-provenance.json](../config/source-provenance.json) records the SHA-256 hashes of the frozen sources from all seven formal runs and their exported counterparts. Request drivers, timing loops, request audits and workload orchestration are unchanged. Export changes cover local paths, source snapshots and the P4 compiler's working directory. The target helper contains the original status, trace and process-management functions with a separate IPC filename prefix.
+[source-provenance.json](../config/source-provenance.json) records the SHA-256 hashes of the frozen sources from all seven formal runs and their exported counterparts. Request drivers, timing loops, request audits and workload orchestration are unchanged. Export changes cover local paths, source snapshots, the P4 compiler's working directory and P4 block formatting. The target helper contains the original status, trace and process-management functions with a separate IPC filename prefix.
 
 The statistics module retains the original phase metrics and across-round calculation functions. Its entry point groups the new run's measurements and writes the same CSV fields. The launcher and dependency installer are new entry points for this repository.
 

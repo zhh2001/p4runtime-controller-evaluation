@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "release_tag": "rpc-traces-v1",
+  "release_url": "https://github.com/zhh2001/p4runtime-controller-evaluation/releases/tag/rpc-traces-v1",
+  "download_base": "https://github.com/zhh2001/p4runtime-controller-evaluation/releases/download/rpc-traces-v1",
+  "dataset_manifest_sha256": "c72ae966c42847e2f9da9c88a897af1aeae07f4f689cc8516d7e96febfc1397b",
+  "p4info": {
+    "bytes": 612,
+    "sha256": "f4041f2cf2cd94ef63abbfe5e50778ef9952b6df176dd180b76e51ceb5040c92"
+  },
+  "points": [
+    {
+      "id": "default",
+      "archive": {
+        "name": "rpc-traces-v1-default.tar.gz",
+        "bytes": 502509101,
+        "sha256": "0a271329832172678ab8385dacf78679c7481f82e6365fd3279b3fd81d6dcbda"
+      },
+      "inventory": {
+        "bytes": 214334,
+        "sha256": "9b100bf989fe6eb1a4669cb32246068d780da6aed69e1bf20087a0092b5ef91e"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 15830514,
+      "uncompressed_member_bytes": 5285408489
+    },
+    {
+      "id": "n256",
+      "archive": {
+        "name": "rpc-traces-v1-n256.tar.gz",
+        "bytes": 540955664,
+        "sha256": "3a4794dcd4ebbba0a9b65d955ae049f40453243f96a64b7d5735e67e4d2a4f81"
+      },
+      "inventory": {
+        "bytes": 211096,
+        "sha256": "aaf529283d27d0e6ddfa322ce86e6b71e706a2a3afde26da24bb85e88c46b5c8"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 17502284,
+      "uncompressed_member_bytes": 5878338622
+    },
+    {
+      "id": "n16384",
+      "archive": {
+        "name": "rpc-traces-v1-n16384.tar.gz",
+        "bytes": 500464724,
+        "sha256": "64f0be44f750dcfc3576105840edde9b2083ed0f041269285a2a33680d0c1c74"
+      },
+      "inventory": {
+        "bytes": 213476,
+        "sha256": "1f614ef09ca4ef519207889134f841d03ca840056bb10d24e6f10baffd4bff1e"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 15767667,
+      "uncompressed_member_bytes": 5290303398
+    },
+    {
+      "id": "b1",
+      "archive": {
+        "name": "rpc-traces-v1-b1.tar.gz",
+        "bytes": 634886897,
+        "sha256": "9e362a9b174c639ef6b69d2e992b627c354d23afbba64d92907a65576cebb9c5"
+      },
+      "inventory": {
+        "bytes": 210357,
+        "sha256": "34e24a7c53ae96832e9377f9b3de39a212ca2af4a7e619e3e513edee93d5cafb"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 20575137,
+      "uncompressed_member_bytes": 6876186086
+    },
+    {
+      "id": "b128",
+      "archive": {
+        "name": "rpc-traces-v1-b128.tar.gz",
+        "bytes": 374414297,
+        "sha256": "a760acd18d0c208cac56fd92f7c59e7a630345fecefcd47f5f19bb69feb6b8ed"
+      },
+      "inventory": {
+        "bytes": 211598,
+        "sha256": "490c5e31644d280b81ddf40622715d9628ed3e3bffa848924b4b5d7ea1f2b38d"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 11522349,
+      "uncompressed_member_bytes": 3917975654
+    },
+    {
+      "id": "c4",
+      "archive": {
+        "name": "rpc-traces-v1-c4.tar.gz",
+        "bytes": 779318359,
+        "sha256": "54b38e8a956319881ab58c2100f6ac2a5e17b777749bb76839dd68f1138d738f"
+      },
+      "inventory": {
+        "bytes": 210216,
+        "sha256": "a4cc8b273c56e32bfd83e6d599e50ab356a1348aad4c2e9d403acedd63ab43d1"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 23449650,
+      "uncompressed_member_bytes": 7880211065
+    },
+    {
+      "id": "c16",
+      "archive": {
+        "name": "rpc-traces-v1-c16.tar.gz",
+        "bytes": 1174868253,
+        "sha256": "535b9ee90293649290cfb96adaae3c8999b1715a8dbedb65f274f498b5ecba9d"
+      },
+      "inventory": {
+        "bytes": 211107,
+        "sha256": "f3e3d5361f7b065472ffccb097f2306c687826de064fb2811deef8685f4ba42b"
+      },
+      "phases": 420,
+      "measurement_phases": 240,
+      "requests": 34698020,
+      "uncompressed_member_bytes": 11635097078
+    }
+  ]
+}

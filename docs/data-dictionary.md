@@ -27,7 +27,7 @@ There is one row per profile, repetition and operation, with 240 rows per point.
 | `client_peak_rss_kib`, `target_peak_rss_kib` | Maximum sampled process RSS, in KiB |
 | `client_observation_seconds`, `target_observation_seconds` | Outer intervals used for resource measurements |
 
-`concurrency` records the parameter point. Read-all still runs with one worker. All saved measurement rows have zero failed calls and zero unknown updates.
+`concurrency` records the number of workers for every operation. Each Read-all call reads all N entries. All saved measurement rows have zero failed calls and zero unknown updates.
 
 ## round-statistics.csv
 
@@ -52,3 +52,25 @@ The file has eight rows: two matched Go pairs and four operations. `pair` identi
 ## manifest.json
 
 The manifest records parameter values, profile order within each repetition, the bootstrap settings and file hashes. Each CSV entry includes its row count, byte count and relative path in the original experiment records.
+
+## Request-level archives
+
+The [trace guide](rpc-traces.md) describes the original JSON phase records and protobuf readbacks. Both measurement and warmup phases are included.
+
+Each phase has workload parameters, a `records` array, a `resources` object and a `state` reference. `start_ns`, `scheduled_stop_ns`, `end_ns` and `elapsed_ns` describe the load window. `requested_seconds` is zero for finite INSERT, five for warmups and thirty for sustained measurements.
+
+| Request field | Meaning |
+| --- | --- |
+| `worker`, `iteration` | Worker index and that worker's sequential request number |
+| `first`, `count`, `port` | Requested key range and write action value |
+| `admission_ns` | Time the worker admits the request into the load window |
+| `start_ns`, `build_end_ns`, `end_ns` | Request construction start, public-call start and completion |
+| `call_made`, `rpc_code` | Whether the public call was made and its canonical status code |
+| `read_count`, `key_sum`, `port_sum` | Returned entry count and sums used to check read contents |
+| `ok_updates`, `failed_updates`, `unknown_updates` | Confirmed, rejected and unconfirmed write updates |
+
+`resources.before` and `resources.after` contain client and target process counters around the command interval. Each counter sample has `monotonic_ns`, `user_ticks`, `system_ticks` and `rss_kib`. `clock_ticks_per_second` converts process ticks to seconds. `rss_samples` contains the intermediate samples used to calculate peak RSS.
+
+`state.file` names the complete readback for the phase. `state.entries` records its entry count. `protobuf_sha256` hashes the uncompressed `ReadResponse` and `gzip_sha256` hashes the archived readback file.
+
+The trace catalog binds the archives to this dataset's manifest and includes compressed sizes and hashes. Each per-point inventory lists member names, byte counts, hashes and phase identities. Git preserves the exact bytes of the trace catalog, inventories and P4Info. Archive files preserve the original phase, readback and process bytes. The selected run metadata is described in the trace guide.

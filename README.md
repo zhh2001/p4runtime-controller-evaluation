@@ -34,6 +34,7 @@ Run the analysis tests with:
 | Benchmark setup, execution and validation | [Run the RPC comparison](docs/running-rpc.md) |
 | Fixed workloads and dependency versions | [config](config) |
 | Drivers and request validation | [experiments/performance](experiments/performance) |
+| Original request records and complete readbacks | [RPC trace archives](docs/rpc-traces.md) |
 
 ## Run new measurements
 
@@ -46,7 +47,11 @@ python3 scripts/run_rpc.py --points all --output results/rpc-smoke
 
 Setup installs the pinned clients and builds the drivers. The default run validates all seven parameter points with short measurement windows. Use `--mode full` for ten rounds with the published five-second warmup and 30-second measurement windows. See [Run the RPC comparison](docs/running-rpc.md) for prerequisites, outputs and checks.
 
-The repository supports statistical reanalysis and new RPC measurements. The original per-request traces and remaining experiment groups will be added in subsequent batches.
+## Verify the original requests
+
+The [RPC trace archives](docs/rpc-traces.md) contain the original request records and full table readbacks for all 2,940 measurement and warmup phases. Download archives by parameter point and verify them directly from their compressed form. The verifier checks request accounting, table state and all 1,680 published measurement rows.
+
+The repository supports statistical reanalysis, request-level verification and new RPC measurements. The remaining experiment groups will be added in subsequent batches.
 
 ## License
 
