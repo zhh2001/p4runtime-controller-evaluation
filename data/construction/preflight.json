@@ -1,0 +1,12 @@
+{
+  "created_local": "2026-10-19T10:35:00.872056+08:00",
+  "semantic_samples": {
+    "sdk": 1536,
+    "legacy": 1536,
+    "finsy": 1024,
+    "shell": 1024
+  },
+  "total_semantic_samples": 5120,
+  "ownership_checks": true,
+  "go_race_and_vet_passed": true
+}

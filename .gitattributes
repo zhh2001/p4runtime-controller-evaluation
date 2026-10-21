@@ -1,3 +1,4 @@
 data/**/*.csv -text whitespace=cr-at-eol
 data/rpc/traces/* -text
+data/construction/** -text
 LICENSES/* -text -whitespace

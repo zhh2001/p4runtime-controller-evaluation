@@ -1,0 +1,24 @@
+pkg_info { name: "construction" version: "1" arch: "v1model" }
+tables {
+  preamble { id: 33554433 name: "MyIngress.forwarding" alias: "forwarding" }
+  match_fields { id: 1 name: "h.key.value" bitwidth: 32 match_type: EXACT }
+  action_refs { id: 16777217 } size: 32768
+}
+tables {
+  preamble { id: 33554434 name: "MyIngress.mixed" alias: "mixed" }
+  match_fields { id: 1 name: "h.key.value" bitwidth: 32 match_type: EXACT }
+  match_fields { id: 2 name: "h.key.prefix" bitwidth: 32 match_type: LPM }
+  match_fields { id: 3 name: "h.key.flags" bitwidth: 16 match_type: TERNARY }
+  match_fields { id: 4 name: "h.key.range" bitwidth: 16 match_type: RANGE }
+  match_fields { id: 5 name: "h.key.class" bitwidth: 8 match_type: OPTIONAL }
+  action_refs { id: 16777218 } size: 32768
+}
+actions {
+  preamble { id: 16777217 name: "MyIngress.forward" alias: "forward" }
+  params { id: 1 name: "port" bitwidth: 9 }
+}
+actions {
+  preamble { id: 16777218 name: "MyIngress.tagged" alias: "tagged" }
+  params { id: 1 name: "port" bitwidth: 9 }
+  params { id: 2 name: "tag" bitwidth: 32 }
+}

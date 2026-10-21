@@ -1,0 +1,33 @@
+{
+  "platform": {
+    "system": "Linux",
+    "release": "6.6.87.2-microsoft-standard-WSL2",
+    "machine": "x86_64"
+  },
+  "cpu_model": "13th Gen Intel(R) Core(TM) i5-13500H",
+  "affinity_cpu": 0,
+  "visible_logical_cpus": 16,
+  "memory_kib": {
+    "MemTotal": 8130740,
+    "SwapTotal": 2097152
+  },
+  "go": {
+    "version": "1.26.9",
+    "GOGC": null,
+    "GOMEMLIMIT": null
+  },
+  "python": {
+    "finsy": {
+      "python": "3.12.3",
+      "grpc": "1.81.1",
+      "protobuf": "6.33.6",
+      "protobuf_backend": "upb"
+    },
+    "shell": {
+      "python": "3.12.3",
+      "grpc": "1.84.0",
+      "protobuf": "3.20.3",
+      "protobuf_backend": "python"
+    }
+  }
+}

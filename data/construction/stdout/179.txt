@@ -1,0 +1,6 @@
+goos: linux
+goarch: amd64
+pkg: p4runtime-experiments/construction-go-sdk
+cpu: 13th Gen Intel(R) Core(TM) i5-13500H
+BenchmarkComponents/action_lookup/exact         	 3705064	       327.3 ns/op	1212503528 elapsed-ns	     584 B/op	       7 allocs/op
+PASS

@@ -1,0 +1,2189 @@
+{
+  "started_local": "2026-10-19T10:35:25.036897+08:00",
+  "completed_local": "2026-10-19T10:41:34.043961+08:00",
+  "smoke": false,
+  "completed": true,
+  "completed_measurements": 270,
+  "affinity_cpu": 0,
+  "available_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "failures": [],
+  "schedule": [
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 1
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 2
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 3
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 3
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 3
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 4
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 4
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 5
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 6
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 7
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 7
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 7
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 8
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 9
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "encode_exact32",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "exact",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "raw-current",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "shell",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "finsy",
+      "workload": "mixed",
+      "mode": "new",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "entry",
+      "profile": "legacy",
+      "workload": "mixed",
+      "mode": "reused",
+      "component": "",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "table_lookup",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "exact",
+      "mode": "",
+      "component": "action_lookup",
+      "repetition": 10
+    },
+    {
+      "kind": "component",
+      "profile": "sdk",
+      "workload": "mixed",
+      "mode": "",
+      "component": "clone_entry",
+      "repetition": 10
+    }
+  ]
+}

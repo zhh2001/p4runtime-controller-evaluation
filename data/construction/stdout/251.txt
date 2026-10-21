@@ -1,0 +1,1 @@
+{"iterations": 13416, "elapsed_ns": 1029287209, "ns_per_op": 76720.87127310674, "gc_enabled": true, "timing_basis": "WSL CLOCK_MONOTONIC", "profile": "shell", "workload": "mixed", "mode": "reused", "python": "3.12.3"}

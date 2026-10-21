@@ -1,0 +1,6 @@
+goos: linux
+goarch: amd64
+pkg: p4runtime-experiments/construction-go-sdk
+cpu: 13th Gen Intel(R) Core(TM) i5-13500H
+BenchmarkConstruct/sdk/mixed/new         	  206856	      5608 ns/op	1159948285 elapsed-ns	    5664 B/op	      97 allocs/op
+PASS

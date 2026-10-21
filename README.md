@@ -4,6 +4,8 @@ Data and analysis scripts for comparing P4Runtime controller interfaces. The SDK
 
 The RPC dataset covers performance on BMv2. It contains seven parameter points, six software configurations and ten repetition blocks. Each point has 240 measurement rows, 312 metric summaries and eight paired throughput summaries. The CSV files preserve the recorded values and file hashes.
 
+The local construction dataset has 270 measurements across complete table-entry construction and separate SDK public operations. It includes benchmark outputs, input fixtures, 65 metric summaries, 16 paired summaries and PDF and PNG figures.
+
 ## Recompute the statistics
 
 Use Python 3.12:
@@ -35,6 +37,17 @@ Run the analysis tests with:
 | Fixed workloads and dependency versions | [config](config) |
 | Drivers and request validation | [experiments/performance](experiments/performance) |
 | Original request records and complete readbacks | [RPC trace archives](docs/rpc-traces.md) |
+| Local table-entry construction data and outputs | [data/construction](data/construction) |
+| Construction workloads, statistics and figures | [Construction method](docs/construction.md) |
+| Construction CSV columns and units | [Construction data dictionary](docs/construction-data.md) |
+
+## Recompute construction results
+
+```sh
+.venv/bin/python scripts/recompute_construction.py --output results/construction
+```
+
+The script checks all 270 benchmark outputs against the saved measurements and recomputes all 81 summary rows. It uses Python and the same pinned NumPy dependency as the RPC reanalysis. See the [construction method](docs/construction.md) for timing scope, result ownership and the archived figures.
 
 ## Run new measurements
 

@@ -1,0 +1,6 @@
+goos: linux
+goarch: amd64
+pkg: p4runtime-experiments/construction-go-legacy
+cpu: 13th Gen Intel(R) Core(TM) i5-13500H
+BenchmarkConstruct/legacy/mixed/new         	  635757	      1838 ns/op	1168728877 elapsed-ns	    2032 B/op	      45 allocs/op
+PASS
