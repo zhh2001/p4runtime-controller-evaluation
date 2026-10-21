@@ -245,6 +245,8 @@ def summaries(output, runs):
                       ("trials", "completed", "blocked", "watchdog_timeout", "write_requests",
                        "update_attempts", "successful_updates", "failed_updates", "application_reads")}))
         for profile in model.PROFILES:
+            if not any(row["profile"] == profile for row in rows):
+                continue
             profiles.append(dict(mode=mode, profile=profile, **{outcome: result["profile_outcomes"].get(profile + ":" + outcome, 0)
                             for outcome in ("completed", "blocked", "watchdog_timeout")}))
         for row, checked in zip(rows, result["trials"]):

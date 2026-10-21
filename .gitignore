@@ -14,3 +14,5 @@ __pycache__/
 /experiments/inputs/*/fixtures/
 /experiments/sessions/bin/
 /experiments/sessions/fixtures/
+/experiments/retries/bin/
+/experiments/retries/fixtures/

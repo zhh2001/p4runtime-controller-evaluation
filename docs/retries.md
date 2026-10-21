@@ -83,6 +83,8 @@ These counts include retries and exclude setup calls and independent observer Re
 
 The results describe these fixed functional scenarios. They measure neither throughput nor a reliability rate. RPC-wide ambiguity here is injected by the controlled service. Actual stream faults and target restarts are covered separately by the [session comparison](sessions.md).
 
+The [execution guide](running-retries.md) provides setup and live runners for the same policy, six profiles and two targets. It includes smoke, race and full modes, source snapshots and verification of new records with both decoders.
+
 ## Archive and source correspondence
 
 [manifest.json](../data/retries/manifest.json) identifies the two complete formal runs and every exported file. Smoke and race runs are outside this selection. Original observation, RPC, run-manifest and analysis-report bytes are retained. Driver stdout and stderr are collected as text with each original file hash. Source inventories retain hashes of the original drivers and executables, while this batch exports the offline checks and fixtures.

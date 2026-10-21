@@ -61,6 +61,8 @@ Run the analysis tests with:
 | Batch-write retry policy, scenarios and outcomes | [Batch-retry method](docs/retries.md) |
 | Retry observations, requests, driver outputs and results | [data/retries](data/retries) |
 | Retry fields and summary counts | [Batch-retry data dictionary](docs/retry-data.md) |
+| Retry setup, execution and verification | [Run the batch-write retry comparison](docs/running-retries.md) |
+| Retry drivers, controlled service and scheduler | [experiments/retries](experiments/retries) |
 
 ## Recompute construction results
 
@@ -108,6 +110,15 @@ python3 scripts/run_sessions.py --output results/sessions-smoke
 
 Setup checks the pinned SDK, compiles the shared P4 fixture and builds both Go driver modules. The default run checks all 28 configurations once. Use `--mode race` for the 16 SDK configurations or `--mode full` for 840 trials and independently checked statistics. `--groups` selects recovery, mastership, cancellation or consumers. See [Run the session and stream comparison](docs/running-sessions.md).
 
+To run the batch-write retry comparison:
+
+```sh
+python3 scripts/bootstrap_retries.py
+python3 scripts/run_retries.py --output results/retries-smoke
+```
+
+Setup checks the pinned clients and case corpus, compiles the P4 fixture and builds normal and race-enabled Go drivers. The default run checks 30 application trials across both targets. Use `--mode race` for 32 Go trials or `--mode full` for all 192 trials. Every run uses both decoders to reconstruct retry subsets and target state. See [Run the batch-write retry comparison](docs/running-retries.md).
+
 ## Verify the original requests
 
 The [RPC trace archives](docs/rpc-traces.md) contain the original request records and full table readbacks for all 2,940 measurement and warmup phases. Download archives by parameter point and verify them directly from their compressed form. The verifier checks request accounting, table state and all 1,680 published measurement rows.
@@ -142,7 +153,7 @@ Verification checks all 840 trials, 108,000 emitted PacketIn IDs and 510 actual 
 
 The verifier checks all 192 trials, 334 Writes, 882 update attempts and 112 application Reads. Protobuf and independent standard-library decoders reconstruct retry subsets and target state, then reproduce the historical reports and saved CSV files byte for byte. The retry policy belongs to the experiment application. See the [batch-retry method](docs/retries.md).
 
-The repository supports statistical reanalysis, archived input, request, session and retry verification, new RPC and construction measurements, and live input, session and stream experiments. Live batch-retry drivers will follow in a subsequent batch.
+The repository supports statistical reanalysis, archived input, request, session and retry verification, new RPC and construction measurements, and live input, session, stream and batch-retry experiments. Data-plane case-study records and verification will follow in a subsequent batch.
 
 ## License
 

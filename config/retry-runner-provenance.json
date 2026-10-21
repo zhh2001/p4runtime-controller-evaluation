@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "files": {
+    "experiments/retries/endpoint.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/endpoint.py",
+      "source_sha256": "3262678102ab52d2d55cfd5cab86f5854b85670d2dd052492096dcd83dc5aab7",
+      "export_sha256": "3262678102ab52d2d55cfd5cab86f5854b85670d2dd052492096dcd83dc5aab7",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "message": "230f8e82e26e618730a182b49b5e942b8a8adedced83e04a7eaf375620f6b73f",
+        "binary": "02c289cc74e553bc9a89cdb7cc879afe90b17863de5acd5e22425de36b55e200",
+        "identity": "86e46d16940ce45bffc7d9993195a6320d64873315656ef4df50e1c08458245f",
+        "Endpoint.__init__": "45afdc8f58b836f6848e1b1a98d55bc4b38bc9778fa1159b2f50b3ecd9aebb99",
+        "Endpoint.configure": "1331cdb22dba31ac97e2f245593a80ee3fc692acad8d8ba8ce2b83fb6f187951",
+        "Endpoint.record": "eb9a6459b64747e37aa058cde07ab747d59db4a765250e1f6110ea401b3f11f8",
+        "Endpoint.Capabilities": "952ee1bb4c7d0b88c7a980cbc196a330be5425ddc7feb12422968f4a304823cb",
+        "Endpoint.GetForwardingPipelineConfig": "45cd83257bce83260ca823ab5464d7180b7bb4f79feb96aeacae5f587890a70e",
+        "Endpoint.StreamChannel": "19507c294e5ab30421050d3b49912ecb0c81d01f1c49a409acc47f733cf0101b",
+        "Endpoint.Write": "220732c329a429425a2d67884f4935111a076dba3e3a3a843772f8612eb210ff",
+        "Endpoint.Read": "fd346abb3c7b26820dd62b16d0356f9e36f5ec83ff91c0c4577ef3fc3f226564",
+        "Endpoint.snapshot": "78c9c188e8eaf7b4847d3c8de80c161af849208a6fa313ebd00d379307e23047",
+        "Endpoint.close": "0def60422604cf9545bc43c1ccfb3e2c1c4416fef7ef3d11b432e2b4d4014d73"
+      }
+    },
+    "experiments/retries/python_driver.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/python_driver.py",
+      "source_sha256": "a39696908a79ea214f31775ae2b94c981c4f7f6c710cb2fb4a875ea45e8c3c95",
+      "export_sha256": "a39696908a79ea214f31775ae2b94c981c4f7f6c710cb2fb4a875ea45e8c3c95",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "emit": "cf3d2dfdc60194d748a8d0ae8d7fe3cb383f64afb309a94b396dd9b2c1a52aee",
+        "rpc_error": "315ccc96e4e9a904ebd6894c2fb780255259ee5ed1119079291f080816332cdc",
+        "raw_fields": "348d2d1c71b2328b931da9b88f145e06224c52df0ad65968ab3d0c08242c2cb4",
+        "arbitration": "44f8f1264c047d188143c163fe76d4fe9ad163df0cd516942de9a24faf8e36f5",
+        "arbitration.iterator": "bc99495dfa55a8de0bd3dac3c2c1e302ab52789b826da77cd63ec9d9b1b18e37",
+        "finsy_main": "f3ac966bb350bae70b425440ca6a437c5d0f9e059687b6bf92b03e2f4172a015",
+        "shell_main": "613e68409ee83ebdf3f641f5c110eb629f655f10e42884cb6502b2cb78a537b9",
+        "shell_main.Deadlines.Write": "bac1a5175bffa5a0918040e21c0adeab5fa0bae6e7fcfc0efa5efdae44f401e9",
+        "shell_main.Deadlines.__getattr__": "33561aa93543bd927b1d0405aa61f9c7e2cd6a9b36e81ab7e0b58cbd9655589f",
+        "main": "dc1822ab752f1b66ce60da93ce0670a1d4fd57eec91665c649843edc1a34cbfa"
+      }
+    },
+    "experiments/retries/go-sdk/native.go": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-sdk/native.go",
+      "source_sha256": "704c7b70384ee1d761afa23346094a11f85e165ad71fb9a5542234046493d62c",
+      "export_sha256": "704c7b70384ee1d761afa23346094a11f85e165ad71fb9a5542234046493d62c",
+      "unchanged": true
+    },
+    "experiments/retries/go-sdk/shared.go": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-sdk/shared.go",
+      "source_sha256": "9a380fa0ad2bec1cada6be0f329d487519a9a5a7fe5bc071d227fbca42ac8a1d",
+      "export_sha256": "9a380fa0ad2bec1cada6be0f329d487519a9a5a7fe5bc071d227fbca42ac8a1d",
+      "unchanged": true
+    },
+    "experiments/retries/go-sdk/go.sum": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-sdk/go.sum",
+      "source_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "export_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "unchanged": true
+    },
+    "experiments/retries/go-sdk/go.mod": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-sdk/go.mod",
+      "source_sha256": "2a43127970cf0e8f2699d4c8d76a7c27fb4616f550e8e74db7abdb93b2505a06",
+      "export_sha256": "672191143fb9f1072300f213d029e87a9f4b494805f3939097ce22674ecee076",
+      "unchanged": false,
+      "adaptation": "Use the repository-local pinned dependency source."
+    },
+    "experiments/retries/go-legacy/native.go": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-legacy/native.go",
+      "source_sha256": "73800f55ef8634bbb9615dd090c3311cc135c7f4a3367ad2049c37439179bf08",
+      "export_sha256": "73800f55ef8634bbb9615dd090c3311cc135c7f4a3367ad2049c37439179bf08",
+      "unchanged": true
+    },
+    "experiments/retries/go-legacy/shared.go": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-legacy/shared.go",
+      "source_sha256": "9a380fa0ad2bec1cada6be0f329d487519a9a5a7fe5bc071d227fbca42ac8a1d",
+      "export_sha256": "9a380fa0ad2bec1cada6be0f329d487519a9a5a7fe5bc071d227fbca42ac8a1d",
+      "unchanged": true
+    },
+    "experiments/retries/go-legacy/go.sum": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-legacy/go.sum",
+      "source_sha256": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+      "export_sha256": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+      "unchanged": true
+    },
+    "experiments/retries/go-legacy/go.mod": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/go-legacy/go.mod",
+      "source_sha256": "f188515161e323d3f7e9decd73f43f7dad8c259d2ac613d302963a501f97494d",
+      "export_sha256": "cb36a0f69c3daf714a55b37ce7703bc24359875a4255712978ab5dcdadd56f23",
+      "unchanged": false,
+      "adaptation": "Use the repository-local pinned dependency source."
+    },
+    "experiments/retries/infra.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/bmv2-pilot/infra.py",
+      "source_sha256": "0c7195ff6c73447f5407d51b9a0c848f57f13a38f5cb0fe0fc546c8831eff80e",
+      "export_sha256": "2a6152aea1118cb4f90bad6a5bbc8b6befeaaeedd563340fc643ac926c80f640",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "status_record": "611645b3eae35566780a080a4752bfcee48e36bcaf4714cd507853916d32d32c",
+        "unused_port": "61223ba1b3c675d3fb382810c53dee2232a1ebce4fcca7995b4adc744251b642",
+        "Target.__init__": "85581bfa40ea03b273202e56397e86e3ba225e9b84ecfd69cee46d078122b4cf",
+        "Target.stop": "ceb02b9f9e880244c74051c848dd6565a2fd0a9498ee0ce17c93b384d2a4c3bd",
+        "Session.__init__.requests": "18ecf7ace7c4772df2b2bdd2dd26a157dd323e208686324ce83dd14b487d922a",
+        "Session.install": "0ffe4e12bbe4ccb9b7da973f4166209e1115ada310dc7e4fbc84587400ba683e",
+        "Session.read": "d7f7b3fdd43eb035c71df438aee92dfac9b42b192b7c3217f40456aeb13721a9",
+        "Session.pipeline": "7e5fed3a8ec0cfa112e7c3fc7027bca55717ebc2c8792c8ccb362d8686272dcd",
+        "Session.write": "0dc6b928f2fbcc83107ef34a61e3f5930ed9eea87980477cfd2a7dccf9374da1",
+        "Session.close": "dfa998ceb2f8b0fececf6f92dc23a070c69f2dde05f634b844a14fa346b50f20",
+        "entry": "3039a579b3f5d0b1ab7c864da157ccdaaff71a16b649fa81224462b2591347ac"
+      },
+      "adaptation": "Extract the target, session, status and entry helpers. Use local fixtures and a distinct IPC prefix. Close owned target or observer resources when startup fails."
+    },
+    "experiments/retries/run.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/run.py",
+      "source_sha256": "1363499ae2d716cd5b70488f3d37eb4efee118abfb5582f1defa8ddcbc5a6ec9",
+      "export_sha256": "077b3edb235050bbd924ba2c5498c7b2b53a8052c3934d0aba1eb6d5e6d01583",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "wire": "9fe55c992946ff3c05063acd5d1db2803240a52a7fdcf02d013cbf65e0df0d59",
+        "Driver.__init__.read": "21dfaa7d74db1e3b727ba5301883709f6f1345805d7ea5398127fadfcbd064c2",
+        "Driver.receive": "469d7eb90e43df5029f91e603156f36a4a3949bde9f84e3dadf8320ce78defaf",
+        "Driver.execute": "f143074f887957a4a40723faa736e5cfad6163cdb9cc9c9413628364a0eeb57b",
+        "snapshot": "920b1c38cac074fcc6fb420f4902fae51ecaa5a6410f721458d77f8673d9a6af",
+        "trial": "21cc93bbe1433639d9720f50294a6d329d74ccba3a9f0e6ee21d0436b1173e4b"
+      },
+      "adaptation": "Retain wire, snapshot and trial functions. Use public retry models and interpreter paths. Close log files after a failed spawn and reap drivers after a broken shutdown pipe. Replace the private main function with explicit output selection and setup-bound snapshots."
+    }
+  }
+}
