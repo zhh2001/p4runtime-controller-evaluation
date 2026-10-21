@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "files": {
+    "scripts/dataplane_checks/model.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/common.py",
+      "source_sha256": "9066b65f703f7c7e845ade828f3fc68566854431ce8b59d2159c84f4f0e32c63",
+      "export_sha256": "69d36b5ea7437f92861e18cf1d254bca0e98fd20c8c4e488245b2de95293cdd9",
+      "unchanged": false,
+      "adaptation": "Extract unchanged frame and PCAP functions. Omit live process and interpreter helpers.",
+      "unchanged_functions_sha256": {
+        "frame": "6f51fc9fce1c8e7c7ffab19e75397b71929496aae6bfeba8ce4360f0f03367f0",
+        "frame_id": "80019c6013ba37e7b7c0b546327bf0a2c914ea04ecb9f0952a816c4199832013",
+        "read_pcap": "9b9f3c2f4b2fb9fe96d7884cbb48bddaa61e8bd603d3984e95f22602d08a8bb7",
+        "check_frames": "b4fb4ddc2a825735e331d16deeb083ab3a04fb06b73b6935fecfbc9be1d5b0b3"
+      }
+    },
+    "scripts/dataplane_checks/analyze.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/analyze.py",
+      "source_sha256": "6c490c9025062fb795aa4670d18658ca0526feb712d7db193a4d5182ef85497b",
+      "export_sha256": "48cad5922b31dce6b8adcad11494f466d1db16f55a90ac1384c980840cc6de81",
+      "unchanged": false,
+      "adaptation": "Extract unchanged expected_frames, rows and verify_case functions. The public wrapper handles inventories and output files; omit private report generation.",
+      "unchanged_functions_sha256": {
+        "expected_frames": "fba2005ea5f8ebe0745ca21500ee11ff0e80dca099d81e1bd695d2431cab6e0d",
+        "expected_frames.add": "1ca10fd77b12b90e91074bf7f14c4bcbfae61ea64040124c5fe0097850f51502",
+        "rows": "5ad06b8f54b09c3a5cb9904a40331d045fab2692bf4d9c938d9cacd2a6ca18a8",
+        "verify_case": "a69d18e711f28e307fdaf6d679cd376202a91c244dd92dd3db5d22d318acd21b"
+      }
+    },
+    "tests/dataplane/test_frames.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/tests/test_frames.py",
+      "source_sha256": "edc5bb23c360f0004e595d5d8f25e49bdc86c5dbbe3da89939461ceba0df652c",
+      "export_sha256": "d6f7f9e7f5037aee783c12d39417a5ff1ae47c0a167602a7504f1175a1e3ffef",
+      "unchanged": false,
+      "adaptation": "Use public package imports; retain all four original test function bodies.",
+      "unchanged_functions_sha256": {
+        "FrameTests.test_payload_identity_and_ethernet_fields": "10b01d8c152eca8ac1b18b446c17c35fbbddef5310716c70540d9bbb776c5764",
+        "FrameTests.test_capture_check_detects_loss_duplicates_and_wrong_ports": "6ca8c6d8516302de0d6a5c47fdca3b693add16b8a10efc4646f5345eca2ab767",
+        "FrameTests.test_rejects_truncated_pcap": "aaf25798f08da6e7f1e5dc21e5bd1772377232997084184c80a535f7daea5cba",
+        "FrameTests.test_case_packet_totals_and_restart_probe": "df3e7e7edf61ccf543b14d898b0a9782bac7a0fe3b9259336d78244f00863ab8"
+      }
+    }
+  }
+}

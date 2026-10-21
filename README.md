@@ -12,6 +12,8 @@ The session and stream dataset contains 840 trials across 28 configurations and 
 
 The batch-retry dataset contains 192 application trials across six profiles, sixteen target-specific scenarios and two repetitions. It includes original-index retry decisions, binary requests, driver outputs and complete state snapshots, checked by two independent decoders.
 
+The data-plane dataset contains 130 Mininet/BMv2 cases, all 520 PCAP files and 2,420 case files. It covers reactive forwarding, batched table updates, counter collection, application recovery and p4ctl, with 27,170 received frames and independent offline verification.
+
 ## Recompute the statistics
 
 Use Python 3.12:
@@ -63,6 +65,9 @@ Run the analysis tests with:
 | Retry fields and summary counts | [Batch-retry data dictionary](docs/retry-data.md) |
 | Retry setup, execution and verification | [Run the batch-write retry comparison](docs/running-retries.md) |
 | Retry drivers, controlled service and scheduler | [experiments/retries](experiments/retries) |
+| Data-plane traffic, counter, recovery and CLI cases | [Data-plane method](docs/dataplane.md) |
+| Captures, controller/host records and case results | [data/dataplane](data/dataplane) |
+| Capture format, event fields and counts | [Data-plane data dictionary](docs/dataplane-data.md) |
 
 ## Recompute construction results
 
@@ -153,7 +158,16 @@ Verification checks all 840 trials, 108,000 emitted PacketIn IDs and 510 actual 
 
 The verifier checks all 192 trials, 334 Writes, 882 update attempts and 112 application Reads. Protobuf and independent standard-library decoders reconstruct retry subsets and target state, then reproduce the historical reports and saved CSV files byte for byte. The retry policy belongs to the experiment application. See the [batch-retry method](docs/retries.md).
 
-The repository supports statistical reanalysis, archived input, request, session and retry verification, new RPC and construction measurements, and live input, session, stream and batch-retry experiments. Data-plane case-study records and verification will follow in a subsequent batch.
+## Verify data-plane cases
+
+```sh
+python3 scripts/verify_dataplane.py --output results/dataplane
+python3 -m unittest discover -s tests/dataplane -v
+```
+
+The verifier uses only the Python standard library. It checks all 130 cases, 520 captures, 360 counter checkpoints, 2,040 periodic samples and sixty target restarts. It reproduces both original CSV files and independently cross-checks frames, ports, table state, raw counter replies and CLI calls. See the [data-plane method](docs/dataplane.md).
+
+The repository supports statistical reanalysis and archived input, request, session, retry and data-plane verification. Live runners cover RPC and construction measurements, input validation, sessions, streams and batch retries. Live data-plane case-study runners will follow in a subsequent batch.
 
 ## License
 

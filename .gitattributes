@@ -4,13 +4,16 @@ data/construction/** -text
 data/inputs/** -text
 data/sessions/** -text
 data/retries/** -text
+data/dataplane/** -text
 figures/sessions/** -text
 scripts/input_checks/** -text
 scripts/session_checks/** -text
 scripts/retry_checks/** -text
+scripts/dataplane_checks/** -text
 tests/inputs/** -text
 tests/sessions/** -text
 tests/retries/** -text
+tests/dataplane/** -text
 experiments/performance/** -text
 experiments/construction/** -text
 experiments/inputs/** -text

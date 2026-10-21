@@ -1,0 +1,43 @@
+{
+  "purpose": "E5 functional data-plane cases on two Mininet hosts and BMv2",
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "repetitions": 10,
+  "cli_repetitions": 10,
+  "race": false,
+  "report": true,
+  "expected_cases": 130,
+  "cases": [
+    "reactive",
+    "counter-recovery"
+  ],
+  "device_id": 1,
+  "cpu_port": 255,
+  "data_ports": [
+    1,
+    2
+  ],
+  "frame_bytes_without_fcs": 64,
+  "reactive_first_frames": 2,
+  "reactive_stable_frames_per_port": 32,
+  "counter_table_entries": 16,
+  "counter_frames_per_epoch": 128,
+  "counter_epochs": 3,
+  "counter_poll_interval_seconds": 0.05,
+  "counter_recovery_policy": "application closes the old session, installs the pipeline, opens a new session, restores entries, and verifies forwarding",
+  "stopped_target_probe_frames": 1,
+  "random_seed": 20261017,
+  "timing_basis": "WSL CLOCK_MONOTONIC",
+  "wsl_memory_limit_bytes": 8589934592,
+  "sdk_version": "v2.0.1",
+  "sdk_commit": "3f2def2b28c098961078ce64e9d86ab3c79e6ccb",
+  "preflight_evidence": "results/dataplane/ready-20261019-082543/verification.json",
+  "preflight_evidence_sha256": "a208fb5e367e8546f0f757ec9b639bae3304a888041ce7580a667ae50e1c8660",
+  "frozen_utc": "2026-10-19T00:28:11.140225+00:00"
+}

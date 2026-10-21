@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-19T00:28:11.420447+00:00",
+  "kernel": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "memory": "MemTotal:        8130740 kB\nMemFree:         5544132 kB\nMemAvailable:    7351372 kB\nBuffers:          118132 kB\nCached:          1776000 kB\nSwapCached:        27640 kB\nActive:           866100 kB\nInactive:        1234652 kB\nActive(anon):      26580 kB\nInactive(anon):   197192 kB\nActive(file):     839520 kB\nInactive(file):  1037460 kB\nUnevictable:       16012 kB\nMlocked:           16012 kB\nSwapTotal:       2097152 kB\nSwapFree:        1904368 kB\nDirty:             93372 kB\nWriteback:             4 kB\nAnonPages:        214360 kB\nMapped:           241992 kB\nShmem:              3124 kB\nKReclaimable:     126832 kB\nSlab:             218856 kB\nSReclaimable:     126832 kB\nSUnreclaim:        92024 kB\nKernelStack:        7552 kB\nPageTables:         9484 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     6162520 kB\nCommitted_AS:    2360108 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       33276 kB\nVmallocChunk:          0 kB\nPercpu:             7488 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      113664 kB\nDirectMap2M:     6176768 kB\nDirectMap1G:    11534336 kB\n",
+  "packages": {
+    "typing_extensions": "4.15.0",
+    "pyee": "13.0.1",
+    "parsy": "2.2",
+    "grpcio": "1.81.1",
+    "finsy": "0.30.0",
+    "protobuf": "6.33.6"
+  },
+  "sources": {
+    "retrieved": "2026-10-17",
+    "sources": [
+      {
+        "name": "finsy",
+        "sha": "491a6e2ac67473ec2ee9a94601f6107ae5d76e7b",
+        "date": "2026-06-28T16:17:14-07:00",
+        "remote": "https://github.com/byllyfish/finsy.git",
+        "tags": "v0.30.0"
+      },
+      {
+        "name": "p4runtime",
+        "sha": "554fcbfd68b0044d2275d755b307e0aec89a3a5e",
+        "date": "2026-02-12T12:36:50-08:00",
+        "remote": "https://github.com/p4lang/p4runtime.git",
+        "tags": "v1.5.0"
+      },
+      {
+        "name": "p4runtime-go-client",
+        "sha": "de3748d9d85953f1fa7093ca441aca53dfc9008b",
+        "date": "2025-01-29T10:20:37-08:00",
+        "remote": "https://github.com/antoninbas/p4runtime-go-client.git",
+        "tags": ""
+      },
+      {
+        "name": "p4runtime-shell",
+        "sha": "5641d39c1778c79f726da7e216b2c7e134af4a47",
+        "date": "2026-10-11T19:15:16-07:00",
+        "remote": "https://github.com/p4lang/p4runtime-shell.git",
+        "tags": ""
+      }
+    ]
+  },
+  "sdk": {
+    "version": "v2.0.1",
+    "commit": "3f2def2b28c098961078ce64e9d86ab3c79e6ccb"
+  },
+  "bmv2": "1.15.0-2bdd0b7b\n",
+  "p4c": "p4c-bm2-ss\nVersion 1.2.5.10 (SHA: 8b6de3c57 BUILD: Release)\n",
+  "mininet": "2.3.0\n",
+  "cpu": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        39 bits physical, 48 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               16\nOn-line CPU(s) list:                  0-15\nVendor ID:                            GenuineIntel\nModel name:                           13th Gen Intel(R) Core(TM) i5-13500H\nCPU family:                           6\nModel:                                186\nThread(s) per core:                   2\nCore(s) per socket:                   8\nSocket(s):                            1\nStepping:                             2\nBogoMIPS:                             6374.40\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities\nVirtualization:                       VT-x\nHypervisor vendor:                    Microsoft\nVirtualization type:                  full\nL1d cache:                            384 KiB (8 instances)\nL1i cache:                            256 KiB (8 instances)\nL2 cache:                             10 MiB (8 instances)\nL3 cache:                             18 MiB (1 instance)\nNUMA node(s):                         1\nNUMA node0 CPU(s):                    0-15\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Vulnerable: No microcode\nVulnerability Retbleed:               Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n"
+}

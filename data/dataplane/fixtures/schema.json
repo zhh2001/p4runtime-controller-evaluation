@@ -1,0 +1,20 @@
+{
+  "p4info_sha256": "0232cb5ec7d1899969a0f1347e13e2402e7185b3ebfb8589b24a7c3bc552fb0e",
+  "table": {
+    "id": 33554433,
+    "name": "MyIngress.t_l2",
+    "field_id": 1,
+    "bitwidth": 48
+  },
+  "action": {
+    "id": 16777219,
+    "name": "MyIngress.forward",
+    "param_id": 1,
+    "bitwidth": 9
+  },
+  "counter": {
+    "id": 301989889,
+    "name": "MyIngress.pkt_counter",
+    "size": 512
+  }
+}
