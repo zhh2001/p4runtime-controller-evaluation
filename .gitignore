@@ -10,3 +10,5 @@ __pycache__/
 /experiments/performance/fixtures/compatibility.json
 /experiments/construction/bin/
 /experiments/construction/preflight.json
+/experiments/inputs/*/bin/
+/experiments/inputs/*/fixtures/

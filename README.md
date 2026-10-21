@@ -47,6 +47,8 @@ Run the analysis tests with:
 | Input-validation cases, request records and results | [data/inputs](data/inputs) |
 | Input workloads, outcome counts and semantic verification | [Input method](docs/inputs.md) |
 | Input fields and outcome names | [Input data dictionary](docs/input-data.md) |
+| Input-validation setup, execution and checks | [Run the input-validation comparison](docs/running-inputs.md) |
+| Live input drivers, controlled services and oracles | [experiments/inputs](experiments/inputs) |
 
 ## Recompute construction results
 
@@ -76,6 +78,15 @@ python3 scripts/run_construction.py --output results/construction-smoke
 
 Setup validates 5,120 constructed entries, result ownership, Go race and vet checks and the semantic oracle. The default run covers all 27 conditions once. Use `--mode full` for ten repetitions and independently checked statistics. See [Run the construction comparison](docs/running-construction.md). This workload does not require a switch or root privileges.
 
+To run the input-validation comparison with p4c and BMv2 installed:
+
+```sh
+python3 scripts/bootstrap_inputs.py
+python3 scripts/run_inputs.py --output results/inputs-smoke
+```
+
+Setup compiles three P4 programs, checks all 382 inputs and generated declarations against the archive, and builds normal and race-enabled Go drivers. The default run executes 972 trials across the three groups and two targets. Use `--mode full` for all 6,984 trials or `--mode race` for 292 Go trials. Each run verifies coverage, requests and target state. See [Run the input-validation comparison](docs/running-inputs.md).
+
 ## Verify the original requests
 
 The [RPC trace archives](docs/rpc-traces.md) contain the original request records and full table readbacks for all 2,940 measurement and warmup phases. Download archives by parameter point and verify them directly from their compressed form. The verifier checks request accounting, table state and all 1,680 published measurement rows.
@@ -90,7 +101,7 @@ The [RPC trace archives](docs/rpc-traces.md) contain the original request record
 
 The verifier checks all 6,984 trials, their associated requests and repeated outcomes. It compares numerical and typed values, verifies target state, and reproduces the saved extended-run CSV files and findings. See the [input method](docs/inputs.md) for the three corpora, selected runs and original-source correspondence. This analysis uses archived records and does not start a target.
 
-The repository supports statistical reanalysis, input and request-level verification, and new RPC and construction measurements. The remaining experiment groups will be added in subsequent batches.
+The repository supports statistical reanalysis, input and request-level verification, new RPC and construction measurements, and live input-validation runs. Session recovery and stream-behavior records and verification will follow in a subsequent batch.
 
 ## License
 

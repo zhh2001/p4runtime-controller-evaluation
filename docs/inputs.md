@@ -119,6 +119,6 @@ Run metadata selects case IDs, source inventories, timestamps and completion fie
 
 The primary analysis functions and numerical models retain their original bodies. Imports and unused workspace constants are adapted for the package layout. Independent verification uses the original JSON/base64/integer decoding functions with per-run entry points. Twenty-three original oracle tests retain their test methods and use the archived fixtures. New checks cover inventory corruption, incomplete coverage, changed payloads and changed readbacks.
 
-The verifier writes regenerated per-run CSV files, a combined `case-results.csv`, per-repetition `counts.csv` and `verification.json` under the requested output directory. Archived data remains unchanged. This batch provides offline verification of existing trials. Live experiment runners will be added separately.
+The verifier writes regenerated per-run CSV files, a combined `case-results.csv`, per-repetition `counts.csv` and `verification.json` under the requested output directory. Archived data remains unchanged. The [live runner guide](running-inputs.md) describes setup, smoke, full and Go race runs on the controlled service and BMv2, with verification of new requests and state.
 
 Experimental data and fixtures use CC BY 4.0. Analysis code and documentation use Apache-2.0. See [LICENSE.md](../LICENSE.md).

@@ -6,6 +6,7 @@ scripts/input_checks/** -text
 tests/inputs/** -text
 experiments/performance/** -text
 experiments/construction/** -text
+experiments/inputs/** -text
 scripts/*.py text eol=lf
 config/*.json text eol=lf
 config/requirements-*.txt text eol=lf
