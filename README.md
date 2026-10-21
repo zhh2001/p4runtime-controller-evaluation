@@ -16,6 +16,8 @@ The data-plane dataset contains 130 Mininet/BMv2 cases, all 520 PCAP files and 2
 
 The [reproduction guide](docs/reproducing-results.md) brings together offline verification, RPC trace downloads, test suites and live execution for all six datasets.
 
+The [evaluation-v1 release preparation](docs/releases.md) fixes the complete source and data snapshot, its archive contents and verification procedure.
+
 ## Recompute the statistics
 
 Use Python 3.12:

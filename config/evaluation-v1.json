@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "tag": "evaluation-v1",
+  "repository": "https://github.com/zhh2001/p4runtime-controller-evaluation",
+  "source_commit": "edbb75d7b83d27dce6a3138aa01122921773f7ab",
+  "archive_prefix": "p4runtime-controller-evaluation-v1",
+  "sdk_version": "v2.0.1",
+  "sdk_commit": "3f2def2b28c098961078ce64e9d86ab3c79e6ccb",
+  "rpc_catalog": "data/rpc/traces/manifest.json",
+  "license_document": "LICENSE.md"
+}
