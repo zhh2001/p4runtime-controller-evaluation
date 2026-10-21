@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "trials": 840,
+  "repetitions": 30,
+  "adapters": [
+    "sdk",
+    "finsy"
+  ],
+  "groups": [
+    "recovery",
+    "mastership",
+    "cancellation",
+    "consumers"
+  ],
+  "files": {
+    "data/sessions/recovery/observations.jsonl.gz": {
+      "bytes": 29829,
+      "sha256": "60669393e840f72d0c67eeca63ef60a29dc07f3c297265c885b397e5673463e8",
+      "source_file": "results/session-formal/selected-20261019-135809/recovery/observations.jsonl",
+      "source_sha256": "b1584b3dd101cce44e7b743a6956935b74fa70e2ca1cbd499ebd16895bef5391",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 633740,
+      "uncompressed_sha256": "b1584b3dd101cce44e7b743a6956935b74fa70e2ca1cbd499ebd16895bef5391",
+      "records": 180
+    },
+    "data/sessions/recovery/rpc.jsonl.gz": {
+      "bytes": 63229,
+      "sha256": "6c9d3c175e1b6328b4b9d4415d0ddcad5c2c9774b749a7e1877efad785fa2a54",
+      "source_file": "results/session-formal/selected-20261019-135809/recovery/rpc.jsonl",
+      "source_sha256": "fd7faf74f4f951405090332343f15c8c5cbefb5b962ea5fdb2e38b81db1eafef",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 982429,
+      "uncompressed_sha256": "fd7faf74f4f951405090332343f15c8c5cbefb5b962ea5fdb2e38b81db1eafef",
+      "records": 4800
+    },
+    "data/sessions/recovery/run.json": {
+      "bytes": 22295,
+      "sha256": "bd680002a15d88f37338514b6e9371382ae084579fbd43287faebc0716d9a2dd",
+      "source_file": "results/session-formal/selected-20261019-135809/recovery/manifest.json",
+      "source_sha256": "28cbad855a73bef05977a96d373bf8c2aa7e7cad5952340a1c991ee3abe946bb",
+      "transformation": "Preserve run settings, schedule, source inventory and executable hash. Omit the local executable path."
+    },
+    "data/sessions/recovery/target-processes.json": {
+      "bytes": 119523,
+      "sha256": "29eee3b86718e38a83a27d04e31674c747ba59e30e472c288a1365f86b93d730",
+      "source_file": "results/session-formal/selected-20261019-135809/recovery/target-processes.json",
+      "source_sha256": "29eee3b86718e38a83a27d04e31674c747ba59e30e472c288a1365f86b93d730"
+    },
+    "data/sessions/recovery/recovery-trials.csv": {
+      "bytes": 12113,
+      "sha256": "cf38372c7acd2448a58b36894ff1cbcd75531e4def109ad457db5f22f3941c57",
+      "source_file": "results/session-formal/selected-20261019-135809/recovery/recovery-trials.csv",
+      "source_sha256": "cf38372c7acd2448a58b36894ff1cbcd75531e4def109ad457db5f22f3941c57"
+    },
+    "data/sessions/recovery/recorded-verification.json": {
+      "bytes": 245,
+      "sha256": "a221fb260715dffdf99b27edb2ea787f1dc382744e01786a6e649750e67b43cc",
+      "source_file": "results/session-formal/selected-20261019-135809/recovery/verification.json",
+      "source_sha256": "a221fb260715dffdf99b27edb2ea787f1dc382744e01786a6e649750e67b43cc"
+    },
+    "data/sessions/recovery/stderr.jsonl.gz": {
+      "bytes": 8586,
+      "sha256": "f75ea66483d6236b5f6222fc40e69ff98d8e883de9f2fd8c2ae92050d8c3e27d",
+      "transformation": "Collect all driver stderr files in filename order. Replace the private Finsy source prefix with <finsy-source>; retain original and exported text hashes.",
+      "uncompressed_bytes": 161946,
+      "uncompressed_sha256": "2ddbe7edf2e7f7b651d7f94ecc3a04332b9a28fe370ab8d21ed6eb2a52653433",
+      "records": 180
+    },
+    "data/sessions/mastership/observations.jsonl.gz": {
+      "bytes": 8590,
+      "sha256": "782642fd42c952baaedefa3bc42c5ce9557090fe7415b0a453ff586e7cf419ae",
+      "source_file": "results/session-formal/selected-20261019-135809/mastership/observations.jsonl",
+      "source_sha256": "51716d06ec9048021b7298ad86a311d5d5f05f1a10c8ef4347e0c7563482a941",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 163420,
+      "uncompressed_sha256": "51716d06ec9048021b7298ad86a311d5d5f05f1a10c8ef4347e0c7563482a941",
+      "records": 60
+    },
+    "data/sessions/mastership/rpc.jsonl.gz": {
+      "bytes": 21410,
+      "sha256": "649df558b25d6aa28f19345d4e27f1563899e54a3dd5951f8cbf9d48498dfe6d",
+      "source_file": "results/session-formal/selected-20261019-135809/mastership/rpc.jsonl",
+      "source_sha256": "93b1d1f7f0e12b36bff9eba5cdeb12e6df76302a3fee1bcc6f24852ad180e471",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 370228,
+      "uncompressed_sha256": "93b1d1f7f0e12b36bff9eba5cdeb12e6df76302a3fee1bcc6f24852ad180e471",
+      "records": 1708
+    },
+    "data/sessions/mastership/run.json": {
+      "bytes": 10512,
+      "sha256": "d6388cdb2ff01215dde82f96f0229e6c16cb6acd92d784af4708df844fb6c689",
+      "source_file": "results/session-formal/selected-20261019-135809/mastership/manifest.json",
+      "source_sha256": "6b4c115a346a1ac5897f04f32b39fe1cf7c5d66b8a0524cd0c9d25dafba8739c",
+      "transformation": "Preserve run settings, schedule, source inventory and executable hash. Omit the local executable path."
+    },
+    "data/sessions/mastership/target-processes.json": {
+      "bytes": 29883,
+      "sha256": "5e0f9dd19c770b35a3c6431e09f28325c69faa95d574d0334492c029d6fe6631",
+      "source_file": "results/session-formal/selected-20261019-135809/mastership/target-processes.json",
+      "source_sha256": "5e0f9dd19c770b35a3c6431e09f28325c69faa95d574d0334492c029d6fe6631"
+    },
+    "data/sessions/mastership/recorded-verification.json": {
+      "bytes": 189,
+      "sha256": "b732ee9288f6514940b008c4f7139c487fee685d7a56a4cdd07662be7ad6d1c4",
+      "source_file": "results/session-formal/selected-20261019-135809/mastership/verification.json",
+      "source_sha256": "b732ee9288f6514940b008c4f7139c487fee685d7a56a4cdd07662be7ad6d1c4"
+    },
+    "data/sessions/mastership/stderr.jsonl.gz": {
+      "bytes": 2461,
+      "sha256": "8c34d5a8feb25b8564b241b1dd39409e116ec892e7d8ca4c3e1fc1fc06b6243a",
+      "transformation": "Collect all driver stderr files in filename order. Replace the private Finsy source prefix with <finsy-source>; retain original and exported text hashes.",
+      "uncompressed_bytes": 33852,
+      "uncompressed_sha256": "39e06dfde36244cac6ae9c275a637f7207e63332d3ab52c72b2fefa9f7389602",
+      "records": 60
+    },
+    "data/sessions/cancellation/observations.jsonl.gz": {
+      "bytes": 76110,
+      "sha256": "70afd9950c4d68ac7f5eafc2877d1de5649a9bab77bc79767e1628136d5f8940",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/observations.jsonl",
+      "source_sha256": "06b751d28704f271c6978f6b30abbd9a5a130ee6578df05c1151d84c37a682b4",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 989916,
+      "uncompressed_sha256": "06b751d28704f271c6978f6b30abbd9a5a130ee6578df05c1151d84c37a682b4",
+      "records": 240
+    },
+    "data/sessions/cancellation/rpc.jsonl.gz": {
+      "bytes": 28017,
+      "sha256": "eb0cdb91770a3aa876ac3be1fe439871ee7d7aa8a7602f089a302c5e6db9d16d",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/rpc.jsonl",
+      "source_sha256": "4ca516a9c8e2edb6148778a47430f6dd4478f3321918e42ad6d94fdeac05dabd",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 322279,
+      "uncompressed_sha256": "4ca516a9c8e2edb6148778a47430f6dd4478f3321918e42ad6d94fdeac05dabd",
+      "records": 2338
+    },
+    "data/sessions/cancellation/run.json": {
+      "bytes": 29103,
+      "sha256": "442b455400285c54cb04bb16ef999eccdc9e853f56affcc532389964245ec683",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/manifest.json",
+      "source_sha256": "42d1a53ffb2c6943f460e7bf278fc0330dfad71a1588e671c9f8a9c7f63b3b42",
+      "transformation": "Preserve run settings, schedule, source inventory and executable hash. Omit the local executable path."
+    },
+    "data/sessions/cancellation/target-processes.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/target-processes.json",
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "data/sessions/cancellation/outcomes.csv": {
+      "bytes": 283,
+      "sha256": "1fc43713a9f44e1afbadf257673bac7c3dbe82f9ed8d3ca892e4d0ab9a05cc8a",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/outcomes.csv",
+      "source_sha256": "1fc43713a9f44e1afbadf257673bac7c3dbe82f9ed8d3ca892e4d0ab9a05cc8a"
+    },
+    "data/sessions/cancellation/recorded-verification.json": {
+      "bytes": 292,
+      "sha256": "8bf8ea972056d45f0ed76ef5209138b6817a3f0773eb26f2b601ade94793a289",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/verification.json",
+      "source_sha256": "8bf8ea972056d45f0ed76ef5209138b6817a3f0773eb26f2b601ade94793a289"
+    },
+    "data/sessions/cancellation/stderr.jsonl.gz": {
+      "bytes": 9402,
+      "sha256": "d339e79de310bf40893d0d8d46058ae43533b26b7922bf5a5e71dcdb0c2bc984",
+      "transformation": "Collect all driver stderr files in filename order. Replace the private Finsy source prefix with <finsy-source>; retain original and exported text hashes.",
+      "uncompressed_bytes": 119875,
+      "uncompressed_sha256": "08615ed1acc2a7c41e526ccf7d2901406273725dc1a5d7c5798f7a114945bd62",
+      "records": 240
+    },
+    "data/sessions/consumers/observations.jsonl.gz": {
+      "bytes": 1312082,
+      "sha256": "fb34b04e043135ea5d7a099aaf665bd47072dd83ba4dbb34ed01ddcf86dd164f",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/observations.jsonl",
+      "source_sha256": "6a104cd37e21541fb8fb5092ece35ac2c7311eb9a93c865ff3f6eb98128e046f",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 5426479,
+      "uncompressed_sha256": "6a104cd37e21541fb8fb5092ece35ac2c7311eb9a93c865ff3f6eb98128e046f",
+      "records": 360
+    },
+    "data/sessions/consumers/rpc.jsonl.gz": {
+      "bytes": 1431125,
+      "sha256": "3a6cdbcbccbb93001cea9940738b9d7cf7c25a0c3745a6e4260de2ece2d176b7",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/rpc.jsonl",
+      "source_sha256": "746fae39eaf33b18c9ab9a8022c8db3985ddd95874d5962d5d6b979cfff0a890",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 12553276,
+      "uncompressed_sha256": "746fae39eaf33b18c9ab9a8022c8db3985ddd95874d5962d5d6b979cfff0a890",
+      "records": 111246
+    },
+    "data/sessions/consumers/run.json": {
+      "bytes": 45294,
+      "sha256": "9f5a5a3cfe36c170cac1d36e432b00dd623638e02c1b9bdb89d08013486e4e92",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/manifest.json",
+      "source_sha256": "6d7433be93303ce308378fe6ba6d1c36e19980297cbce8c5ed355d484bc5601c",
+      "transformation": "Preserve run settings, schedule, source inventory and executable hash. Omit the local executable path."
+    },
+    "data/sessions/consumers/target-processes.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/target-processes.json",
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "data/sessions/consumers/consumer-summary.csv": {
+      "bytes": 1020,
+      "sha256": "2a3f4345c71b3697244384161201f82e885df5c7729ff78e33ca0e647dbd0f85",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/consumer-summary.csv",
+      "source_sha256": "2a3f4345c71b3697244384161201f82e885df5c7729ff78e33ca0e647dbd0f85"
+    },
+    "data/sessions/consumers/rss-evaluation.jsonl": {
+      "bytes": 48612,
+      "sha256": "449368b39883401179be3074fa627f311ff31b817ef614b9f396a44d13cf6cdf",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/rss-evaluation.jsonl",
+      "source_sha256": "449368b39883401179be3074fa627f311ff31b817ef614b9f396a44d13cf6cdf"
+    },
+    "data/sessions/consumers/recorded-verification.json": {
+      "bytes": 246,
+      "sha256": "c6c532609c06a3447327c97faaaef612035a139009687e1580eebb1bd95af27f",
+      "source_file": "results/session-formal/selected-20261019-135809/consumers/verification.json",
+      "source_sha256": "c6c532609c06a3447327c97faaaef612035a139009687e1580eebb1bd95af27f"
+    },
+    "data/sessions/consumers/stderr.jsonl.gz": {
+      "bytes": 34074,
+      "sha256": "d59962f1a6f58b760c3eba61c1eefbeca85ba65005bbd253028a1a2baa7e0ca7",
+      "transformation": "Collect all driver stderr files in filename order. Replace the private Finsy source prefix with <finsy-source>; retain original and exported text hashes.",
+      "uncompressed_bytes": 1316183,
+      "uncompressed_sha256": "e5946d882ded260b339f0fba77ead5affb2630a7b86358997cb2a9af063843a0",
+      "records": 360
+    },
+    "data/sessions/statistics.csv": {
+      "bytes": 9018,
+      "sha256": "7eb585e6cc5dadb080fdff8511608f0676e4132a0a99c9410e0c7bfcffa577e2",
+      "source_file": "results/session-formal/selected-20261019-135809/statistics.csv",
+      "source_sha256": "7eb585e6cc5dadb080fdff8511608f0676e4132a0a99c9410e0c7bfcffa577e2"
+    },
+    "data/sessions/summary.json": {
+      "bytes": 7750,
+      "sha256": "07cb016d8aa497a0cbbc4b6191bb56b5bc4f76b30ca49838d35ea82e7713a54c",
+      "source_file": "results/session-formal/selected-20261019-135809/summary.json",
+      "source_sha256": "07cb016d8aa497a0cbbc4b6191bb56b5bc4f76b30ca49838d35ea82e7713a54c"
+    },
+    "data/sessions/plan.json": {
+      "bytes": 1378,
+      "sha256": "aaffd4a24aad9e876ff608d4ad7041834336ee3d91987e46a28924d110d2cd3e",
+      "source_file": "experiments/session-formal/formal-plan.json",
+      "source_sha256": "aaffd4a24aad9e876ff608d4ad7041834336ee3d91987e46a28924d110d2cd3e"
+    },
+    "data/sessions/selection.json": {
+      "bytes": 1022,
+      "sha256": "a8fe1873158e51d7e1a2f2041eae836b37f38734b31faecb3ec2f16168d40763",
+      "source_file": "results/session-formal/selected-20261019-135809/state.json",
+      "source_sha256": "0571ebdde63180bc7b22374e09c9c12d8d50ec90ad7187ed7730f6178d7e8b93",
+      "transformation": "Replace private absolute run directories with relative source directories. Preserve completion, group selection and excluded-attempt details."
+    },
+    "data/sessions/environment.json": {
+      "bytes": 20230,
+      "sha256": "cf010ec21801631998402fca339629fa2b366de2a0edc77102833275395dc293",
+      "source_file": "experiments/session-formal/environment.json",
+      "source_sha256": "6b6d93dad622665d2bdea4e0111386feb5727ade18c2eb28b6ec7e40303ee3dd",
+      "transformation": "Omit hostname and Python import paths, retain the Finsy environment, and replace the workspace prefix in Go build information."
+    },
+    "data/sessions/fixtures/keys.p4info.txt": {
+      "bytes": 2253,
+      "sha256": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/fixtures/keys.p4info.txt",
+      "source_sha256": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f"
+    },
+    "data/sessions/fixtures/keys.p4": {
+      "bytes": 2104,
+      "sha256": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/fixtures/keys.p4",
+      "source_sha256": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53"
+    },
+    "data/sessions/fixtures/stream.p4info.txt": {
+      "bytes": 2408,
+      "sha256": "ebe016d078dc322fcc0144713913581bcf4611cbed4e340f0d9428cddee486ba",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/fixtures/stream.p4info.txt",
+      "source_sha256": "ebe016d078dc322fcc0144713913581bcf4611cbed4e340f0d9428cddee486ba"
+    },
+    "data/sessions/fixtures/validation-samples.json": {
+      "bytes": 89334,
+      "sha256": "69c8878956971a02aabd97e9589a30afbaa0618626ddefb8a9254d95884fe9a4",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/fixtures/validation-samples.json",
+      "source_sha256": "69c8878956971a02aabd97e9589a30afbaa0618626ddefb8a9254d95884fe9a4"
+    },
+    "data/sessions/fixtures/recovery-validation-sample.json": {
+      "bytes": 16947,
+      "sha256": "3e8e261a001635f9aec3cf7d919ffe2b454167a6b7f29bad1996bbaa8454bd32",
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/fixtures/recovery-validation-sample.json",
+      "source_sha256": "3e8e261a001635f9aec3cf7d919ffe2b454167a6b7f29bad1996bbaa8454bd32"
+    },
+    "figures/sessions/session-recovery.pdf": {
+      "bytes": 38620,
+      "sha256": "d3debf8954db99c37dcfd58dd8b6b5a1d89ea87091985d690c776362f05c9d29",
+      "source_file": "results/session-formal/selected-20261019-135809/figures/session-recovery.pdf",
+      "source_sha256": "d3debf8954db99c37dcfd58dd8b6b5a1d89ea87091985d690c776362f05c9d29"
+    },
+    "figures/sessions/session-recovery.png": {
+      "bytes": 159284,
+      "sha256": "2e3adfb9f5c8e86e58c81e1a89c73cf7ac6379aadd614bf5acce18ac05a1aadc",
+      "source_file": "results/session-formal/selected-20261019-135809/figures/session-recovery.png",
+      "source_sha256": "2e3adfb9f5c8e86e58c81e1a89c73cf7ac6379aadd614bf5acce18ac05a1aadc"
+    },
+    "figures/sessions/slow-consumer-tradeoff.pdf": {
+      "bytes": 30233,
+      "sha256": "873eec176b78e491c6253aa7c77e0166583544179175241cd6751526e79628af",
+      "source_file": "results/session-formal/selected-20261019-135809/figures/slow-consumer-tradeoff.pdf",
+      "source_sha256": "873eec176b78e491c6253aa7c77e0166583544179175241cd6751526e79628af"
+    },
+    "figures/sessions/slow-consumer-tradeoff.png": {
+      "bytes": 220223,
+      "sha256": "d1e136c8175eb9c24876fe22fcc8e1e9ab733f125bec99c95386188fd4c9fa8c",
+      "source_file": "results/session-formal/selected-20261019-135809/figures/slow-consumer-tradeoff.png",
+      "source_sha256": "d1e136c8175eb9c24876fe22fcc8e1e9ab733f125bec99c95386188fd4c9fa8c"
+    }
+  },
+  "runs": [
+    {
+      "group": "recovery",
+      "trials": 180,
+      "source_manifest_sha256": "28cbad855a73bef05977a96d373bf8c2aa7e7cad5952340a1c991ee3abe946bb"
+    },
+    {
+      "group": "mastership",
+      "trials": 60,
+      "source_manifest_sha256": "6b4c115a346a1ac5897f04f32b39fe1cf7c5d66b8a0524cd0c9d25dafba8739c"
+    },
+    {
+      "group": "cancellation",
+      "trials": 240,
+      "source_manifest_sha256": "42d1a53ffb2c6943f460e7bf278fc0330dfad71a1588e671c9f8a9c7f63b3b42"
+    },
+    {
+      "group": "consumers",
+      "trials": 360,
+      "source_manifest_sha256": "6d7433be93303ce308378fe6ba6d1c36e19980297cbce8c5ed355d484bc5601c"
+    }
+  ],
+  "figures": {
+    "font_family": "Times New Roman",
+    "dpi": 300,
+    "formats": [
+      "PDF",
+      "PNG"
+    ]
+  }
+}

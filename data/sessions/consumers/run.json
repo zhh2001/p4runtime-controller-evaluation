@@ -1,0 +1,2304 @@
+{
+  "date": "2026-10-19T13:50:58.566086+08:00",
+  "kind": "consumers",
+  "repetitions": 30,
+  "schedule": [
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 1
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 1
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 1
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 1
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 1
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 1
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 1
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 1
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 1
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 1
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 1
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 1
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 2
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 2
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 2
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 2
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 2
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 2
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 3
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 3
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 3
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 3
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 3
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 3
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 4
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 4
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 4
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 4
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 4
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 4
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 4
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 4
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 4
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 4
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 4
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 4
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 5
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 5
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 5
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 5
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 5
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 5
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 5
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 5
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 5
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 5
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 5
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 5
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 6
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 6
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 6
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 6
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 6
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 6
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 7
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 7
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 7
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 7
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 7
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 7
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 7
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 7
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 7
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 7
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 7
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 7
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 8
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 8
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 8
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 8
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 8
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 8
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 9
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 9
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 9
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 9
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 9
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 9
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 9
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 9
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 9
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 9
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 9
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 9
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 10
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 10
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 10
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 10
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 10
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 10
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 10
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 10
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 10
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 10
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 10
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 10
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 11
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 11
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 11
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 11
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 11
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 11
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 11
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 11
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 11
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 11
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 11
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 11
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 12
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 12
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 12
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 12
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 12
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 12
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 12
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 12
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 12
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 12
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 12
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 12
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 13
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 13
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 13
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 13
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 13
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 13
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 13
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 13
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 13
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 13
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 13
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 13
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 14
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 14
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 14
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 14
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 14
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 14
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 15
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 15
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 15
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 15
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 15
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 15
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 16
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 16
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 16
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 16
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 16
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 16
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 16
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 16
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 16
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 16
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 16
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 16
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 17
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 17
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 17
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 17
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 17
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 17
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 17
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 17
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 17
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 17
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 17
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 17
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 18
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 18
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 18
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 18
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 18
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 18
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 19
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 19
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 19
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 19
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 19
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 19
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 19
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 19
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 19
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 19
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 19
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 19
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 20
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 20
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 20
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 20
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 20
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 20
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 20
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 20
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 20
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 20
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 20
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 20
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 21
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 21
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 21
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 21
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 21
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 21
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 22
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 22
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 22
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 22
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 22
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 22
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 23
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 23
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 23
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 23
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 23
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 23
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 23
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 23
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 23
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 23
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 23
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 23
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 24
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 24
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 24
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 24
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 24
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 24
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 24
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 24
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 24
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 24
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 24
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 24
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 25
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 25
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 25
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 25
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 25
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 25
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 26
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 26
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 26
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 26
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 26
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 26
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 26
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 26
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 26
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 26
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 26
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 26
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 27
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 27
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 27
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 27
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 27
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 27
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 28
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 28
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 28
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 28
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 28
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 28
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 29
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 29
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 29
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 29
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 29
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 29
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 30
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 30
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 30
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 0,
+      "repetition": 30
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 30
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 1,
+      "repetition": 30
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 30
+    },
+    {
+      "adapter": "sdk",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 30
+    },
+    {
+      "adapter": "finsy",
+      "path": "native",
+      "delay_ms": 10,
+      "repetition": 30
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 0,
+      "repetition": 30
+    },
+    {
+      "adapter": "finsy",
+      "path": "queued",
+      "delay_ms": 10,
+      "repetition": 30
+    },
+    {
+      "adapter": "sdk",
+      "path": "queued",
+      "delay_ms": 1,
+      "repetition": 30
+    }
+  ],
+  "adapters": [
+    "sdk",
+    "finsy"
+  ],
+  "complete": true,
+  "trials": 360,
+  "started_local": "2026-10-19T13:50:58.418276+08:00",
+  "plan": {
+    "created_local": "2026-10-19T13:18:56+08:00",
+    "seed": 20261019,
+    "repetitions": 30,
+    "adapters": [
+      "sdk",
+      "finsy"
+    ],
+    "groups": [
+      "recovery",
+      "mastership",
+      "cancellation",
+      "consumers"
+    ],
+    "recovery_modes": [
+      "eof",
+      "unavailable",
+      "restart"
+    ],
+    "settling_seconds": 2.1,
+    "recovery_observation_seconds": 60,
+    "arbitration_gate": "always open, no intentional arbitration delay",
+    "cancellation_modes": {
+      "sdk": [
+        "pre_cancelled",
+        "queued_cancelled",
+        "inflight_cancelled",
+        "immediate",
+        "graceful",
+        "graceful_timeout"
+      ],
+      "finsy": [
+        "inflight_cancelled",
+        "immediate"
+      ]
+    },
+    "consumer_paths": [
+      "native",
+      "queued"
+    ],
+    "consumer_delays_ms": [
+      0,
+      1,
+      10
+    ],
+    "packet_count": 300,
+    "offered_rate_pps": 500,
+    "application_queue_capacity": 50,
+    "library_packet_queue_capacity_finsy": 50,
+    "expected_trials": {
+      "recovery": 180,
+      "mastership": 60,
+      "cancellation": 240,
+      "consumers": 360
+    },
+    "order": "randomized configurations within each repetition, groups run sequentially",
+    "restoration": "native session recovery, then common application installs missing pipeline and inserts its own entry",
+    "latency_scope": "transparent local relay plus native client, state polling and application restore; no forwarding metric"
+  },
+  "smoke": false,
+  "race": false,
+  "packet_count": 300,
+  "offered_rate_pps": 500,
+  "paths": [
+    "native",
+    "queued"
+  ],
+  "delays_ms": [
+    0,
+    1,
+    10
+  ],
+  "configurations": {
+    "sdk": [
+      "pre_cancelled",
+      "queued_cancelled",
+      "inflight_cancelled",
+      "immediate",
+      "graceful",
+      "graceful_timeout"
+    ],
+    "finsy": [
+      "inflight_cancelled",
+      "immediate"
+    ]
+  },
+  "sdk_executable_sha256": "752f67e6469b27376f18f0bd58cf3e1169fab85002ac142c0dde9e800b3d6838",
+  "completed_local": "2026-10-19T13:58:09.293243+08:00",
+  "execution_sources_sha256": {
+    "experiments/session-formal/formal-plan.json": "aaffd4a24aad9e876ff608d4ad7041834336ee3d91987e46a28924d110d2cd3e",
+    "experiments/session-formal/prepare.py": "85c11532762124becdced2dceb0d601cabbca5d7d4439951d0475dc90c71baa9",
+    "experiments/session-formal/resumption-plan.json": "f9aff463b2f8a2be00561dc32a2983d824a4354221ed7b0c44439f50c1535fcb",
+    "experiments/session-formal/mastership.py": "3a3fafe42253197da9dcdb14abc9ec35d0b6a8eef8630e3069cc86bc28dc4965",
+    "experiments/session-formal/recover.py": "8815ecfdd9cca5e62675cfff8f1e59d7149e8866a4985caca82baf0148bccc3c",
+    "experiments/session-formal/README.md": "ef453410a0a7252ac22808e93b615d13f9b188df96f66c89dbcc62f7bf91b950",
+    "experiments/session-formal/finsy_driver.py": "e1840f2cbe1b0cc4689c9caad814d4e270f389abb2e65cc4bb16441fe2fc8345",
+    "experiments/session-formal/infra.py": "baa323a2919e7cb9c90e16bc98a9c4031df919e6ba2a34c546b5462a1f25e10a",
+    "experiments/session-formal/cancellation.py": "3a2bcf434c34fd224907d5b5e24d919cef5581cc86ddb106762a763eb9edd4ab",
+    "experiments/session-formal/session_finsy.py": "9e84da7e4cc9f5c8e00f65dd996936d6f993f518684e8f030a2ca0610f676967",
+    "experiments/session-formal/verify.py": "04ca56e269cf9ca4cfb28b592c456a35880b57f6c1ee8fecdfb3fa154eea586d",
+    "experiments/session-formal/environment.json": "6b6d93dad622665d2bdea4e0111386feb5727ade18c2eb28b6ec7e40303ee3dd",
+    "experiments/session-formal/server.py": "4c0af42022c2ce120991d9ff14acf8b1882c28b4bcf16d3821e62c2f801a6da4",
+    "experiments/session-formal/analyze.py": "6769f1959c4fd79fb3959e7c3cd497d73445f8e107396fc6215101e4c593b153",
+    "experiments/session-formal/common.py": "2924c6a086f5d70f54698e6710fd3e11ffcefe231a8742d2d7a8c6c0205dab34",
+    "experiments/session-formal/consumers.py": "696b7f8c3b42cc578a439bec612e5e9d9bc7082a3950090ad7bed283c9e1cd61",
+    "experiments/session-formal/session_driver.py": "db8064e2d69971aed80fcd6275f5a32776f4a9b171b4d086c437caa840394319",
+    "experiments/session-formal/run.py": "e97c581cf892eada0806e33cd18f22b6fd1aee0e67d516c61acc54c14de13439",
+    "experiments/session-formal/sdk/go.mod": "be40ea01d647b9dbb635864b2908f45a1d29f63ec3d3677e73ef43920814e2e4",
+    "experiments/session-formal/sdk/main.go": "b3fc9f6ad1658c8901dc3c290bbabcfa906a4a9073a74b11d1d95f6bb4a4d7b0",
+    "experiments/session-formal/sdk/go.sum": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+    "experiments/session-formal/tests/test_recovery.py": "e9e245bda9312f2bdd35160ab90cf46393b5ecbf976996c3fd94439a6fcf4d36",
+    "experiments/session-formal/tests/test_server_close.py": "7a55c70fcc0be0f703a12edc04ad07f383ac5b050c5abb97c3f22ea678622c3d",
+    "experiments/session-formal/tests/test_analysis.py": "eafd2ceee1007e3ba57c9e4cf24d4cb8de3c515e3fd3df5f3d2297865a747a5e",
+    "experiments/session-formal/fixtures/keys.p4": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53",
+    "experiments/session-formal/fixtures/stream.p4info.txt": "ebe016d078dc322fcc0144713913581bcf4611cbed4e340f0d9428cddee486ba",
+    "experiments/session-formal/fixtures/compatibility.json": "d6abb16fb9dec9ea07518a5c96c4bafa57866a6501eaa2028ad3623249277427",
+    "experiments/session-formal/fixtures/recovery-validation-sample.json": "3e8e261a001635f9aec3cf7d919ffe2b454167a6b7f29bad1996bbaa8454bd32",
+    "experiments/session-formal/fixtures/keys.p4info.txt": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f",
+    "experiments/session-formal/fixtures/keys.json": "02234f31c35e837527e2a133035617181ad1a13633a93cf55f71167343ad4cc0",
+    "experiments/session-formal/fixtures/keys.compiler.txtpb": "588ef7bba756eaf03a2503788047643974c61691ec51342114c7555fec940d98",
+    "experiments/session-formal/fixtures/validation-samples.json": "69c8878956971a02aabd97e9589a30afbaa0618626ddefb8a9254d95884fe9a4",
+    "experiments/session-formal/bin/sdk": "752f67e6469b27376f18f0bd58cf3e1169fab85002ac142c0dde9e800b3d6838",
+    "experiments/session-formal/bin/sdk-race": "038e3147b16814b242947ab335f6a2fff49f5fce31a19ccd3fe4d83a1c5b3ea6",
+    "experiments/session-formal/bin/session-sdk-race": "36d93a27f6626e3f0e22b5de311fd8b196ea3b8c3e7d522e920c4bb0568ff1a5",
+    "experiments/session-formal/bin/session-sdk": "de2d90e3d5e19b011d54589d7300ae7fc10d8d9ea69a37f7d2f42647ac1b9cc8",
+    "experiments/session-formal/session-sdk/go.mod": "36e3f1bf325dc70b47ffcdb670b9b6e950dd20649eddab45c037209c66787a36",
+    "experiments/session-formal/session-sdk/main.go": "7484f047814b4a285bf6b7912a126f1341b9f18277e55630684e6146528337b7",
+    "experiments/session-formal/session-sdk/go.sum": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245"
+  },
+  "source_manifest_sha256": "6d7433be93303ce308378fe6ba6d1c36e19980297cbce8c5ed355d484bc5601c"
+}

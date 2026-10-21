@@ -1,0 +1,10 @@
+{
+  "trials": 180,
+  "session_recoveries": 180,
+  "right_censored": 0,
+  "driver_processes_exited": 180,
+  "application_pipeline_restores": 60,
+  "no_arbitration_gate": true,
+  "final_entries_verified": 180,
+  "source_snapshot_verified": true
+}

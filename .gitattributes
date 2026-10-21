@@ -2,8 +2,12 @@ data/**/*.csv -text whitespace=cr-at-eol
 data/rpc/traces/* -text
 data/construction/** -text
 data/inputs/** -text
+data/sessions/** -text
+figures/sessions/** -text
 scripts/input_checks/** -text
+scripts/session_checks/** -text
 tests/inputs/** -text
+tests/sessions/** -text
 experiments/performance/** -text
 experiments/construction/** -text
 experiments/inputs/** -text

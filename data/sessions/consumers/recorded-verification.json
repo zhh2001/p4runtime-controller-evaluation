@@ -1,0 +1,10 @@
+{
+  "trials": 360,
+  "packets_emitted": 108000,
+  "packet_accounting_verified": true,
+  "arbitration_observations": 360,
+  "driver_processes_exited": 360,
+  "race_reports": 0,
+  "rss_summaries_recomputed": 0,
+  "source_snapshot_verified": true
+}

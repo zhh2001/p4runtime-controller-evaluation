@@ -1,0 +1,293 @@
+{
+  "created_local": "2026-10-19T13:58:17.520320+08:00",
+  "total_trials": 840,
+  "groups": {
+    "recovery": 180,
+    "mastership": 60,
+    "cancellation": 240,
+    "consumers": 360
+  },
+  "outcomes": [
+    {
+      "group": "cancellation",
+      "adapter": "finsy",
+      "setting": "immediate",
+      "trials": 30,
+      "session_recovered": 0,
+      "received_packets": 0
+    },
+    {
+      "group": "cancellation",
+      "adapter": "finsy",
+      "setting": "inflight_cancelled",
+      "trials": 30,
+      "session_recovered": 30,
+      "received_packets": 30
+    },
+    {
+      "group": "cancellation",
+      "adapter": "sdk",
+      "setting": "graceful",
+      "trials": 30,
+      "session_recovered": 0,
+      "received_packets": 30
+    },
+    {
+      "group": "cancellation",
+      "adapter": "sdk",
+      "setting": "graceful_timeout",
+      "trials": 30,
+      "session_recovered": 0,
+      "received_packets": 30
+    },
+    {
+      "group": "cancellation",
+      "adapter": "sdk",
+      "setting": "immediate",
+      "trials": 30,
+      "session_recovered": 0,
+      "received_packets": 0
+    },
+    {
+      "group": "cancellation",
+      "adapter": "sdk",
+      "setting": "inflight_cancelled",
+      "trials": 30,
+      "session_recovered": 30,
+      "received_packets": 30
+    },
+    {
+      "group": "cancellation",
+      "adapter": "sdk",
+      "setting": "pre_cancelled",
+      "trials": 30,
+      "session_recovered": 0,
+      "received_packets": 30
+    },
+    {
+      "group": "cancellation",
+      "adapter": "sdk",
+      "setting": "queued_cancelled",
+      "trials": 30,
+      "session_recovered": 0,
+      "received_packets": 172
+    },
+    {
+      "group": "consumers",
+      "adapter": "finsy",
+      "setting": "native/0",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "finsy",
+      "setting": "native/1",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "finsy",
+      "setting": "native/10",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 3197,
+      "library_undelivered": 5803,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "finsy",
+      "setting": "queued/0",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "finsy",
+      "setting": "queued/1",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "finsy",
+      "setting": "queued/10",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 3209,
+      "library_undelivered": 0,
+      "application_dropped": 5791
+    },
+    {
+      "group": "consumers",
+      "adapter": "sdk",
+      "setting": "native/0",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "sdk",
+      "setting": "native/1",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "sdk",
+      "setting": "native/10",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "sdk",
+      "setting": "queued/0",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "sdk",
+      "setting": "queued/1",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 9000,
+      "library_undelivered": 0,
+      "application_dropped": 0
+    },
+    {
+      "group": "consumers",
+      "adapter": "sdk",
+      "setting": "queued/10",
+      "trials": 30,
+      "sent": 9000,
+      "processed": 3247,
+      "library_undelivered": 0,
+      "application_dropped": 5753
+    },
+    {
+      "group": "mastership",
+      "adapter": "finsy",
+      "setting": "takeover",
+      "trials": 30,
+      "primary_restored": 30,
+      "backup_write_rpc": 30
+    },
+    {
+      "group": "mastership",
+      "adapter": "sdk",
+      "setting": "takeover",
+      "trials": 30,
+      "primary_restored": 30,
+      "backup_write_rpc": 0
+    },
+    {
+      "group": "recovery",
+      "adapter": "finsy",
+      "setting": "eof",
+      "trials": 30,
+      "recovered": 30,
+      "censored": 0
+    },
+    {
+      "group": "recovery",
+      "adapter": "finsy",
+      "setting": "restart",
+      "trials": 30,
+      "recovered": 30,
+      "censored": 0
+    },
+    {
+      "group": "recovery",
+      "adapter": "finsy",
+      "setting": "unavailable",
+      "trials": 30,
+      "recovered": 30,
+      "censored": 0
+    },
+    {
+      "group": "recovery",
+      "adapter": "sdk",
+      "setting": "eof",
+      "trials": 30,
+      "recovered": 30,
+      "censored": 0
+    },
+    {
+      "group": "recovery",
+      "adapter": "sdk",
+      "setting": "restart",
+      "trials": 30,
+      "recovered": 30,
+      "censored": 0
+    },
+    {
+      "group": "recovery",
+      "adapter": "sdk",
+      "setting": "unavailable",
+      "trials": 30,
+      "recovered": 30,
+      "censored": 0
+    }
+  ],
+  "statistics_rows": 62,
+  "quantile_method": "linear, type 7",
+  "bootstrap": {
+    "statistic": "median",
+    "replicates": 10000,
+    "seed": "20261019 + first 4 SHA256 bytes of configuration key",
+    "interval": "percentile 95%"
+  },
+  "consumer_totals": {
+    "sent": 108000,
+    "delivered": 90653,
+    "not_delivered_to_iterator": 5803,
+    "application_dropped": 11544
+  },
+  "inputs_sha256": {
+    "recovery/manifest.json": "28cbad855a73bef05977a96d373bf8c2aa7e7cad5952340a1c991ee3abe946bb",
+    "recovery/observations.jsonl": "b1584b3dd101cce44e7b743a6956935b74fa70e2ca1cbd499ebd16895bef5391",
+    "recovery/rpc.jsonl": "fd7faf74f4f951405090332343f15c8c5cbefb5b962ea5fdb2e38b81db1eafef",
+    "recovery/verification.json": "a221fb260715dffdf99b27edb2ea787f1dc382744e01786a6e649750e67b43cc",
+    "mastership/manifest.json": "6b4c115a346a1ac5897f04f32b39fe1cf7c5d66b8a0524cd0c9d25dafba8739c",
+    "mastership/observations.jsonl": "51716d06ec9048021b7298ad86a311d5d5f05f1a10c8ef4347e0c7563482a941",
+    "mastership/rpc.jsonl": "93b1d1f7f0e12b36bff9eba5cdeb12e6df76302a3fee1bcc6f24852ad180e471",
+    "mastership/verification.json": "b732ee9288f6514940b008c4f7139c487fee685d7a56a4cdd07662be7ad6d1c4",
+    "cancellation/manifest.json": "42d1a53ffb2c6943f460e7bf278fc0330dfad71a1588e671c9f8a9c7f63b3b42",
+    "cancellation/observations.jsonl": "06b751d28704f271c6978f6b30abbd9a5a130ee6578df05c1151d84c37a682b4",
+    "cancellation/rpc.jsonl": "4ca516a9c8e2edb6148778a47430f6dd4478f3321918e42ad6d94fdeac05dabd",
+    "cancellation/verification.json": "8bf8ea972056d45f0ed76ef5209138b6817a3f0773eb26f2b601ade94793a289",
+    "consumers/manifest.json": "6d7433be93303ce308378fe6ba6d1c36e19980297cbce8c5ed355d484bc5601c",
+    "consumers/observations.jsonl": "6a104cd37e21541fb8fb5092ece35ac2c7311eb9a93c865ff3f6eb98128e046f",
+    "consumers/rpc.jsonl": "746fae39eaf33b18c9ab9a8022c8db3985ddd95874d5962d5d6b979cfff0a890",
+    "consumers/verification.json": "c6c532609c06a3447327c97faaaef612035a139009687e1580eebb1bd95af27f"
+  },
+  "script_sha256": "76deb80ebb3106f531723117d85429617e4350c9f6c485db6765a16e6463f5e4"
+}

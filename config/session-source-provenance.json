@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "files": {
+    "scripts/session_checks/analyze.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/analyze.py",
+      "source_sha256": "6769f1959c4fd79fb3959e7c3cd497d73445f8e107396fc6215101e4c593b153",
+      "export_sha256": "581ff96efd5092fa9dbc79e6668a242fcfbcd4f012f267d1a567946a91cf1af3",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "recovery": "c3fbbed43bc856e1596bb8b65be8476f0044255babdf7f3fe2215cc86dbcfd9b",
+        "payload_digest": "ce77618ef8c26f615d217316778f2d9cb221ccf06ee7c7d4cc49b1f90ce6a92e",
+        "sampled_peak": "974beb95ab242e47e15e4ac0048fb9815767514efc2c91450928d5f376f6e511",
+        "mastership": "b5e7eb26db88318b890242f4b4f9e261412bb8068fac2b2eefab78f0ee6de4df",
+        "cancellation": "7a8eb852054f4695f3fda453b9cb06576e4c3d5142ee666eaa667136c8efe99b",
+        "consumers": "8529d02cae9acf296101623bb84babf3a500cdd73e0829765b62969ca34b50de"
+      },
+      "adaptation": "Use package-local fixture helpers. Retain evidence functions and result calculations; omit private analysis-source copying and check the exported fixture snapshot."
+    },
+    "scripts/session_checks/model.py": {
+      "export_sha256": "5e637f8b602ba98b6748b710fa971fca4fe6eda5609c6845fd23a612a3cd26dd",
+      "adaptation": "Extract unchanged entry and snapshot helpers; load P4Info from the public archive.",
+      "extracted_functions": {
+        "message": {
+          "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/infra.py",
+          "source_sha256": "baa323a2919e7cb9c90e16bc98a9c4031df919e6ba2a34c546b5462a1f25e10a",
+          "function_sha256": "e35e813619cebc1ec4dcdd581174e4e45794f6a09714e2c90ef7a0cad3ae18fe"
+        },
+        "entry": {
+          "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/infra.py",
+          "source_sha256": "baa323a2919e7cb9c90e16bc98a9c4031df919e6ba2a34c546b5462a1f25e10a",
+          "function_sha256": "3039a579b3f5d0b1ab7c864da157ccdaaff71a16b649fa81224462b2591347ac"
+        },
+        "expected_entry": {
+          "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/recover.py",
+          "source_sha256": "8815ecfdd9cca5e62675cfff8f1e59d7149e8866a4985caca82baf0148bccc3c",
+          "function_sha256": "e1635fc248f910e06a35a14051f10bcd75809eb3fb98c0755101737d86378c29"
+        },
+        "verify_snapshot": {
+          "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/common.py",
+          "source_sha256": "2924c6a086f5d70f54698e6710fd3e11ffcefe231a8742d2d7a8c6c0205dab34",
+          "function_sha256": "a6f3d6c95aa36a37a12569c30fa8998a91afc08b85961106279cc84ec7b3ed7b"
+        }
+      }
+    },
+    "scripts/session_checks/secondary.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/verify.py",
+      "source_sha256": "04ca56e269cf9ca4cfb28b592c456a35880b57f6c1ee8fecdfb3fa154eea586d",
+      "export_sha256": "04ca56e269cf9ca4cfb28b592c456a35880b57f6c1ee8fecdfb3fa154eea586d",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "raw_entry": "da23e3eb2bf8f0eb73da2515c317c91173174e3b02d9c60c6fc49dadae35067c",
+        "check_group": "b8699a60375390b52a52d9a87961f09791ebccd2733c1e88ef0648d9b2e097cb",
+        "main": "cb4dd21d59f3f2423121ba3119a0d8e83e7c2dce8f79fe6e4a5346e139b93ed0"
+      }
+    },
+    "scripts/session_checks/summarize.py": {
+      "source_file": "results/session-formal/postprocessing-20261019/summarize.py",
+      "source_sha256": "76deb80ebb3106f531723117d85429617e4350c9f6c485db6765a16e6463f5e4",
+      "export_sha256": "76deb80ebb3106f531723117d85429617e4350c9f6c485db6765a16e6463f5e4",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "quantile": "aa7dbf39b09063d86f80feb81d4e80004ccc64d53c68b7b236ceb3f430da404b",
+        "summarize": "47cf4840fe9710206e4a1bef36d5fab3188e40831f5dacea3b4496644c57ae26",
+        "read_rows": "af381601c19ca890f61e1073cd6e28bd97414a45cd5f5bfadc4543f66ec473e9",
+        "main": "7dba7f19c83386eabc8f18f8b0c7a8e0c9b5be0fe5ab5c41dadbeeb8c5e72e2a"
+      }
+    },
+    "scripts/session_checks/verify_statistics.py": {
+      "source_file": "results/session-formal/postprocessing-20261019/verify_statistics.py",
+      "source_sha256": "0693049df33fe2d06f255c34984ffe5ad96d3b4a43800fd9c6511fda4a60f1d2",
+      "export_sha256": "0693049df33fe2d06f255c34984ffe5ad96d3b4a43800fd9c6511fda4a60f1d2",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "main": "2d3a58301efeb83ba2594ddcc5c379945b545b69880f6a64c341785ae9df7100"
+      }
+    },
+    "scripts/session_checks/extra_checks.py": {
+      "source_file": "results/session-formal/postprocessing-20261019/extra_checks.py",
+      "source_sha256": "a4ca776947b62afb9c07a055c332c6e56ca43c65c83477ccee6ba2a76aa6f766",
+      "export_sha256": "a4ca776947b62afb9c07a055c332c6e56ca43c65c83477ccee6ba2a76aa6f766",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "main": "c18161b3660c7ca629fff4fd950d0f1d091005269134fd6e6b251bdca4a0f1ff"
+      }
+    },
+    "tests/sessions/test_analysis.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/tests/test_analysis.py",
+      "source_sha256": "eafd2ceee1007e3ba57c9e4cf24d4cb8de3c515e3fd3df5f3d2297865a747a5e",
+      "export_sha256": "f19cb14404d835501fc817806262a337ffb34ff27a521401ec4bfba262333e1a",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "EvidenceTests.setUpClass": "ba197b288c39e71dda15486530feb0ae48fc8a9f96f25b08297568fdf46e79e7",
+        "EvidenceTests.sample": "61a581316dabec88ad7187683a8be64227d1147e0cf99c1fc7855bba534aa9c3",
+        "EvidenceTests.test_observed_valid_records": "ca9a5ee8fced543ae03fa21dc041c7032090dfc8fcefd8598f7f42ed3764bfea",
+        "EvidenceTests.test_unaccounted_packet_loss_is_rejected": "e2c4d7c798c1f49b81b4ac879d08f245dec337d58ce1190b5bc287d8bd873731",
+        "EvidenceTests.test_duplicate_packet_delivery_is_rejected": "9db53939cf8392e2d2b65baa285e4de6dfc74732b87022af13834f3e9b084c45",
+        "EvidenceTests.test_received_cancelled_packet_is_rejected": "4554d18b62dba64f0d6958ff158282b85b76220443ed38df0be96f4bfd98cdc4",
+        "EvidenceTests.test_absent_demotion_is_rejected": "f99779de6075a8473231b34898e7bffb763768f14867321e4488866a42c1161d",
+        "EvidenceTests.test_changed_table_state_is_rejected": "bb0c10581b3fb51edd41585441dd122102c44f244c4cb799d27676cf2a20f8e8",
+        "EvidenceTests.test_rss_peak_uses_all_original_samples": "2c1dfffe6eb0e4405327577e5677a39d3c9b048190640d2eab5e20e2dee83f19"
+      },
+      "adaptation": "Use the public data fixtures and package import; retain all test methods."
+    },
+    "tests/sessions/test_recovery.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/tests/test_recovery.py",
+      "source_sha256": "e9e245bda9312f2bdd35160ab90cf46393b5ecbf976996c3fd94439a6fcf4d36",
+      "export_sha256": "7b69725e115037543db33b6a06cc16a38dd6afa390093cdec86e4a1e15f6bdf3",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "RecoveryEvidenceTests.sample": "44a9ac000bd53552bdcc43f7b904ed842e9946116356b710573e424680c3ad46",
+        "RecoveryEvidenceTests.test_real_ungated_recovery": "9262ebee35424bf0d5438952456a7da2548d8f60e3e5dc692ab09e17c8c9f99f",
+        "RecoveryEvidenceTests.test_old_state_is_not_restoration": "079ff3c5254e8dfb24e8d6aa03feed5b31b3988001516ee0b703229a6f0e9d6b",
+        "RecoveryEvidenceTests.test_changed_duration_is_rejected": "e3191e8d6c459d4a9c86b9bbede779f2a3edb835789c0028b088f5a51452154d",
+        "RecoveryEvidenceTests.test_unrequested_write_is_rejected": "b5c1026bb807b2273fb2e111eb683fbbfb18195e22b0226ccb3cf0ccbb010baa",
+        "RecoveryEvidenceTests.test_gate_event_is_rejected": "bf8026f44c33f47986f8dba8bb670055a80a397bc27f8df327a1f7eec24392e1",
+        "RecoveryEvidenceTests.test_censored_failure_remains_a_record": "226c2e47b037c46e6a194e8d6b9c96a793f817b6d086194a332c359220e0f030"
+      },
+      "adaptation": "Use the public data fixtures and package import; retain all test methods."
+    }
+  }
+}

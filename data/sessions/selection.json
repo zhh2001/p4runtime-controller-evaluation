@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "completed": 840,
+  "groups": [
+    "recovery",
+    "mastership",
+    "cancellation",
+    "consumers"
+  ],
+  "started_local": "2026-10-19T13:23:44.078148+08:00",
+  "completed_local": "2026-10-19T13:58:09.361798+08:00",
+  "assembled_from": {
+    "recovery": "results/session-formal/formal-20261019-132343/recovery",
+    "mastership": "results/session-formal/formal-20261019-132343/mastership",
+    "cancellation": "results/session-formal/formal-streams-20261019-134653/cancellation",
+    "consumers": "results/session-formal/formal-streams-20261019-134653/consumers"
+  },
+  "partial_cancel_attempt": "results/session-formal/formal-20261019-132343/cancellation",
+  "invalid_attempt_reason": "Service.close released a held final status during cleanup. The affected cancellation group was rerun in full after correcting the service. Recovery and mastership do not use Service.",
+  "original_partial_cancel_trials": 38,
+  "configuration_policy": "all 28 configurations retain 30 complete repetitions"
+}

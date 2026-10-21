@@ -1,0 +1,8 @@
+{
+  "trials": 60,
+  "backup_states_verified": 60,
+  "primary_restorations": 60,
+  "final_entries_verified": 60,
+  "owned_target_processes_stopped": 60,
+  "source_snapshot_verified": true
+}

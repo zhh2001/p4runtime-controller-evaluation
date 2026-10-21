@@ -1,0 +1,737 @@
+{
+  "row": {
+    "adapter": "finsy",
+    "mode": "restart",
+    "repetition": 1,
+    "start_sequence": 0,
+    "recovered": true,
+    "observation_window_seconds": 60,
+    "initial": {
+      "op": "write",
+      "rpc_code": 0,
+      "is_primary": true,
+      "is_up": true
+    },
+    "initial_entries": [
+      {
+        "table_id": 38514850,
+        "match": [
+          {
+            "field_id": 1,
+            "exact": {
+              "value": "AQ=="
+            }
+          }
+        ],
+        "action": {
+          "action": {
+            "action_id": 29683729,
+            "params": [
+              {
+                "param_id": 1,
+                "value": "AQ=="
+              }
+            ]
+          }
+        },
+        "metadata": "c2Vzc2lvbi13cml0ZQ=="
+      }
+    ],
+    "target_ready_sequence": 18,
+    "fault_sequence": 12,
+    "arbitration_sequence": 22,
+    "primary": {
+      "op": "state",
+      "rpc_code": 0,
+      "is_primary": true,
+      "is_up": true
+    },
+    "primary_observed_sequence": 23,
+    "pipeline_before_restore": {
+      "rpc_code": 9,
+      "error": "No forwarding pipeline config set for this device",
+      "details": [],
+      "trailing_metadata": []
+    },
+    "pipeline_missing": true,
+    "restore_started_sequence": 24,
+    "entries_after_install": [],
+    "final_write": {
+      "op": "restore-final",
+      "rpc_code": 0,
+      "is_primary": true,
+      "is_up": true
+    },
+    "writes": [
+      {
+        "sequence": 11,
+        "monotonic_ns": 68118815422830,
+        "event": "write_end",
+        "request_sequence": 10,
+        "request": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          },
+          "updates": [
+            {
+              "type": "INSERT",
+              "entity": {
+                "table_entry": {
+                  "table_id": 38514850,
+                  "match": [
+                    {
+                      "field_id": 1,
+                      "exact": {
+                        "value": "AQ=="
+                      }
+                    }
+                  ],
+                  "action": {
+                    "action": {
+                      "action_id": 29683729,
+                      "params": [
+                        {
+                          "param_id": 1,
+                          "value": "AQ=="
+                        }
+                      ]
+                    }
+                  },
+                  "metadata": "c2Vzc2lvbi13cml0ZQ=="
+                }
+              }
+            }
+          ]
+        },
+        "rpc_code": 0,
+        "details": [],
+        "trailing_metadata": []
+      },
+      {
+        "sequence": 26,
+        "monotonic_ns": 68130970415799,
+        "event": "write_end",
+        "request_sequence": 25,
+        "request": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          },
+          "updates": [
+            {
+              "type": "INSERT",
+              "entity": {
+                "table_entry": {
+                  "table_id": 38514850,
+                  "match": [
+                    {
+                      "field_id": 1,
+                      "exact": {
+                        "value": "AQ=="
+                      }
+                    }
+                  ],
+                  "action": {
+                    "action": {
+                      "action_id": 29683729,
+                      "params": [
+                        {
+                          "param_id": 1,
+                          "value": "Ag=="
+                        }
+                      ]
+                    }
+                  },
+                  "metadata": "cmVjb3ZlcmVk"
+                }
+              }
+            }
+          ]
+        },
+        "rpc_code": 0,
+        "details": [],
+        "trailing_metadata": []
+      }
+    ],
+    "successful_write_sequence": 26,
+    "final_entries": [
+      {
+        "table_id": 38514850,
+        "match": [
+          {
+            "field_id": 1,
+            "exact": {
+              "value": "AQ=="
+            }
+          }
+        ],
+        "action": {
+          "action": {
+            "action_id": 29683729,
+            "params": [
+              {
+                "param_id": 1,
+                "value": "Ag=="
+              }
+            ]
+          }
+        },
+        "metadata": "cmVjb3ZlcmVk"
+      }
+    ],
+    "censored": false,
+    "verified_sequence": 27,
+    "fault_to_arbitration_ns": 10036442593,
+    "fault_to_primary_observed_ns": 10043130207,
+    "fault_to_successful_write_ns": 10051965585,
+    "fault_to_verified_state_ns": 10053892802,
+    "driver_exit_code": 0,
+    "driver_records": [
+      {
+        "op": "ready",
+        "is_primary": true,
+        "is_up": true
+      },
+      {
+        "op": "write",
+        "rpc_code": 0,
+        "is_primary": true,
+        "is_up": true
+      },
+      {
+        "op": "state",
+        "rpc_code": 0,
+        "is_primary": false,
+        "is_up": false
+      },
+      {
+        "op": "state",
+        "rpc_code": 0,
+        "is_primary": true,
+        "is_up": true
+      },
+      {
+        "op": "restore-final",
+        "rpc_code": 0,
+        "is_primary": true,
+        "is_up": true
+      },
+      {
+        "op": "close",
+        "rpc_code": 0,
+        "is_primary": true,
+        "is_up": true
+      }
+    ],
+    "target_processes": [
+      {
+        "generation": 1,
+        "pid": 521519,
+        "command": [
+          "simple_switch_grpc",
+          "--no-p4",
+          "--device-id",
+          "1",
+          "--thrift-port",
+          "35095",
+          "--notifications-addr",
+          "ipc:///tmp/p4paper-135097636157776-1.ipc",
+          "--log-console",
+          "-L",
+          "info",
+          "--",
+          "--grpc-server-addr",
+          "127.0.0.1:33457",
+          "--cpu-port",
+          "255"
+        ],
+        "start_ns": 68117105980573,
+        "stop_ns": 68120926849927,
+        "exit_code": -15
+      },
+      {
+        "generation": 2,
+        "pid": 521630,
+        "command": [
+          "simple_switch_grpc",
+          "--no-p4",
+          "--device-id",
+          "1",
+          "--thrift-port",
+          "35095",
+          "--notifications-addr",
+          "ipc:///tmp/p4paper-135097636157776-2.ipc",
+          "--log-console",
+          "-L",
+          "info",
+          "--",
+          "--grpc-server-addr",
+          "127.0.0.1:33457",
+          "--cpu-port",
+          "255"
+        ],
+        "start_ns": 68120927834929,
+        "stop_ns": 68130991851541,
+        "exit_code": -15
+      }
+    ],
+    "end_sequence": 29
+  },
+  "events": [
+    {
+      "sequence": 0,
+      "monotonic_ns": 68117094231854,
+      "event": "trial_started",
+      "kind": "recovery",
+      "adapter": "finsy",
+      "mode": "restart",
+      "repetition": 1
+    },
+    {
+      "sequence": 1,
+      "monotonic_ns": 68118687729981,
+      "event": "stream_open",
+      "stream_id": 1
+    },
+    {
+      "sequence": 2,
+      "monotonic_ns": 68118689158975,
+      "event": "arbitration_received",
+      "stream_id": 1,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 3,
+      "monotonic_ns": 68118689233798,
+      "event": "arbitration_forwarded",
+      "stream_id": 1,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "monotonic_ns": 68118691761013,
+      "event": "arbitration_response",
+      "stream_id": 1,
+      "response": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          },
+          "status": {
+            "message": "Is primary"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "monotonic_ns": 68118704730091,
+      "event": "stream_end",
+      "stream_id": 1,
+      "mode": null,
+      "rpc_code": 1,
+      "error": "Locally cancelled by application!",
+      "details": [],
+      "trailing_metadata": []
+    },
+    {
+      "sequence": 6,
+      "monotonic_ns": 68118805753288,
+      "event": "stream_open",
+      "stream_id": 2
+    },
+    {
+      "sequence": 7,
+      "monotonic_ns": 68118806272106,
+      "event": "arbitration_received",
+      "stream_id": 2,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 8,
+      "monotonic_ns": 68118806361648,
+      "event": "arbitration_forwarded",
+      "stream_id": 2,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 9,
+      "monotonic_ns": 68118807171880,
+      "event": "arbitration_response",
+      "stream_id": 2,
+      "response": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          },
+          "status": {
+            "message": "Is primary"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 10,
+      "monotonic_ns": 68118813198025,
+      "event": "write_start",
+      "request": {
+        "device_id": "1",
+        "election_id": {
+          "low": "1"
+        },
+        "updates": [
+          {
+            "type": "INSERT",
+            "entity": {
+              "table_entry": {
+                "table_id": 38514850,
+                "match": [
+                  {
+                    "field_id": 1,
+                    "exact": {
+                      "value": "AQ=="
+                    }
+                  }
+                ],
+                "action": {
+                  "action": {
+                    "action_id": 29683729,
+                    "params": [
+                      {
+                        "param_id": 1,
+                        "value": "AQ=="
+                      }
+                    ]
+                  }
+                },
+                "metadata": "c2Vzc2lvbi13cml0ZQ=="
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 11,
+      "monotonic_ns": 68118815422830,
+      "event": "write_end",
+      "request_sequence": 10,
+      "request": {
+        "device_id": "1",
+        "election_id": {
+          "low": "1"
+        },
+        "updates": [
+          {
+            "type": "INSERT",
+            "entity": {
+              "table_entry": {
+                "table_id": 38514850,
+                "match": [
+                  {
+                    "field_id": 1,
+                    "exact": {
+                      "value": "AQ=="
+                    }
+                  }
+                ],
+                "action": {
+                  "action": {
+                    "action_id": 29683729,
+                    "params": [
+                      {
+                        "param_id": 1,
+                        "value": "AQ=="
+                      }
+                    ]
+                  }
+                },
+                "metadata": "c2Vzc2lvbi13cml0ZQ=="
+              }
+            }
+          }
+        ]
+      },
+      "rpc_code": 0,
+      "details": [],
+      "trailing_metadata": []
+    },
+    {
+      "sequence": 12,
+      "monotonic_ns": 68120918450214,
+      "event": "target_restart",
+      "stream_id": 2,
+      "adapter": "finsy"
+    },
+    {
+      "sequence": 13,
+      "monotonic_ns": 68120923682971,
+      "event": "stream_end",
+      "stream_id": 2,
+      "mode": null,
+      "rpc_code": 14,
+      "error": "Stream removed (Socket closed)",
+      "details": [],
+      "trailing_metadata": []
+    },
+    {
+      "sequence": 14,
+      "monotonic_ns": 68120930144858,
+      "event": "stream_open",
+      "stream_id": 3
+    },
+    {
+      "sequence": 15,
+      "monotonic_ns": 68120931374551,
+      "event": "stream_end",
+      "stream_id": 3,
+      "mode": null,
+      "rpc_code": 14,
+      "error": "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:33457: Failed to connect to remote host: Connection refused",
+      "details": [],
+      "trailing_metadata": []
+    },
+    {
+      "sequence": 16,
+      "monotonic_ns": 68120931745740,
+      "event": "arbitration_received",
+      "stream_id": 3,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 17,
+      "monotonic_ns": 68120931781063,
+      "event": "arbitration_forwarded",
+      "stream_id": 3,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 18,
+      "monotonic_ns": 68122213051743,
+      "event": "target_ready",
+      "stream_id": 2
+    },
+    {
+      "sequence": 19,
+      "monotonic_ns": 68130951858821,
+      "event": "stream_open",
+      "stream_id": 4
+    },
+    {
+      "sequence": 20,
+      "monotonic_ns": 68130953580099,
+      "event": "arbitration_received",
+      "stream_id": 4,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 21,
+      "monotonic_ns": 68130953729267,
+      "event": "arbitration_forwarded",
+      "stream_id": 4,
+      "request": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 22,
+      "monotonic_ns": 68130954892807,
+      "event": "arbitration_response",
+      "stream_id": 4,
+      "response": {
+        "arbitration": {
+          "device_id": "1",
+          "election_id": {
+            "low": "1"
+          },
+          "status": {
+            "message": "Is primary"
+          }
+        }
+      }
+    },
+    {
+      "sequence": 23,
+      "monotonic_ns": 68130961580421,
+      "event": "primary_observed",
+      "state": {
+        "op": "state",
+        "rpc_code": 0,
+        "is_primary": true,
+        "is_up": true
+      }
+    },
+    {
+      "sequence": 24,
+      "monotonic_ns": 68130963677156,
+      "event": "application_restore_started"
+    },
+    {
+      "sequence": 25,
+      "monotonic_ns": 68130969836217,
+      "event": "write_start",
+      "request": {
+        "device_id": "1",
+        "election_id": {
+          "low": "1"
+        },
+        "updates": [
+          {
+            "type": "INSERT",
+            "entity": {
+              "table_entry": {
+                "table_id": 38514850,
+                "match": [
+                  {
+                    "field_id": 1,
+                    "exact": {
+                      "value": "AQ=="
+                    }
+                  }
+                ],
+                "action": {
+                  "action": {
+                    "action_id": 29683729,
+                    "params": [
+                      {
+                        "param_id": 1,
+                        "value": "Ag=="
+                      }
+                    ]
+                  }
+                },
+                "metadata": "cmVjb3ZlcmVk"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 26,
+      "monotonic_ns": 68130970415799,
+      "event": "write_end",
+      "request_sequence": 25,
+      "request": {
+        "device_id": "1",
+        "election_id": {
+          "low": "1"
+        },
+        "updates": [
+          {
+            "type": "INSERT",
+            "entity": {
+              "table_entry": {
+                "table_id": 38514850,
+                "match": [
+                  {
+                    "field_id": 1,
+                    "exact": {
+                      "value": "AQ=="
+                    }
+                  }
+                ],
+                "action": {
+                  "action": {
+                    "action_id": 29683729,
+                    "params": [
+                      {
+                        "param_id": 1,
+                        "value": "Ag=="
+                      }
+                    ]
+                  }
+                },
+                "metadata": "cmVjb3ZlcmVk"
+              }
+            }
+          }
+        ]
+      },
+      "rpc_code": 0,
+      "details": [],
+      "trailing_metadata": []
+    },
+    {
+      "sequence": 27,
+      "monotonic_ns": 68130972343016,
+      "event": "final_state_verified"
+    },
+    {
+      "sequence": 28,
+      "monotonic_ns": 68130973274862,
+      "event": "stream_end",
+      "stream_id": 4,
+      "mode": null,
+      "rpc_code": 1,
+      "error": "Locally cancelled by application!",
+      "details": [],
+      "trailing_metadata": []
+    },
+    {
+      "sequence": 29,
+      "monotonic_ns": 68130991905227,
+      "event": "trial_completed",
+      "kind": "recovery",
+      "adapter": "finsy",
+      "mode": "restart"
+    }
+  ]
+}

@@ -8,6 +8,8 @@ The local construction dataset has 270 measurements across complete table-entry 
 
 The input-validation dataset contains 382 fixed cases and 6,984 trials on a controlled service and BMv2. It includes complete selected requests and state snapshots, original extended-run classifications, and offline semantic verification.
 
+The session and stream dataset contains 840 trials across 28 configurations and 30 repetitions. It includes recovery and mastership on BMv2, controlled cancellation and close scenarios, slow-consumer events, 62 statistical summaries, and PDF and PNG figures.
+
 ## Recompute the statistics
 
 Use Python 3.12:
@@ -49,6 +51,9 @@ Run the analysis tests with:
 | Input fields and outcome names | [Input data dictionary](docs/input-data.md) |
 | Input-validation setup, execution and checks | [Run the input-validation comparison](docs/running-inputs.md) |
 | Live input drivers, controlled services and oracles | [experiments/inputs](experiments/inputs) |
+| Session recovery, cancellation, close and slow consumers | [Session and stream method](docs/sessions.md) |
+| Session event fields and statistical units | [Session data dictionary](docs/session-data.md) |
+| Session observations, events and statistical results | [data/sessions](data/sessions) |
 
 ## Recompute construction results
 
@@ -101,7 +106,17 @@ The [RPC trace archives](docs/rpc-traces.md) contain the original request record
 
 The verifier checks all 6,984 trials, their associated requests and repeated outcomes. It compares numerical and typed values, verifies target state, and reproduces the saved extended-run CSV files and findings. See the [input method](docs/inputs.md) for the three corpora, selected runs and original-source correspondence. This analysis uses archived records and does not start a target.
 
-The repository supports statistical reanalysis, input and request-level verification, new RPC and construction measurements, and live input-validation runs. Session recovery and stream-behavior records and verification will follow in a subsequent batch.
+## Verify session and stream results
+
+```sh
+.venv/bin/python -m pip install --require-hashes --only-binary=:all: --no-deps -r config/requirements-sessions.txt
+.venv/bin/python scripts/verify_sessions.py --output results/sessions
+.venv/bin/python -m unittest discover -s tests/sessions -v
+```
+
+Verification checks all 840 trials, 108,000 emitted PacketIn IDs and 510 actual Write results. It reproduces per-trial outputs and all 62 statistical rows, with independent event decoding and NumPy checks of 496 summary values. It uses archived records without a target or Go toolchain. See the [session and stream method](docs/sessions.md).
+
+The repository supports statistical reanalysis, archived input, request and session verification, new RPC and construction measurements, and live input-validation runs. Live session and stream runners will follow in a subsequent batch.
 
 ## License
 

@@ -1,0 +1,11 @@
+{
+  "trials": 240,
+  "cancelled_requests_absent": 60,
+  "inflight_cancellations": 60,
+  "inflight_session_recoveries": 60,
+  "graceful_final_status_verified": 30,
+  "graceful_deadlines_verified": 30,
+  "driver_processes_exited": 240,
+  "race_reports": 0,
+  "source_snapshot_verified": true
+}

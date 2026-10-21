@@ -1,0 +1,9 @@
+adapter,mode,trials,inflight_recoveries,received_after_immediate_close
+finsy,immediate,30,0,0
+finsy,inflight_cancelled,30,30,
+sdk,graceful,30,0,
+sdk,graceful_timeout,30,0,
+sdk,immediate,30,0,0
+sdk,inflight_cancelled,30,30,
+sdk,pre_cancelled,30,0,
+sdk,queued_cancelled,30,0,
