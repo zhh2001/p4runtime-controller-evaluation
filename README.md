@@ -68,6 +68,8 @@ Run the analysis tests with:
 | Data-plane traffic, counter, recovery and CLI cases | [Data-plane method](docs/dataplane.md) |
 | Captures, controller/host records and case results | [data/dataplane](data/dataplane) |
 | Capture format, event fields and counts | [Data-plane data dictionary](docs/dataplane-data.md) |
+| Data-plane setup, execution and checks | [Run the data-plane comparison](docs/running-dataplane.md) |
+| Mininet hosts, controller drivers and CLI cases | [experiments/dataplane](experiments/dataplane) |
 
 ## Recompute construction results
 
@@ -123,6 +125,15 @@ python3 scripts/run_retries.py --output results/retries-smoke
 ```
 
 Setup checks the pinned clients and case corpus, compiles the P4 fixture and builds normal and race-enabled Go drivers. The default run checks 30 application trials across both targets. Use `--mode race` for 32 Go trials or `--mode full` for all 192 trials. Every run uses both decoders to reconstruct retry subsets and target state. See [Run the batch-write retry comparison](docs/running-retries.md).
+
+To run the data-plane comparison with Mininet installed:
+
+```sh
+python3 scripts/bootstrap_dataplane.py
+sudo python3 scripts/run_dataplane.py --output results/dataplane-smoke
+```
+
+Setup builds the controller drivers and CLI and checks the L2 fixture against the archive. The default run checks thirteen cases with two Mininet hosts. Use `--mode race` for four Go cases or `--mode full` for all 130 cases. Both decoders verify frames, table state, counters and recovery. See [Run the data-plane comparison](docs/running-dataplane.md).
 
 ## Verify the original requests
 

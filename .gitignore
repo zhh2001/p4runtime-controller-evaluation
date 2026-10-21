@@ -16,3 +16,5 @@ __pycache__/
 /experiments/sessions/fixtures/
 /experiments/retries/bin/
 /experiments/retries/fixtures/
+/experiments/dataplane/bin/
+/experiments/dataplane/fixtures/

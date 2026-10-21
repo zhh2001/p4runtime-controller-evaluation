@@ -19,6 +19,7 @@ experiments/construction/** -text
 experiments/inputs/** -text
 experiments/sessions/** -text
 experiments/retries/** -text
+experiments/dataplane/** -text
 experiments/retries/run.py whitespace=-blank-at-eof
 experiments/sessions/session_driver.py whitespace=-blank-at-eof
 scripts/*.py text eol=lf

@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "files": {
+    "experiments/dataplane/control.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/control.py",
+      "source_sha256": "25a24d64721ab0c72dadf7cb3f68902682dfeaecb02ac197ebf722d3c6bd535e",
+      "export_sha256": "25a24d64721ab0c72dadf7cb3f68902682dfeaecb02ac197ebf722d3c6bd535e",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "Observer.__init__": "6c8bd744f9be1328ccd39c3bd4e5000146520d7ba039d0b32daf73df318f82f9",
+        "Observer.install": "63d92345d439e0d6607eff5d943946a9b22ded1bb503bc0ad4842b74edec1158",
+        "Observer.install.iterate": "f60decb1e03cf66f40706a5e5145d7c23d6e4bb85bcd1e439e27267720653e91",
+        "Observer.missing_pipeline": "5875edc791f7b688d3cb8ef59a7de140e26bcbc74d398c081725dc0a8a1476af",
+        "Observer.tables": "8a85568f8780723fb4573dfef51eb93e6433ed566876d94caa62431dc139b4c4",
+        "Observer.counters": "0d4cbca34ce68ada4e2eb1eba2302a0c5bcaec7e04328921c5c0d6228d65dcea",
+        "Observer.close": "f26d564ddad06c47bc5dadbb3a3061dde29f51193eacabf7b57485996636628f"
+      }
+    },
+    "experiments/dataplane/host.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/host.py",
+      "source_sha256": "7707d8a779a4a21c4056b804c1c70d17ae79afe29dded9631d6328d6e0904706",
+      "export_sha256": "7707d8a779a4a21c4056b804c1c70d17ae79afe29dded9631d6328d6e0904706",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "main": "77eb0abedff21e1a60eda8a8276c8b569023ba87ffb257fad953e80a377e14ad",
+        "main.emit": "07a029e556423a6fe1bea42e9f2d2410f0fb034e81a020395cc024568b182012",
+        "main.capture": "83c75be013a669f7394a0ef75967b9913116f09aa69e6bb7d91c0e560a94edc4",
+        "main.receive": "468b9b472e384ccf7ad61e8740045099511df114aaa30949515d42e681a2b78a"
+      }
+    },
+    "experiments/dataplane/python_driver.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/python_driver.py",
+      "source_sha256": "e2607cef76569424a4d73ffca818f59f7cfa77d8da7ced118a952d5c25fb80d3",
+      "export_sha256": "e2607cef76569424a4d73ffca818f59f7cfa77d8da7ced118a952d5c25fb80d3",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "emit": "5aa748ff139df4973d234df68ac38034b5257289e9a9b98b009aa36cc17874bb",
+        "incoming": "ec78eee6de6b21423108e08a5f711f19a34bcc4bd6ab8a3df42afec8ddfbb68c",
+        "Shell.__init__": "497fe701d274c0f0870a80e7db500bf3abd42bbf9066b964f6dd834cc808e274",
+        "Shell.__init__.receive": "b9335ff99ae480a654f07fb41416dc48ed65c91e8192afe8675e54fd78934ca4",
+        "Shell.operation": "d66abb986d66fb62116ea76d79b9d9d4d2c25bad70f54e75cde0ccc2a8bffbe2",
+        "Shell.close": "27ff46789c8ffe9880642d1112202f8a2025cfd92fd8bf266f12db0ba2b4111b",
+        "finsy_main": "815cc55b418565c90fb2a0d8cfeb58f081e004a75daa914023fe6e1fe354a2ed",
+        "finsy_main.on_ready": "36440954d7bf8f84277530cae9bc2631de45de951a5ed9a667dbd5c0a8336dfa",
+        "finsy_main.packets": "60012a75c3beaef040cebd10c6e6f9554a45e571eb296125d7fbe36f0f3d4c2a",
+        "main": "ecd054ebd5545796c3dd78f67eb7e6ce54b1451fbd632a7baa98cc98378223c9"
+      }
+    },
+    "experiments/dataplane/go-sdk/native.go": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-sdk/native.go",
+      "source_sha256": "be5667a516398eb246b81210852134d61484f22e7498758c3482644bc1a8360a",
+      "export_sha256": "be5667a516398eb246b81210852134d61484f22e7498758c3482644bc1a8360a",
+      "unchanged": true
+    },
+    "experiments/dataplane/go-sdk/shared.go": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-sdk/shared.go",
+      "source_sha256": "6413747992e8f27a6691c037593a87855fe543ffd057c992031623e4ad13d952",
+      "export_sha256": "6413747992e8f27a6691c037593a87855fe543ffd057c992031623e4ad13d952",
+      "unchanged": true
+    },
+    "experiments/dataplane/go-sdk/go.sum": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-sdk/go.sum",
+      "source_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "export_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "unchanged": true
+    },
+    "experiments/dataplane/go-sdk/go.mod": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-sdk/go.mod",
+      "source_sha256": "58664452d75f355864d675ea298f19fb3d0231690b2069a1d191144d4db5a96b",
+      "export_sha256": "a21e0a1321a267afdf019e4f8f8c855a6769a24af5048f7e0952ecf97459271e",
+      "unchanged": false,
+      "adaptation": "Use the repository-local pinned dependency source."
+    },
+    "experiments/dataplane/go-legacy/native.go": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-legacy/native.go",
+      "source_sha256": "1d1807c02c25ae20237584c8e50f38baf44a95c410cb76719f9d620ad00ebdc6",
+      "export_sha256": "1d1807c02c25ae20237584c8e50f38baf44a95c410cb76719f9d620ad00ebdc6",
+      "unchanged": true
+    },
+    "experiments/dataplane/go-legacy/shared.go": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-legacy/shared.go",
+      "source_sha256": "6413747992e8f27a6691c037593a87855fe543ffd057c992031623e4ad13d952",
+      "export_sha256": "6413747992e8f27a6691c037593a87855fe543ffd057c992031623e4ad13d952",
+      "unchanged": true
+    },
+    "experiments/dataplane/go-legacy/go.sum": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-legacy/go.sum",
+      "source_sha256": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+      "export_sha256": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+      "unchanged": true
+    },
+    "experiments/dataplane/go-legacy/go.mod": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/go-legacy/go.mod",
+      "source_sha256": "7d465d70671012e3c816b63a9dd721cd59b2ba7559035583e673fb3cded61027",
+      "export_sha256": "26b9383e764cfe2782c880d2bc3e9a1afd9ad2b26030afaff9f5458adbc165d6",
+      "unchanged": false,
+      "adaptation": "Use the repository-local pinned dependency source."
+    },
+    "experiments/dataplane/network.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/network.py",
+      "source_sha256": "b3c7ba6363297803bcb9beb3df6b9cc27d05d8f779d276b49eb0d0b55aaeb3df",
+      "export_sha256": "ac9f3d89604dae178993b0e444bfc4b1a60b5703c310d1eaf5edd10bd85970ae",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "Network.__init__": "be47ed781282e9aa0fe197911c17c9b081f47eec4702d7e8616ea6e8c9b43a97",
+        "Network.topology": "3b51a039f4931314c1b22eb6b3b3fc391f3b03d6bfb174dc7128603d97865026",
+        "Network.agents": "5b5779ca5bf9e7807b49d5acf547be8fffa8c10caff705cf60585aaf7c3f7b82",
+        "Network.close": "d9a0ffc3af328ff65606bbf4dc10ce9f804ff8e9ee9523caa1d3074accab8760",
+        "unused_port": "e11f5bdb7dd9355d1ae7ef0344f16b776473a44bae865d10d7eebbc020c0462a",
+        "Target.__init__": "114160b652c239ab4e2bfd7d0351ce8b6b79b07de616cf80adac844433b81810",
+        "Target.save": "f77ea7bec72dd12e00af31b7e90cc887e1292b7b6cfbad32a6e0e16dea2347a8",
+        "Target.stop": "4c5a465712132500275d8db45eedf42488c7bdd43f00dd8e7346b06bea24d72b"
+      },
+      "adaptation": "Preserve topology creation and teardown. Close logs after failed target creation and stop the owned process after failed readiness."
+    },
+    "experiments/dataplane/common.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/common.py",
+      "source_sha256": "9066b65f703f7c7e845ade828f3fc68566854431ce8b59d2159c84f4f0e32c63",
+      "export_sha256": "704bcbc6ef9d6ff3bd920c0291ee3b96d55f6218365e01c41632e728df87b7f2",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "frame": "6f51fc9fce1c8e7c7ffab19e75397b71929496aae6bfeba8ce4360f0f03367f0",
+        "frame_id": "80019c6013ba37e7b7c0b546327bf0a2c914ea04ecb9f0952a816c4199832013",
+        "read_pcap": "9b9f3c2f4b2fb9fe96d7884cbb48bddaa61e8bd603d3984e95f22602d08a8bb7",
+        "check_frames": "b4fb4ddc2a825735e331d16deeb083ab3a04fb06b73b6935fecfbc9be1d5b0b3",
+        "Peer._read": "8a836a3e7f4354b5189c059a2518f470f9d38194dc79196aa224a905aa4c9858",
+        "Peer.wait": "fc640dd75f9d8a0ae52ee3139f38e4c756b6e4002b13ee44642f5d52f15cb3f0",
+        "Peer.ask": "9bda5882256247dc3ab356c328ce2814948e991b996995fa03822238acfcd928",
+        "Peer._ask": "059c7ed98e5cf11860f9df9cf29208d45722746fa48eef20259c24044bbcbe5b"
+      },
+      "adaptation": "Use public interpreter paths. Retain frame and process-protocol functions. Close owned resources on failed spawn, failed readiness and broken shutdown pipes, and check reader termination."
+    },
+    "experiments/dataplane/run.py": {
+      "source_file": "results/dataplane/formal-20261019-082811/source/experiments/dataplane/run.py",
+      "source_sha256": "3435e55dd14c5bf897bd30568ffc3902dfd2431d18f7a00fb9f60a27527525fd",
+      "export_sha256": "b3da385199ade2ba860a45b42fd5cefbb606b6306813507366c2aa9b002c29cb",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "save": "34a21e54dfff9c4426f610d290d108b7e5b81c1e95ae9e479eb231d1ab75c5f1",
+        "user_options": "4e578d261a4f6e79bf1eeac4f0f26a3148d43cd0da043c9f5c1d0d11074ea1a1",
+        "Case.__init__": "92670adc99130116d6ea07e2ba7cdb352b71481648524e83d2b78b48f818061a",
+        "Case.trace": "e1b8cc7435a7208eb41fa01d4406284ccad44209d828c6063b617ee639270695",
+        "Case.start_poll": "0773a28736e4a988e23430a8256b102a3838d13d029d66471f3db38999592d9c",
+        "Case.start_poll.poll": "b3f5078e2f1c5ae70a40a3e26a7d440b8b9ace635dc1f864dad5989ac97593e6",
+        "Case.stop_poll": "55626bdd84b853fdc7a783350fb8dbcda40e09fa24e117f4670785f86aba14e7",
+        "Case.start": "ed83ac3653a48c21b03496c8c51f5f3bb42749c969cdf052239d11ea98123dc7",
+        "Case.start_driver": "568aa15d1756cd3a13390f3624c1c1ada883cfee63a133f23c1f61ae814d3fe2",
+        "Case.start_driver.popen": "1cd10c1960a1983d793910b95699c4dbee32343f40fe7b9f0417fc2475ce31ae",
+        "Case.stop_driver": "02bbbf7fe12174a7d66314269b21dbe4ccf08984b6f0b78ec21e0cf9e43d2394",
+        "Case.packet": "b6e2baf3c965a6f6a35e988d7b5c26e78d25d15422e936e1edc0af0323cf78d2",
+        "Case.send": "a6ab725cdad56e9ac3b1062153b5ab21778d434269167a18dc47e2c22479294b",
+        "Case.received": "0a08114fb95444483b23768b938ddf1f1dccf11d1b8914ee684626e4d1a56975",
+        "Case.wait_packets": "3f66f7e19ff874df479f8c819b20651a6cdd84121276fae7f9e16d072008c578",
+        "Case.tables": "eb08d2d7fd480ef421ddf30c8e461d031e4d4b5b75a327bedcea7bffa82850d8",
+        "Case.counters": "a6900e48b3c5b0372ea911151f9f205731a2913205fe1a749151117c0ad648e6",
+        "Case.traffic": "3d407a9c0bb74af7ce03b1421c55bfb4d32a5ee24b3bb4e1ce54c3932320d86e",
+        "Case.reactive": "e0d7e7693c8923401ad9b2f1b60500f4a03065f5c6370547ba0f9b2a5bd7cebf",
+        "Case.counter_recovery": "545c3503424c19a8387996367a2d19ab5d5c652bc6207ce59e51076f39381431",
+        "Case.cli": "71d72bbb93419eeafbd785b16f194e6d58382ae0b5f2608d419f3f4be2487148",
+        "Case.cli_case": "dbcc52b2b8c38c0c5d89ee725dd7806640389bb5e5cd630ccac3bc82a571bd34",
+        "Case.finish": "259253b3e4b90ec0761e909e9a6277dd9aff12f78b62e7bc76b59bb1617540ec"
+      },
+      "adaptation": "Retain every Case method, atomic JSON writes and unprivileged controller execution. Replace private snapshot and report entry points with public setup-bound execution and cleanup records."
+    }
+  }
+}
