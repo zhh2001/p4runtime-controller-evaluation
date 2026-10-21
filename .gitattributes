@@ -11,6 +11,8 @@ tests/sessions/** -text
 experiments/performance/** -text
 experiments/construction/** -text
 experiments/inputs/** -text
+experiments/sessions/** -text
+experiments/sessions/session_driver.py whitespace=-blank-at-eof
 scripts/*.py text eol=lf
 config/*.json text eol=lf
 config/requirements-*.txt text eol=lf

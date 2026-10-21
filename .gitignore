@@ -12,3 +12,5 @@ __pycache__/
 /experiments/construction/preflight.json
 /experiments/inputs/*/bin/
 /experiments/inputs/*/fixtures/
+/experiments/sessions/bin/
+/experiments/sessions/fixtures/

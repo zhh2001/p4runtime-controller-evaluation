@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "files": {
+    "experiments/sessions/recover.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/recover.py",
+      "source_sha256": "8815ecfdd9cca5e62675cfff8f1e59d7149e8866a4985caca82baf0148bccc3c",
+      "export_sha256": "8815ecfdd9cca5e62675cfff8f1e59d7149e8866a4985caca82baf0148bccc3c",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "UngatedRelay.cut": "83a9340575a2fbd0f7fe4e298fff698147fd2af187a1b883fc8be8b3ec24f74f",
+        "expected_entry": "e1635fc248f910e06a35a14051f10bcd75809eb3fb98c0755101737d86378c29",
+        "trial": "77dfb331fd269690dfab7aa9bb21aa36bfbc7f83d93b88727043b1e9684349fc"
+      }
+    },
+    "experiments/sessions/mastership.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/mastership.py",
+      "source_sha256": "3a3fafe42253197da9dcdb14abc9ec35d0b6a8eef8630e3069cc86bc28dc4965",
+      "export_sha256": "3a3fafe42253197da9dcdb14abc9ec35d0b6a8eef8630e3069cc86bc28dc4965",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "trial": "9504dda940a48ab739abfccb11f7ec670439b7de51de1a78729dc29649a873a0",
+        "trial.iterator": "422b92b5f9615d9397f3e32d8d76e5d8f697046f2a8c24acd1f62e5164f0927f",
+        "trial.backup": "47f1436d63497eb51c8044422ebfb039de18805d321c2f4da575668f21fde899",
+        "main": "927591a3caa094b34f0ef1b45b074eb8b8bd6b7cd778c742cf3b1aaa64ad9eb2"
+      }
+    },
+    "experiments/sessions/cancellation.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/cancellation.py",
+      "source_sha256": "3a2bcf434c34fd224907d5b5e24d919cef5581cc86ddb106762a763eb9edd4ab",
+      "export_sha256": "785040fcf927a2e88aa6ab19034ef5780112135c06866e68b890fab929155be2",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "pending": "dae4cabef650e176729057f45ee278e1e1719ff2e942a5ef09c2e4c7af00c638",
+        "send_barrier": "0bdaac86f02faaf4465a1b2954d538e8a83977e934950cf18d570c43df4afd6e",
+        "trial": "b7540f0deb7f1ea4b5e424bb6d36f3aeee87d71e1d15244b3b20676334feebef",
+        "main": "61e70118c1bb34686db78c58878c0c5689a95bae1d82717704aefb1566fd6f20"
+      },
+      "adaptation": "Use a one-second backpressure probe. Retain the original trial function and all cancellation checks."
+    },
+    "experiments/sessions/consumers.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/consumers.py",
+      "source_sha256": "696b7f8c3b42cc578a439bec612e5e9d9bc7082a3950090ad7bed283c9e1cd61",
+      "export_sha256": "696b7f8c3b42cc578a439bec612e5e9d9bc7082a3950090ad7bed283c9e1cd61",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "rss_kib": "edff92ffafc557bf92377be74df8a8182b3d0f2dcdd59b5f4123937f47e73591",
+        "trial": "823dd0cbde8bbd5a27c03ccb51afbf451bafddc305c7811d31fa517856b09ad6",
+        "trial.sample": "6721ec853545a9aba5b51578c44d1344874b008060d01d9b6cb97dcedbb4ae5f",
+        "trial.backup": "47f1436d63497eb51c8044422ebfb039de18805d321c2f4da575668f21fde899",
+        "trial.drained": "9af679a0ab674151f2e6101b1fd53e686dbcab7b6ca8cf69a59484d2ef154a26",
+        "main": "8de91af933804ca1f45c678a0019d011ada1c418e57677af295a934735353d18"
+      }
+    },
+    "experiments/sessions/server.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/server.py",
+      "source_sha256": "4c0af42022c2ce120991d9ff14acf8b1882c28b4bcf16d3821e62c2f801a6da4",
+      "export_sha256": "4c0af42022c2ce120991d9ff14acf8b1882c28b4bcf16d3821e62c2f801a6da4",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "Stream.__init__": "8130f568a7232b8a9a2652d05b389492bfc1b5f24f9cc3c2a556dc37d00766e7",
+        "Service.__init__": "5acfd03928092f6489a97b51462396ae2b9e1ba20973f6223d1a2419c827f7be",
+        "Service.Capabilities": "96f09229c2f9055a1d8201789a5719821bcb2046a7b5325c5eebab5a45726221",
+        "Service.GetForwardingPipelineConfig": "09ae15fb19dc083dae3541c9ab5f8c61a912016e94a3e9263dd7af06e5205dca",
+        "Service.StreamChannel": "0023bbef64da911e17fb2eeff1030cf4e7704ec5757bca90af087d159bb68e77",
+        "Service.StreamChannel.receive": "ad5e9f0de439adb8699c9566d180e1873d74e8de0472d586859e047491d8af9e",
+        "Service.send_packets": "0c103820731e0b5df690ec6c7658fc2defa02e431e86742f2a7ab167da578f20",
+        "Service.close": "f00b296fbe346c367db99f6e023813c1f13cad2b44a3df63307be1295b3a3cd4"
+      }
+    },
+    "experiments/sessions/finsy_driver.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/finsy_driver.py",
+      "source_sha256": "e1840f2cbe1b0cc4689c9caad814d4e270f389abb2e65cc4bb16441fe2fc8345",
+      "export_sha256": "e1840f2cbe1b0cc4689c9caad814d4e270f389abb2e65cc4bb16441fe2fc8345",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "main": "acdb8259594dd5db4b4edf266af684c057026d5029368302bc2412cc5db5052e",
+        "main.emit": "5c576e9cc608199a605812e13dd6ec5238caa6b8081f7885c0867dd8c0c498b9",
+        "main.on_ready": "36440954d7bf8f84277530cae9bc2631de45de951a5ed9a667dbd5c0a8336dfa",
+        "main.process": "325183470d08e8f29beff086731d61d8a9590603528b37fb1fd3959fc8eddf27",
+        "main.packets": "fd156f25a44ea8d849c4e61b4965be8c11db7de643f9545f53b72f8533bdfebb",
+        "main.worker": "5ad592881d4a1d925361610b47b096d6f29f8719f8c9c942efd5fe49c6c88305",
+        "main.send": "3d5ddfc2a3105fa290aa0700c1c23306c92e47e11d8bed0fd29fe63fb29d6461",
+        "main.close_session": "1ba3f458b8206687db93175d673ee069043db090e3d3e61008fc900f7f58d851"
+      }
+    },
+    "experiments/sessions/session_finsy.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/session_finsy.py",
+      "source_sha256": "9e84da7e4cc9f5c8e00f65dd996936d6f993f518684e8f030a2ca0610f676967",
+      "export_sha256": "9e84da7e4cc9f5c8e00f65dd996936d6f993f518684e8f030a2ca0610f676967",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "main": "016b8d43e41f962e7adc028fac57447eb4510c231143259086fc283b7adaf8b4",
+        "main.on_ready": "e6d7b1fce59aa644505c511eaf9c7088928a312908f4e8a93cd20f0177167856",
+        "main.emit": "ebc720e0f6abfd8365441258c620945cd3dfcb4e018c739fedef163e0f9abedd",
+        "main.wait": "fe7e49ae340b3a7992412cba97c541500a9534171bb76d30626ba4a4253a25fb"
+      }
+    },
+    "experiments/sessions/tests/test_server_close.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/tests/test_server_close.py",
+      "source_sha256": "7a55c70fcc0be0f703a12edc04ad07f383ac5b050c5abb97c3f22ea678622c3d",
+      "export_sha256": "7a55c70fcc0be0f703a12edc04ad07f383ac5b050c5abb97c3f22ea678622c3d",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "ServerCloseTests.test_close_does_not_release_held_final_status": "316dfd43cfab381689757fecffe03c15f3355a0088b6489a24aaf4e0ba2f3080",
+        "ServerCloseTests.test_close_does_not_release_held_final_status.iterator": "9a5a85bf6a34829ac634fb86a93911fe683f3407a9e88f729dabb21238427c5e",
+        "ServerCloseTests.test_explicit_final_release_is_recorded": "70ac3bac240dc4e5f778152dd068542a19044f08c0b835b90b3eca1f4f3a166e"
+      }
+    },
+    "experiments/sessions/formal-plan.json": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/formal-plan.json",
+      "source_sha256": "aaffd4a24aad9e876ff608d4ad7041834336ee3d91987e46a28924d110d2cd3e",
+      "export_sha256": "aaffd4a24aad9e876ff608d4ad7041834336ee3d91987e46a28924d110d2cd3e",
+      "unchanged": true
+    },
+    "experiments/sessions/sdk/main.go": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/sdk/main.go",
+      "source_sha256": "b3fc9f6ad1658c8901dc3c290bbabcfa906a4a9073a74b11d1d95f6bb4a4d7b0",
+      "export_sha256": "b3fc9f6ad1658c8901dc3c290bbabcfa906a4a9073a74b11d1d95f6bb4a4d7b0",
+      "unchanged": true
+    },
+    "experiments/sessions/sdk/go.sum": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/sdk/go.sum",
+      "source_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "export_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "unchanged": true
+    },
+    "experiments/sessions/session-sdk/main.go": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/session-sdk/main.go",
+      "source_sha256": "7484f047814b4a285bf6b7912a126f1341b9f18277e55630684e6146528337b7",
+      "export_sha256": "7484f047814b4a285bf6b7912a126f1341b9f18277e55630684e6146528337b7",
+      "unchanged": true
+    },
+    "experiments/sessions/session-sdk/go.sum": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/session-sdk/go.sum",
+      "source_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "export_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "unchanged": true
+    },
+    "experiments/sessions/sdk/go.mod": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/sdk/go.mod",
+      "source_sha256": "be40ea01d647b9dbb635864b2908f45a1d29f63ec3d3677e73ef43920814e2e4",
+      "export_sha256": "6635da392e09e3337509e040ac6e2dd02b736d5063ae06b64698dad13e7492f8",
+      "unchanged": false,
+      "adaptation": "Use the repository-local pinned SDK source."
+    },
+    "experiments/sessions/session-sdk/go.mod": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/session-sdk/go.mod",
+      "source_sha256": "36e3f1bf325dc70b47ffcdb670b9b6e950dd20649eddab45c037209c66787a36",
+      "export_sha256": "3c88adb4e45f22b7be5a0ff3cd810f215c152c00b0995a2a5cf2fa61984c5797",
+      "unchanged": false,
+      "adaptation": "Use the repository-local pinned SDK source."
+    },
+    "experiments/sessions/infra.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/infra.py",
+      "source_sha256": "baa323a2919e7cb9c90e16bc98a9c4031df919e6ba2a34c546b5462a1f25e10a",
+      "export_sha256": "578600c36134e0c293b8a3c09814328fbfc1c6a6b9ba474f2bf693bbdf9cd902",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "message": "e35e813619cebc1ec4dcdd581174e4e45794f6a09714e2c90ef7a0cad3ae18fe",
+        "status_record": "611645b3eae35566780a080a4752bfcee48e36bcaf4714cd507853916d32d32c",
+        "Trace.__init__": "14518a2c9fcc31720957c54b29964cb9c69bda4276d5e4d7842cdf69e4a273a8",
+        "Trace.add": "47e5356a89b1707b0a7f13d5d1d4238e4f15c81dc27b78707440cbf7bc8dc4df",
+        "Trace.wait": "2cd0ac36f390eab17ccad7951ad9dbd4efcc6cb38c090f31eec5c9078c09854a",
+        "Trace.close": "c31f33c68b2c8626428912e6274605a9e467d76290533f23856f5d4a1905b98a",
+        "unused_port": "61223ba1b3c675d3fb382810c53dee2232a1ebce4fcca7995b4adc744251b642",
+        "Target.__init__": "85581bfa40ea03b273202e56397e86e3ba225e9b84ecfd69cee46d078122b4cf",
+        "Target.stop": "ceb02b9f9e880244c74051c848dd6565a2fd0a9498ee0ce17c93b384d2a4c3bd",
+        "Relay.__init__": "ae1293f9e0f2ba48ad1e7e3d6dfede1fba9eb2d10eb00a4c43b2f009a8e34249",
+        "Relay.unary": "61543ca376e513256543d74f9f752be89b321d4423043f639bafddcaaa53fcd0",
+        "Relay.Capabilities": "3f59767720c0ff6e356ae890d3719e9b5580b30e828985e3669c29664cd829bd",
+        "Relay.GetForwardingPipelineConfig": "8e982dc59e695fbb18a6cb36f4fcbb72b1c48cf47575b238474681b0bfd3489b",
+        "Relay.SetForwardingPipelineConfig": "2663aa535eca69850e95cde93a3db8ef53a3f7bccf9effe1a5731831a664f9a8",
+        "Relay.Write": "19fdf79adde3da1d3077c980c4f4f16fceccfcb558b36c1efdd637d68527f14f",
+        "Relay.Read": "b742b1b8d00ac9806ec48d39ed2d2873e116c34606c33a853ab44c5cf63e5d96",
+        "Relay.StreamChannel": "45a419d02173f8fe7d901675c52fe285ec17ba182d2806619452dedd0f6b8609",
+        "Relay.StreamChannel.requests": "34b23c310ef6a30a3ee64d322d01ada5082873e9a36b7c4a8bf0641286c21206",
+        "Relay.cut": "620f5354e971cbe8287a79a46a572c39f010e0b62afd3c64f497206c57f0f4e7",
+        "Relay.is_active": "6dd54c60b3d28f4a7bf879954cb2904498d8dda07ce73757260d0219f695c92f",
+        "Relay.close": "311ea36d6443de9f8761cd31f6ab8a1185583f32e48f8719266a9c86d9368619",
+        "Session.__init__": "cba328dba3476733a508dbcc064f8698fc06df2bd7d4f87fa7e984d2fa65c7e8",
+        "Session.__init__.requests": "18ecf7ace7c4772df2b2bdd2dd26a157dd323e208686324ce83dd14b487d922a",
+        "Session.install": "ae09def63e183f2a2e23a946e4371214b00f7f336892e1abe3130a2028a746df",
+        "Session.read": "d7f7b3fdd43eb035c71df438aee92dfac9b42b192b7c3217f40456aeb13721a9",
+        "Session.pipeline": "7e5fed3a8ec0cfa112e7c3fc7027bca55717ebc2c8792c8ccb362d8686272dcd",
+        "Session.write": "39675e37275b2ab27ca0efe189ae8e8efe76ba81d9aa6823a73a85805d49afe3",
+        "Session.close": "dfa998ceb2f8b0fececf6f92dc23a070c69f2dde05f634b844a14fa346b50f20",
+        "entry": "3039a579b3f5d0b1ab7c864da157ccdaaff71a16b649fa81224462b2591347ac",
+        "update": "abff87206aacff3eedb6975e2cbe23686b767e3615e2b91643d8f7149b550ef9"
+      },
+      "adaptation": "Use a session-experiment IPC prefix and stop the owned target if startup fails."
+    },
+    "experiments/sessions/session_driver.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/session_driver.py",
+      "source_sha256": "db8064e2d69971aed80fcd6275f5a32776f4a9b171b4d086c437caa840394319",
+      "export_sha256": "5000fc222b6e89ce96a95ea86fe06841b127eacb46d47f719c3a35230d85d321",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "Driver.receive": "a86fb04f3157b29d9264376cd94fd0ebebca03e5ecbc53a153037ae0fcdeb0ad",
+        "Driver.command": "4542a4fce3dcdbb9bb9e473cdf65a7786f3272e3bbcfc7937b9e1094d640f9e3"
+      },
+      "adaptation": "Use the pinned Python environment and close the driver if readiness fails. Save each raw driver reply and close its output stream during cleanup."
+    },
+    "experiments/sessions/common.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/common.py",
+      "source_sha256": "2924c6a086f5d70f54698e6710fd3e11ffcefe231a8742d2d7a8c6c0205dab34",
+      "export_sha256": "602aaf61080c0a7f7a8d1b5b886d838f852e0ad3916766054ce8d8cf5f5de3a8",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "wait_until": "9219002134357332a17cb9dc526d315fe7ad78daef6c0a14ae1639d1cdb05612",
+        "Driver.wait": "8c85aa926cc2899b53a48f69b144cd6782b7f916114d4665d94ca108c86efe51",
+        "Driver.command": "0be670fc080968680b0a74e24ed0bc8c0d264735c7ef4abb4bdaf937b4d5641b",
+        "Driver.result": "d78ab6ca1859d13ca562d518ef90548bbfc6a1e15dd5e894dfd1c3d3b1f5831a",
+        "verify_snapshot": "a6f3d6c95aa36a37a12569c30fa8998a91afc08b85961106279cc84ec7b3ed7b"
+      },
+      "adaptation": "Use the pinned Python environment, setup-checked snapshots and driver cleanup on readiness failure. Retain command and observation methods. Save each raw driver reply and close its output stream during cleanup."
+    },
+    "experiments/sessions/run.py": {
+      "source_file": "results/session-formal/selected-20261019-135809/cancellation/source/experiments/session-formal/run.py",
+      "source_sha256": "e97c581cf892eada0806e33cd18f22b6fd1aee0e67d516c61acc54c14de13439",
+      "export_sha256": "10a450fedd9b4cc1d1a88cf87962939c464e364a2f58e79fb9c1643cdf8f2254",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "configurations": "4be2f78b758fd166407806ad7ce07124a6edd407db9ff40ad12de1c8620012c1",
+        "execute": "8206d6e7503567d3e8793a3db5e9bffa56a7c240207b63fcb3af5922726d28ef"
+      },
+      "adaptation": "Adapt repository paths, check setup before and after execution, isolate binary selection by mode, and reject conflicting modes or archive output. Retain schedule construction, group order and trial calls."
+    },
+    "experiments/sessions/summarize.py": {
+      "source_file": "results/session-formal/postprocessing-20261019/summarize.py",
+      "source_sha256": "76deb80ebb3106f531723117d85429617e4350c9f6c485db6765a16e6463f5e4",
+      "export_sha256": "8ad2911ffd7f59232144070b5213b69eb7ef8b2d911c18f43ed35daa398818e6",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "quantile": "aa7dbf39b09063d86f80feb81d4e80004ccc64d53c68b7b236ceb3f430da404b",
+        "summarize": "47cf4840fe9710206e4a1bef36d5fab3188e40831f5dacea3b4496644c57ae26",
+        "read_rows": "af381601c19ca890f61e1073cd6e28bd97414a45cd5f5bfadc4543f66ec473e9"
+      },
+      "adaptation": "Allow selected groups while retaining event checks and statistical calculations. Full statistical analysis still requires 30 repetitions."
+    },
+    "experiments/sessions/verify_statistics.py": {
+      "source_file": "results/session-formal/postprocessing-20261019/verify_statistics.py",
+      "source_sha256": "0693049df33fe2d06f255c34984ffe5ad96d3b4a43800fd9c6511fda4a60f1d2",
+      "export_sha256": "09eac3a3927ffbaa7ae297253de5e02cf2959082f7d4607707cc3ec55c964e57",
+      "unchanged": false,
+      "unchanged_functions_sha256": {},
+      "adaptation": "Allow selected groups while retaining event checks and statistical calculations. Full statistical analysis still requires 30 repetitions."
+    },
+    "experiments/sessions/extra_checks.py": {
+      "source_file": "results/session-formal/postprocessing-20261019/extra_checks.py",
+      "source_sha256": "a4ca776947b62afb9c07a055c332c6e56ca43c65c83477ccee6ba2a76aa6f766",
+      "export_sha256": "ce86eb581c7f43fad6dc4770e183a89a3a57f7d751e8fba51c6aed460c0bd6a9",
+      "unchanged": false,
+      "unchanged_functions_sha256": {},
+      "adaptation": "Allow selected groups while retaining event checks and statistical calculations. Full statistical analysis still requires 30 repetitions."
+    }
+  }
+}

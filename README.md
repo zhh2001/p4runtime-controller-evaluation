@@ -54,6 +54,8 @@ Run the analysis tests with:
 | Session recovery, cancellation, close and slow consumers | [Session and stream method](docs/sessions.md) |
 | Session event fields and statistical units | [Session data dictionary](docs/session-data.md) |
 | Session observations, events and statistical results | [data/sessions](data/sessions) |
+| Session setup, execution and checks | [Run the session and stream comparison](docs/running-sessions.md) |
+| Session drivers, controlled service and scheduler | [experiments/sessions](experiments/sessions) |
 
 ## Recompute construction results
 
@@ -92,6 +94,15 @@ python3 scripts/run_inputs.py --output results/inputs-smoke
 
 Setup compiles three P4 programs, checks all 382 inputs and generated declarations against the archive, and builds normal and race-enabled Go drivers. The default run executes 972 trials across the three groups and two targets. Use `--mode full` for all 6,984 trials or `--mode race` for 292 Go trials. Each run verifies coverage, requests and target state. See [Run the input-validation comparison](docs/running-inputs.md).
 
+To run the session and stream comparison:
+
+```sh
+python3 scripts/bootstrap_sessions.py
+python3 scripts/run_sessions.py --output results/sessions-smoke
+```
+
+Setup checks the pinned SDK, compiles the shared P4 fixture and builds both Go driver modules. The default run checks all 28 configurations once. Use `--mode race` for the 16 SDK configurations or `--mode full` for 840 trials and independently checked statistics. `--groups` selects recovery, mastership, cancellation or consumers. See [Run the session and stream comparison](docs/running-sessions.md).
+
 ## Verify the original requests
 
 The [RPC trace archives](docs/rpc-traces.md) contain the original request records and full table readbacks for all 2,940 measurement and warmup phases. Download archives by parameter point and verify them directly from their compressed form. The verifier checks request accounting, table state and all 1,680 published measurement rows.
@@ -116,7 +127,7 @@ The verifier checks all 6,984 trials, their associated requests and repeated out
 
 Verification checks all 840 trials, 108,000 emitted PacketIn IDs and 510 actual Write results. It reproduces per-trial outputs and all 62 statistical rows, with independent event decoding and NumPy checks of 496 summary values. It uses archived records without a target or Go toolchain. See the [session and stream method](docs/sessions.md).
 
-The repository supports statistical reanalysis, archived input, request and session verification, new RPC and construction measurements, and live input-validation runs. Live session and stream runners will follow in a subsequent batch.
+The repository supports statistical reanalysis, archived input, request and session verification, new RPC and construction measurements, and live input, session and stream experiments. Failed-update retry records and verification will follow in a subsequent batch.
 
 ## License
 

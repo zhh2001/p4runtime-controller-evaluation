@@ -1,0 +1,59 @@
+{
+  "created_local": "2026-10-19T13:18:56+08:00",
+  "seed": 20261019,
+  "repetitions": 30,
+  "adapters": [
+    "sdk",
+    "finsy"
+  ],
+  "groups": [
+    "recovery",
+    "mastership",
+    "cancellation",
+    "consumers"
+  ],
+  "recovery_modes": [
+    "eof",
+    "unavailable",
+    "restart"
+  ],
+  "settling_seconds": 2.1,
+  "recovery_observation_seconds": 60,
+  "arbitration_gate": "always open, no intentional arbitration delay",
+  "cancellation_modes": {
+    "sdk": [
+      "pre_cancelled",
+      "queued_cancelled",
+      "inflight_cancelled",
+      "immediate",
+      "graceful",
+      "graceful_timeout"
+    ],
+    "finsy": [
+      "inflight_cancelled",
+      "immediate"
+    ]
+  },
+  "consumer_paths": [
+    "native",
+    "queued"
+  ],
+  "consumer_delays_ms": [
+    0,
+    1,
+    10
+  ],
+  "packet_count": 300,
+  "offered_rate_pps": 500,
+  "application_queue_capacity": 50,
+  "library_packet_queue_capacity_finsy": 50,
+  "expected_trials": {
+    "recovery": 180,
+    "mastership": 60,
+    "cancellation": 240,
+    "consumers": 360
+  },
+  "order": "randomized configurations within each repetition, groups run sequentially",
+  "restoration": "native session recovery, then common application installs missing pipeline and inserts its own entry",
+  "latency_scope": "transparent local relay plus native client, state polling and application restore; no forwarding metric"
+}

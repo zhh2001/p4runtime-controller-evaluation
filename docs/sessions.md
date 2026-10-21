@@ -115,6 +115,6 @@ The statistical unit is one independent trial. Each configuration contributes 30
 
 The four evidence functions, standard-library secondary checks, raw Write checks and statistical calculations retain their original bodies. Packaging adapts imports and fixture paths and omits private workspace snapshot copying. Thirteen original evidence-test methods are preserved. Added tests cover archive corruption, trial and event coverage, queue layers, randomized order and extra writes.
 
-Verification reconstructs fixture-only snapshots in the output directory and checks them against the preserved execution inventories. The original execution-source and binary hashes remain in each `run.json`. This batch publishes archived data and offline verification. Live session and stream runners will follow separately.
+Verification reconstructs fixture-only snapshots in the output directory and checks them against the preserved execution inventories. The original execution-source and binary hashes remain in each `run.json`. The [live runner guide](running-sessions.md) provides pinned setup and smoke, race and full execution, with source snapshots and independent verification of new records.
 
 Data and derived figures use CC BY 4.0. Analysis code and documentation use Apache-2.0. See [LICENSE.md](../LICENSE.md).
