@@ -1,0 +1,503 @@
+[
+  {
+    "id": "exact-zero",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "00"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "exact-max",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01ff"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "exact-padded",
+    "suite": "E1",
+    "category": "normalizable",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "0001"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "exact-overflow",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "0200"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "exact-missing",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "unknown-table",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.does_not_exist",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "unknown-field",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "does_not_exist",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "action-zero",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "00"
+    },
+    "priority": 0
+  },
+  {
+    "id": "action-max",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01ff"
+    },
+    "priority": 0
+  },
+  {
+    "id": "action-overflow",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "0200"
+    },
+    "priority": 0
+  },
+  {
+    "id": "action-missing-param",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {},
+    "priority": 0
+  },
+  {
+    "id": "action-unknown-param",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "does_not_exist": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "action-unknown",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.does_not_exist",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "action-outside-table",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.entry_only",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "lpm-aligned",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_lpm",
+    "matches": [
+      {
+        "field": "s.packet_length",
+        "kind": "lpm",
+        "value": "0a010200",
+        "prefix": 24
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "lpm-host-bits",
+    "suite": "E1",
+    "category": "normalizable",
+    "table": "MyIngress.t_lpm",
+    "matches": [
+      {
+        "field": "s.packet_length",
+        "kind": "lpm",
+        "value": "0a010203",
+        "prefix": 24
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "lpm-wildcard",
+    "suite": "E1",
+    "category": "normalizable",
+    "table": "MyIngress.t_lpm",
+    "matches": [
+      {
+        "field": "s.packet_length",
+        "kind": "lpm",
+        "value": "00",
+        "prefix": 0
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "lpm-prefix-overflow",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_lpm",
+    "matches": [
+      {
+        "field": "s.packet_length",
+        "kind": "lpm",
+        "value": "0a010200",
+        "prefix": 33
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "ternary-canonical",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_ternary",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "ternary",
+        "value": "0f",
+        "mask": "0f"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "ternary-masked-bits",
+    "suite": "E1",
+    "category": "normalizable",
+    "table": "MyIngress.t_ternary",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "ternary",
+        "value": "01ff",
+        "mask": "0f"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "ternary-wildcard",
+    "suite": "E1",
+    "category": "normalizable",
+    "table": "MyIngress.t_ternary",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "ternary",
+        "value": "00",
+        "mask": "00"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "ternary-zero-priority",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_ternary",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "ternary",
+        "value": "01",
+        "mask": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 0
+  },
+  {
+    "id": "range-canonical",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_range",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "range",
+        "value": "01",
+        "high": "0a"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "range-reversed",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_range",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "range",
+        "value": "0a",
+        "high": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "range-full",
+    "suite": "E1",
+    "category": "normalizable",
+    "table": "MyIngress.t_range",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "range",
+        "value": "00",
+        "high": "01ff"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "optional-zero",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_optional",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "optional",
+        "value": "00"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "optional-omitted",
+    "suite": "E1",
+    "category": "canonical_valid",
+    "table": "MyIngress.t_optional",
+    "matches": [],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  },
+  {
+    "id": "exact-positive-priority",
+    "suite": "E1",
+    "category": "invalid",
+    "table": "MyIngress.t_exact",
+    "matches": [
+      {
+        "field": "s.ingress_port",
+        "kind": "exact",
+        "value": "01"
+      }
+    ],
+    "action": "MyIngress.forward",
+    "params": {
+      "port": "01"
+    },
+    "priority": 1
+  }
+]

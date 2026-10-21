@@ -1,0 +1,23 @@
+{
+  "created_local": "2026-10-19T11:34:48+08:00",
+  "cases": 68,
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "repetitions": 2,
+  "modes": [
+    "controlled",
+    "bmv2"
+  ],
+  "expected_observations_per_mode": 816,
+  "cases_sha256": "6f91c16bafe9b11e37897d6b42abb18139bcda33820925c7b39ecf2d0bd25b0d",
+  "unit_tests": 14,
+  "mode_scope": "write construction and before/after state, not notification timing or forwarding",
+  "priority_note": "P4Runtime 1.3.0 requires nonzero TCAM priority. The -1 MODIFY uses a key absent from the initial state and expects NOT_FOUND. SDK positive-only validation is an API policy.",
+  "formal_runs_to_select": "new runs started after this plan; earlier directories remain preflight material"
+}

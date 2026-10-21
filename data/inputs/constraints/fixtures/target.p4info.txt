@@ -1,0 +1,290 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 35059442
+    name: "MyIngress.direct"
+    alias: "direct"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 40531115
+    name: "MyIngress.scoped"
+    alias: "scoped"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 19600540
+    annotations: "@tableonly"
+    scope: TABLE_ONLY
+  }
+  action_refs {
+    id: 25195542
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 46284289
+    name: "MyIngress.const_default"
+    alias: "const_default"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+  }
+  const_default_action_id: 20834244
+  size: 16
+}
+tables {
+  preamble {
+    id: 44753190
+    name: "MyIngress.const_entries"
+    alias: "const_entries"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 35228772
+    name: "MyIngress.indirect"
+    alias: "indirect"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  implementation_id: 301074965
+  size: 16
+}
+tables {
+  preamble {
+    id: 45658000
+    name: "MyIngress.selected"
+    alias: "selected"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  implementation_id: 288538618
+  size: 16
+}
+tables {
+  preamble {
+    id: 37260021
+    name: "MyIngress.idle"
+    alias: "idle"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+  idle_timeout_behavior: NOTIFY_CONTROL
+}
+tables {
+  preamble {
+    id: 50116070
+    name: "MyIngress.sparse"
+    alias: "sparse"
+  }
+  match_fields {
+    id: 13
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  match_fields {
+    id: 5
+    name: "h.key.y"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 24558197
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 48311159
+    name: "MyIngress.ternary_table"
+    alias: "ternary_table"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.x"
+    bitwidth: 8
+    match_type: TERNARY
+  }
+  action_refs {
+    id: 20834244
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 20834244
+    name: "MyIngress.common"
+    alias: "common"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 19600540
+    name: "MyIngress.table_action"
+    alias: "table_action"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 25195542
+    name: "MyIngress.default_action"
+    alias: "default_action"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 24558197
+    name: "MyIngress.sparse_action"
+    alias: "sparse_action"
+  }
+  params {
+    id: 19
+    name: "port"
+    bitwidth: 9
+  }
+  params {
+    id: 7
+    name: "tag"
+    bitwidth: 8
+  }
+}
+action_profiles {
+  preamble {
+    id: 301074965
+    name: "MyIngress.profile"
+    alias: "profile"
+  }
+  table_ids: 35228772
+  size: 16
+}
+action_profiles {
+  preamble {
+    id: 288538618
+    name: "MyIngress.selector"
+    alias: "selector"
+  }
+  table_ids: 45658000
+  with_selector: true
+  size: 16
+}
+type_info {
+}

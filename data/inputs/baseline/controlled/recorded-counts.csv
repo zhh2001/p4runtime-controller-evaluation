@@ -1,0 +1,7 @@
+adapter,canonical_valid_accepted,invalid_local_rejected,invalid_server_rejected,invalid_not_expressible,normalizable_accepted,normalizable_local_rejected,normalizable_server_rejected
+sdk,9,13,0,0,6,0,0
+legacy,9,0,12,1,3,0,3
+raw-current,9,0,13,0,1,0,5
+raw-legacy,9,0,13,0,1,0,5
+finsy,9,8,5,0,4,0,2
+shell,9,6,7,0,3,3,0

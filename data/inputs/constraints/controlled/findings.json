@@ -1,0 +1,172 @@
+[
+  {
+    "token": "1|legacy|sparse-normal",
+    "profile": "legacy",
+    "case_id": "sparse-normal",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "1|legacy|sparse-zero",
+    "profile": "legacy",
+    "case_id": "sparse-zero",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "1|legacy|sparse-max",
+    "profile": "legacy",
+    "case_id": "sparse-max",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "1|legacy|sparse-padded",
+    "profile": "legacy",
+    "case_id": "sparse-padded",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "1|legacy|sparse-reverse",
+    "profile": "legacy",
+    "case_id": "sparse-reverse",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "1|finsy|delete-ignored-action-ttl",
+    "profile": "finsy",
+    "case_id": "delete-ignored-action-ttl",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "'MyIngress.direct': no table action named 'MyIngress.default_action'. Did you mean 'MyIngress.common'?",
+    "protocol_error": null
+  },
+  {
+    "token": "1|shell|delete-ignored-action-ttl",
+    "profile": "shell",
+    "case_id": "delete-ignored-action-ttl",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "action 'MyIngress.default_action' is not a valid action for this table",
+    "protocol_error": null
+  },
+  {
+    "token": "2|legacy|sparse-normal",
+    "profile": "legacy",
+    "case_id": "sparse-normal",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "2|legacy|sparse-zero",
+    "profile": "legacy",
+    "case_id": "sparse-zero",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "2|legacy|sparse-max",
+    "profile": "legacy",
+    "case_id": "sparse-max",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "2|legacy|sparse-padded",
+    "profile": "legacy",
+    "case_id": "sparse-padded",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "2|legacy|sparse-reverse",
+    "profile": "legacy",
+    "case_id": "sparse-reverse",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "rpc error: code = Unknown desc = controlled table rejection",
+    "protocol_error": {
+      "code": 3,
+      "message": "unknown or duplicate parameter id"
+    }
+  },
+  {
+    "token": "2|finsy|delete-ignored-action-ttl",
+    "profile": "finsy",
+    "case_id": "delete-ignored-action-ttl",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "'MyIngress.direct': no table action named 'MyIngress.default_action'. Did you mean 'MyIngress.common'?",
+    "protocol_error": null
+  },
+  {
+    "token": "2|shell|delete-ignored-action-ttl",
+    "profile": "shell",
+    "case_id": "delete-ignored-action-ttl",
+    "flags": [
+      "valid_input_rejected"
+    ],
+    "error": "action 'MyIngress.default_action' is not a valid action for this table",
+    "protocol_error": null
+  }
+]

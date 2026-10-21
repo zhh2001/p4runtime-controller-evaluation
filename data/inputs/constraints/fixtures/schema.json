@@ -1,0 +1,219 @@
+{
+  "tables": {
+    "MyIngress.direct": {
+      "id": 35059442,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 0,
+      "const": false,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "21257015": 0
+      }
+    },
+    "MyIngress.scoped": {
+      "id": 40531115,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 0,
+      "const": false,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "19600540": 1,
+        "25195542": 2,
+        "21257015": 0
+      }
+    },
+    "MyIngress.const_default": {
+      "id": 46284289,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 0,
+      "const": false,
+      "const_default": 20834244,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "21257015": 0
+      }
+    },
+    "MyIngress.const_entries": {
+      "id": 44753190,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 0,
+      "const": true,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "21257015": 0
+      }
+    },
+    "MyIngress.indirect": {
+      "id": 35228772,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 301074965,
+      "const": false,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "21257015": 2
+      }
+    },
+    "MyIngress.selected": {
+      "id": 45658000,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 288538618,
+      "const": false,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "21257015": 2
+      }
+    },
+    "MyIngress.idle": {
+      "id": 37260021,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 0,
+      "const": false,
+      "const_default": 0,
+      "idle": 1,
+      "actions": {
+        "20834244": 0,
+        "21257015": 0
+      }
+    },
+    "MyIngress.sparse": {
+      "id": 50116070,
+      "fields": {
+        "h.key.x": {
+          "id": 13,
+          "width": 8,
+          "kind": 2
+        },
+        "h.key.y": {
+          "id": 5,
+          "width": 8,
+          "kind": 2
+        }
+      },
+      "implementation": 0,
+      "const": false,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "24558197": 0,
+        "21257015": 0
+      }
+    },
+    "MyIngress.ternary_table": {
+      "id": 48311159,
+      "fields": {
+        "h.key.x": {
+          "id": 1,
+          "width": 8,
+          "kind": 4
+        }
+      },
+      "implementation": 0,
+      "const": false,
+      "const_default": 0,
+      "idle": 0,
+      "actions": {
+        "20834244": 0,
+        "21257015": 0
+      }
+    }
+  },
+  "actions": {
+    "NoAction": {
+      "id": 21257015,
+      "params": {}
+    },
+    "MyIngress.common": {
+      "id": 20834244,
+      "params": {
+        "port": {
+          "id": 1,
+          "width": 9
+        }
+      }
+    },
+    "MyIngress.table_action": {
+      "id": 19600540,
+      "params": {
+        "port": {
+          "id": 1,
+          "width": 9
+        }
+      }
+    },
+    "MyIngress.default_action": {
+      "id": 25195542,
+      "params": {
+        "port": {
+          "id": 1,
+          "width": 9
+        }
+      }
+    },
+    "MyIngress.sparse_action": {
+      "id": 24558197,
+      "params": {
+        "port": {
+          "id": 19,
+          "width": 9
+        },
+        "tag": {
+          "id": 7,
+          "width": 8
+        }
+      }
+    }
+  }
+}

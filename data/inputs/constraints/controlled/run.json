@@ -1,0 +1,201 @@
+{
+  "started_local": "2026-10-19T11:36:26.212835+08:00",
+  "completed_local": "2026-10-19T11:36:28.479096+08:00",
+  "mode": "controlled",
+  "smoke": false,
+  "race": false,
+  "preflight": false,
+  "driver_exits": [
+    {
+      "profile": "sdk",
+      "repetition": 1,
+      "code": 0
+    },
+    {
+      "profile": "raw-current",
+      "repetition": 1,
+      "code": 0
+    },
+    {
+      "profile": "legacy",
+      "repetition": 1,
+      "code": 0
+    },
+    {
+      "profile": "raw-legacy",
+      "repetition": 1,
+      "code": 0
+    },
+    {
+      "profile": "finsy",
+      "repetition": 1,
+      "code": 0
+    },
+    {
+      "profile": "shell",
+      "repetition": 1,
+      "code": 0
+    },
+    {
+      "profile": "sdk",
+      "repetition": 2,
+      "code": 0
+    },
+    {
+      "profile": "raw-current",
+      "repetition": 2,
+      "code": 0
+    },
+    {
+      "profile": "legacy",
+      "repetition": 2,
+      "code": 0
+    },
+    {
+      "profile": "raw-legacy",
+      "repetition": 2,
+      "code": 0
+    },
+    {
+      "profile": "finsy",
+      "repetition": 2,
+      "code": 0
+    },
+    {
+      "profile": "shell",
+      "repetition": 2,
+      "code": 0
+    }
+  ],
+  "group": "constraints",
+  "repetitions": 2,
+  "observations": 816,
+  "case_ids": [
+    "default-modify",
+    "default-reset",
+    "default-insert",
+    "default-delete",
+    "default-stale-match",
+    "default-stale-priority",
+    "ordinary-insert",
+    "ordinary-modify",
+    "ordinary-delete",
+    "delete-ignored-action-ttl",
+    "ordinary-missing-action",
+    "ordinary-exact-priority",
+    "ordinary-negative-priority",
+    "constant-default-ordinary",
+    "constant-default-same-action",
+    "constant-default-other-action",
+    "constant-default-reset",
+    "constant-entry-modify",
+    "constant-entry-insert",
+    "constant-entry-delete",
+    "constant-table-default-modify",
+    "constant-table-default-reset",
+    "scope-table_action-ordinary",
+    "scope-table_action-default",
+    "scope-default_action-default",
+    "scope-default_action-ordinary",
+    "scope-common-ordinary",
+    "scope-common-default",
+    "action-not-in-table",
+    "indirect-member-1",
+    "indirect-member-0",
+    "indirect-member-99",
+    "indirect-group-1",
+    "indirect-group-0",
+    "indirect-group-99",
+    "indirect-direct-1",
+    "selected-member-1",
+    "selected-member-0",
+    "selected-member-99",
+    "selected-group-1",
+    "selected-group-0",
+    "selected-group-99",
+    "direct-with-member",
+    "direct-with-group",
+    "ttl-direct-0",
+    "ttl-direct--1",
+    "ttl-direct-1",
+    "ttl-direct-60000000000",
+    "ttl-idle-0",
+    "ttl-idle--1",
+    "ttl-idle-1",
+    "ttl-idle-60000000000",
+    "ttl-default-0",
+    "ttl-default--1",
+    "ttl-default-1",
+    "ternary-priority-10",
+    "ternary-priority-0",
+    "ternary-priority--1",
+    "sparse-normal",
+    "sparse-zero",
+    "sparse-max",
+    "sparse-padded",
+    "sparse-reverse",
+    "sparse-missing-param",
+    "sparse-no-params",
+    "sparse-extra-param",
+    "sparse-missing-field",
+    "sparse-unknown-field"
+  ],
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "source_run": "table-constraints/controlled-formal-20261019-113625",
+  "source_manifest_sha256": "89445be49ed31adcc6a9e2ae3c500cf922190857e1211201794450ff5c905d76",
+  "source_snapshot_sha256": {
+    "experiments/table-constraints/python_driver.py": "3412b6cdca972d46b5908980dcda60d967172589b0e61a07c8733253599409a9",
+    "experiments/table-constraints/formal-plan.json": "8bf640cbe20a2e69c053b9b5a3cf7a79e80a2ed4a8e67e1811e5a9f58aba6935",
+    "experiments/table-constraints/prepare.py": "4fa120ecea1f6a110c99768cab47c5d88f760a896ea724b6773776cc58f744f8",
+    "experiments/table-constraints/README.md": "e3cf591c269a5e94622ccc620ae40da03976462958f3788bd25b40a153c2f24b",
+    "experiments/table-constraints/sdk.go": "8e71b6defd19f0884d02d314b22957fcf3e08194fcbbbf54e87223b3b71909f3",
+    "experiments/table-constraints/oracle.py": "3f86246e2929ce81a7cb21fa82800e0ada8cfe0797759e246329cc4936041315",
+    "experiments/table-constraints/legacy.go": "d4693d05298e92409ed2cef3cbe8777a6dd47959d8f5b79cc8fa9835155f8e43",
+    "experiments/table-constraints/verify.py": "9c009916ac45afb23e86da866b45626ec1bd66d0f8bbb1d747b37e189a66a824",
+    "experiments/table-constraints/environment.json": "6652d8b34913dfe5f5f7148376cb9e489173d560106684967c9720ebf1f650e5",
+    "experiments/table-constraints/endpoint.py": "b28a284cecc383b27f3aedd76b3602984dbde0136cae11cd415fff3888b1059e",
+    "experiments/table-constraints/shared.go": "0bed91309dfa07539bc17b1ffa564fe808b4a654f5e4bd24f8963c1da9bf0ea7",
+    "experiments/table-constraints/analyze.py": "6faadb5de53f6489031efe43031498cd020cd41905666284922b57b60814686a",
+    "experiments/table-constraints/fixtures.py": "6a8b9fb04545285d283c56c5607b46e09b7edd560ed78fdec8202c8385ab9e91",
+    "experiments/table-constraints/model.py": "248c3ae505cf587287b899753a650331d9658c1ed2aa9f3bc6bbd2aafc6af8b7",
+    "experiments/table-constraints/run.py": "98e0c99866d408dd8eec4fcf31ef65d23d9c8e9992f4b1787a89ed31ad330a49",
+    "experiments/table-constraints/go-sdk/go.mod": "e1ef4a28e66dac902b00197c52aa37ba2e4ad2435104c7c347fc6654189ad969",
+    "experiments/table-constraints/go-sdk/native.go": "d97b00dd5c0c37c8f17e9d1a2c4f16b119ca79bf7d404bbd7675a36522b92166",
+    "experiments/table-constraints/go-sdk/go.sum": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+    "experiments/table-constraints/go-sdk/shared.go": "19906b67577759e4a7755176cba710d5f7811d9d09c694eaffe7f2a120d0aff9",
+    "experiments/table-constraints/go-legacy/go.mod": "817953448de8e62d46da84c3a2ce8e9d3cf319af708ad07f337be502fc2805a2",
+    "experiments/table-constraints/go-legacy/native.go": "566de4e4e450914f7273ebad66451ee39381a4e67ae0a10ae65dd7b80c94be06",
+    "experiments/table-constraints/go-legacy/go.sum": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+    "experiments/table-constraints/go-legacy/shared.go": "19906b67577759e4a7755176cba710d5f7811d9d09c694eaffe7f2a120d0aff9",
+    "experiments/table-constraints/tests/test_oracle.py": "84ba1344ac18489b622ba1010717f9799eeeac55d17342c620046d6081e5356d",
+    "experiments/table-constraints/tests/test_endpoint.py": "af8f74d62f38971fb666fc9fe00d76c213b2cb9ee191801528e5a307ee628557",
+    "experiments/table-constraints/fixtures/compiler.p4info.txt": "a1460b261eaf4b3f4919bb6db745981a1a418cfe7c0c4929fcffd4bce0da7aeb",
+    "experiments/table-constraints/fixtures/tables.json": "9ffb8eb251344880aa8e4270443324f4828472b1d90d0af713608b7948a65f21",
+    "experiments/table-constraints/fixtures/compiler.log": "cff9ad245215849b4ba3d5f91631a48abbb86b0513aedd44e94faf4d54f184fe",
+    "experiments/table-constraints/fixtures/cases.json": "6f91c16bafe9b11e37897d6b42abb18139bcda33820925c7b39ecf2d0bd25b0d",
+    "experiments/table-constraints/fixtures/target.p4info.txt": "7d1c8230faf0c8482a689d0bdbfc28f0580e8d1cf62aa022cfc4006d4ce7e90d",
+    "experiments/table-constraints/fixtures/tables.p4": "b688b9744bb35917ec98096856b6101683c8bcf9e04e2a7d326150d370a7dd9d",
+    "experiments/table-constraints/fixtures/schema.json": "2f0f1e030e8224359024ad8abcdf278466c52dd7e1f754d0fe6c305c93194c48",
+    "experiments/table-constraints/bin/go-sdk-race": "1fb8627cd1d7219d3ae2169e6cda89a2b534ee6e5007cd9403fa8703838fb6a5",
+    "experiments/table-constraints/bin/go-sdk": "570e6674e9a70a057606d0ff1818df5cf0f2f28c2f9195f46ac70e0df1389066",
+    "experiments/table-constraints/bin/go-legacy": "06096439649fdbb26883d783c4d05c18c5cbe3087ab4c110caad965dd4aa191f",
+    "experiments/table-constraints/bin/go-legacy-race": "a9ea1eb07637ef256cfb29b5adef27905e5174e7d16b2785870abf115dd0b7a4",
+    "experiments/bmv2-pilot/infra.py": "0c7195ff6c73447f5407d51b9a0c848f57f13a38f5cb0fe0fc546c8831eff80e",
+    "experiments/construction/run.py": "4c65f13233056f4f2d43db9177bbaf6aef35f13e34b124d770bded07f31ff823"
+  },
+  "source_versions": {
+    "sdk_commit": "3f2def2b28c098961078ce64e9d86ab3c79e6ccb",
+    "others": {
+      "p4runtime-go-client": "de3748d9d85953f1fa7093ca441aca53dfc9008b",
+      "finsy": "491a6e2ac67473ec2ee9a94601f6107ae5d76e7b",
+      "p4runtime-shell": "5641d39c1778c79f726da7e216b2c7e134af4a47"
+    }
+  }
+}

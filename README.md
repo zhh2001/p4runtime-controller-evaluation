@@ -6,6 +6,8 @@ The RPC dataset covers performance on BMv2. It contains seven parameter points, 
 
 The local construction dataset has 270 measurements across complete table-entry construction and separate SDK public operations. It includes benchmark outputs, input fixtures, 65 metric summaries, 16 paired summaries and PDF and PNG figures.
 
+The input-validation dataset contains 382 fixed cases and 6,984 trials on a controlled service and BMv2. It includes complete selected requests and state snapshots, original extended-run classifications, and offline semantic verification.
+
 ## Recompute the statistics
 
 Use Python 3.12:
@@ -42,6 +44,9 @@ Run the analysis tests with:
 | Construction CSV columns and units | [Construction data dictionary](docs/construction-data.md) |
 | Construction benchmark setup, execution and validation | [Run the construction comparison](docs/running-construction.md) |
 | Offline construction drivers and semantic checks | [experiments/construction](experiments/construction) |
+| Input-validation cases, request records and results | [data/inputs](data/inputs) |
+| Input workloads, outcome counts and semantic verification | [Input method](docs/inputs.md) |
+| Input fields and outcome names | [Input data dictionary](docs/input-data.md) |
 
 ## Recompute construction results
 
@@ -75,7 +80,17 @@ Setup validates 5,120 constructed entries, result ownership, Go race and vet che
 
 The [RPC trace archives](docs/rpc-traces.md) contain the original request records and full table readbacks for all 2,940 measurement and warmup phases. Download archives by parameter point and verify them directly from their compressed form. The verifier checks request accounting, table state and all 1,680 published measurement rows.
 
-The repository supports statistical reanalysis, request-level verification and new RPC and construction measurements. The remaining experiment groups will be added in subsequent batches.
+## Verify input-validation results
+
+```sh
+.venv/bin/python -m pip install --require-hashes --only-binary=:all: --no-deps -r config/requirements-inputs.txt
+.venv/bin/python scripts/verify_inputs.py --output results/inputs
+.venv/bin/python -m unittest discover -s tests/inputs -v
+```
+
+The verifier checks all 6,984 trials, their associated requests and repeated outcomes. It compares numerical and typed values, verifies target state, and reproduces the saved extended-run CSV files and findings. See the [input method](docs/inputs.md) for the three corpora, selected runs and original-source correspondence. This analysis uses archived records and does not start a target.
+
+The repository supports statistical reanalysis, input and request-level verification, and new RPC and construction measurements. The remaining experiment groups will be added in subsequent batches.
 
 ## License
 

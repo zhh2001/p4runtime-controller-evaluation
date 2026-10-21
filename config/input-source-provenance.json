@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "files": {
+    "scripts/input_checks/boundaries/model.py": {
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/model.py",
+      "source_sha256": "39b338722692dbf5c384aef21e2a1999b09312ac140186450748d2e291722f91",
+      "export_sha256": "39b338722692dbf5c384aef21e2a1999b09312ac140186450748d2e291722f91",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "declaration": "bdd8028a8c60f6f546a0567285a9ee8532b11af8097b0bd1ebea8e0c426a2ede",
+        "raw_entity": "b425a94e426b5a8d6d0208e645bc37d706628260b548dbd021b89ef10a168cb4",
+        "intent": "5f240787096aa0313632920bbf8900a3282d8105f8ba94333d8a5dbffc695460"
+      }
+    },
+    "scripts/input_checks/boundaries/oracle.py": {
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/oracle.py",
+      "source_sha256": "da61c457c40d175ae90101433d18d5fd06ed884cc3319620531a7a48de8ab386",
+      "export_sha256": "da61c457c40d175ae90101433d18d5fd06ed884cc3319620531a7a48de8ab386",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "require": "0b77aadc1bd56faf039dd34f0461e15b0ac46656727c4b5625cd833a6f3bf526",
+        "number": "721a1de913956f224385f52cd678f5d5aa163f194c6b0afe0c9e2a5bdbdc6049",
+        "data_value": "e11c67ec83d97ba523f2a492b1a7a7362cb8bc1742722d8a0227279ac7185c77",
+        "validate": "36c389b0e0275408fc28d2f1c4ff033d017b0710e6927bf0d87eba1bfd76b560"
+      }
+    },
+    "scripts/input_checks/boundaries/analyze.py": {
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/analyze.py",
+      "source_sha256": "bfbde4239b56b6a62846ba4cc625bedcecfd2d6d692165997c24f6b59427eab1",
+      "export_sha256": "645fb9fa52d3dcf530c6fb588b3c80d49a0c3022bd1718129ad9aab69984522b",
+      "unchanged": false,
+      "adaptation": "Use package-relative imports and omit an unused workspace constant.",
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "load_rows": "f56973113ccd1aad5a5cb5c5d6c5c80776d0f86f1121c2d8b739be9b8dcf4dd3",
+        "state_key": "3e47f2da4d9c3518fd75f25616a72fc09383dc5b30c57f06add620f6513a8931",
+        "public_count": "98a5c6cfb20c02d5114d5d04fa33065c349733f5cb30e79d9e99683eb7136b70",
+        "analyze": "fb12f5a2892a2558e141f276e14802174062cc9de1ec2ab50518406af63a4ee7"
+      }
+    },
+    "scripts/input_checks/boundaries/secondary.py": {
+      "source_file": "experiments/boundaries/verify.py",
+      "source_sha256": "0ed64dce2b89f1ffbc794c1ce17a3a95fbe4508e402e24e4af47894649b37f0b",
+      "export_sha256": "6712461fa19c463ae0c4472fdc3870bd1d0f79649cbb46cc590377a0feae6571",
+      "unchanged": false,
+      "adaptation": "Keep the independent decoding functions and adapt verification to one supplied run directory.",
+      "unchanged_functions_sha256": {
+        "rows": "03e4f23a02816fc5774c483062104779bdffa72f13b469142cc197e2e28c4205",
+        "integer": "3e1ef4223acdb7393eb906d3f92518bca11ce1fea5b6a50a2a51fda16cc5f7f4",
+        "data_value": "805daa4559110e027afe9c4d0f06d5896a31f9ebcac926d5b20b17c0bfefa2d2"
+      }
+    },
+    "scripts/input_checks/constraints/model.py": {
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/model.py",
+      "source_sha256": "248c3ae505cf587287b899753a650331d9658c1ed2aa9f3bc6bbd2aafc6af8b7",
+      "export_sha256": "248c3ae505cf587287b899753a650331d9658c1ed2aa9f3bc6bbd2aafc6af8b7",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "lookup": "034f043e4cf0bcd90aa40ce1e3a424cf25e28154e6334262b4643f6ea3fa6da2",
+        "uint": "922387651905dc73b3a2a77a0a520d1f006bc4d2222b110f903018abc7e73ac7",
+        "raw_entry": "62c25f045d2f8b370c32db7f3843a5c4f9fbaef316cd29ad9397ef921825c920",
+        "action_semantics": "6f95f5946cfe1bb821b0d59466c72cbf0c4f3f34918e6a4738b8cc40eb85adc0",
+        "semantics": "97d95a7604caa32793ab49ebd1192bc11ed5e6615b7516008891e98f169447cd",
+        "key": "492233f5a68836c58b2bb0660522d76212c74081e0c3cc01eac0f221a80887c5",
+        "default_entry": "1782494e199446f23a066c3084cce59c736e9bd0863bb95cd979f773d77f3bce",
+        "initial_entries": "c95645f4e913b5d0b5accf61642696d9a0c58ae5b61dc2083a29d30fcba70f8f",
+        "intent": "db6a87cbc7b9ee14f1e73e31df51a253328eb373e2aeda8f5733b4552bb11d6c"
+      }
+    },
+    "scripts/input_checks/constraints/oracle.py": {
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/oracle.py",
+      "source_sha256": "3f86246e2929ce81a7cb21fa82800e0ada8cfe0797759e246329cc4936041315",
+      "export_sha256": "4153c291a593144dd0209901b4c263d6ae782675ce04d5ad8a5b151f24fec9b8",
+      "unchanged": false,
+      "adaptation": "Use package-relative imports and omit an unused workspace constant.",
+      "unchanged_functions_sha256": {
+        "validate": "d0801f0a24a73d0794f6dacdcfeedc36eea5e7c483c2a607fe94bf8da71185b5",
+        "_validate_fields": "86d252e7dae28a250812c455ef7b9ce718731b107acf3aec31cb633a7921ecfe"
+      }
+    },
+    "scripts/input_checks/constraints/analyze.py": {
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/analyze.py",
+      "source_sha256": "6faadb5de53f6489031efe43031498cd020cd41905666284922b57b60814686a",
+      "export_sha256": "12558ed6d10b032ef8735354e5da70bb13233f66e6e763547709f908eec40165",
+      "unchanged": false,
+      "adaptation": "Use package-relative imports and omit an unused workspace constant.",
+      "unchanged_functions_sha256": {
+        "digest": "ae4284b378ed636d3078cff03076801f86e31e4069e83ae0b36783c3d0351c3f",
+        "rows": "bde896985be26aac9407021359c1b88bc805af27ccf2cc94cd92c7f45fc0c9d6",
+        "snapshot": "1422cd12bf339c7b66e6015f4f89f13adb10dfc24c528d47764ca956d80ada00",
+        "analyze": "adf64b796e055aa1a8df7a263f1c43f554c1dd94598718e6c1054b30e9fbe19b"
+      }
+    },
+    "scripts/input_checks/constraints/secondary.py": {
+      "source_file": "experiments/table-constraints/verify.py",
+      "source_sha256": "9c009916ac45afb23e86da866b45626ec1bd66d0f8bbb1d747b37e189a66a824",
+      "export_sha256": "bf9d026cee16a620768a86060fd8b8c2275686f3b8ff3951d870735682e59cc2",
+      "unchanged": false,
+      "adaptation": "Keep the independent decoding functions and adapt verification to one supplied run directory.",
+      "unchanged_functions_sha256": {
+        "digest": "07d1140cbbdeb7d00cdcdb15f4a402d4f5380ffb57905639b05f60815b18cfa3",
+        "number": "3c299dd3f2446d9e1a747f334e56c50b7afa2ab00cc5b1ac746a265a2f4324ec",
+        "action": "da45452ef9fd551c6a266c72dac70432b1673fef8ba547b1e7cb793eb768c07e",
+        "entry": "485f701bf61953c41166f5ed7772d9c9f96738fac543b6bf53b83bad995c4b83",
+        "snapshot": "08c4a0f3a49164e6661e2be9d61dce6896b4e5524d9a06e8bc82eff02ee1a7d6",
+        "expected": "d6c1c1ae705d528032182d98a3f2e81a32f71657b3af2a807e937b4b384c7d84"
+      }
+    },
+    "scripts/input_checks/baseline_semantics.py": {
+      "source_file": "experiments/minimal/run.py",
+      "source_sha256": "02999e3fce5af75a4b44c57f2a56c0eb9ca6e291474ac6dad7d32801e060fb5b",
+      "export_sha256": "0053ce02e74d6c0a479c6dd541761b8f58c2b86fee26274b2573863e3d1c2bb7",
+      "unchanged": false,
+      "adaptation": "Export only the two pure numerical comparison functions.",
+      "unchanged_functions_sha256": {
+        "integer": "2451ba8f3403668c4f5bb09951151054f6e900c1d950ec10cdb2baab48c92c4f",
+        "semantic_match": "cd2f9976f82c580432edb035acb08076c88a9ddfdca8614e79a842de0179964b"
+      }
+    },
+    "scripts/input_checks/baseline_oracle.py": {
+      "source_file": "experiments/minimal/server.py",
+      "source_sha256": "76fb42b0f623287d5c450367bbf3bcf1a56d67307dfac18d6c51cc9822003627",
+      "export_sha256": "dff01ccc0df855ef704ac337e77013cb11f5a58c5c14af1f63213d7940e5f55a",
+      "unchanged": false,
+      "adaptation": "Export only the numerical and table-entry validation functions.",
+      "unchanged_functions_sha256": {
+        "number": "6e01bfe3840e90951dd68da05d4758b70c38d8887d9b513b87c0830460d76954",
+        "validate_entry": "304ed15a6a09cf646686991046325ad8ce99fcbbe9168af1c1e291f5889a8e1f"
+      }
+    },
+    "tests/inputs/test_boundaries_oracle.py": {
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/tests/test_oracle.py",
+      "source_sha256": "0377cfd373c3e8d5ed30469d6b02e82853ff2f02bbaba3a8ef4aec41f8091bbf",
+      "export_sha256": "7201defeabf335712e1cae92248bd1f3514d391fee7123e8304d576b9b9f4726",
+      "unchanged": false,
+      "adaptation": "Use repository-relative fixture paths and package imports. Test methods are unchanged.",
+      "unchanged_functions_sha256": {
+        "case": "2be4bf24dfeb607c95a3412864e38d06fb18dd46931b63b2c3c96d03c98f7398",
+        "test_complete_corpus_against_numeric_intent": "555d1698dbc59610a5a3a35996eeb2cc2ce47968196eee71e6e64f2f9e043122",
+        "test_truncated_129_bit_value_is_detected": "f81a713c2ce38aee279fcbab8987dbf44f3e280580c00a8e3973042dee73b9b3",
+        "test_sign_extension_for_nine_bit_minimum": "8a8265ce0f96cf10bfcdf7a7c97f4bf9a3f187881a44eced14a2326354860896",
+        "test_positive_unsigned_bytes_are_not_signed": "6305d9b7d1a70dc6dfe486219af77719f5aabfd8be9efba02b22a17b5915ef2e",
+        "test_translation_is_not_array_position": "e1fa6ca41f7af9e8f3e74ccc6bb0b2e1b6f7a0d7ff2efdf28f17132fe1f109f3",
+        "test_read_all_omits_index": "05fb0f8838a1565f82175d14c83eb71d5aae064d915928784feca77caa5a6003",
+        "test_false_tuple_member_is_not_missing": "486615c66a00314530e264fcd2416ab959cb47c87bbd4abefa9353e22643bee4",
+        "test_compound_oneof_is_checked": "2ea138ca1eeb91fbeec6152c43e5d18d24253024824293b77210ce6dd957c0ac",
+        "test_dynamic_varbit_width_is_checked": "061a57b2e5759f124980e8d7ad1e9a296aafa67623104943a7d22fe5de8b421c",
+        "test_empty_translated_string_is_not_integer_zero": "9d98ded9c06d4127f87dfe21a6e2b9ae9d8255fd39d7eed2b916bc4cee85ba75"
+      }
+    },
+    "tests/inputs/test_constraints_oracle.py": {
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/tests/test_oracle.py",
+      "source_sha256": "84ba1344ac18489b622ba1010717f9799eeeac55d17342c620046d6081e5356d",
+      "export_sha256": "61d4f9b1f63fc7a679e9fca5b7854f01b181428da92221de3e8c35363b0df0a4",
+      "unchanged": false,
+      "adaptation": "Use repository-relative fixture paths and package imports. Test methods are unchanged.",
+      "unchanged_functions_sha256": {
+        "test_all_frozen_intents": "64f902ac685a9ce7d5ad98dc169a549a70fa343f8ee72751e2c693b1ac44566e",
+        "test_sparse_ids_are_not_positions": "ffb3c09e884db350ee2bfbd8b14e213c6a86537de292cc6f1ac6c47b9a3acb89",
+        "test_delete_ignores_nonsensical_nonkeys": "92aea0143875a9b3db92e8c079bf8cd8ebf1b0b13ab31a66c00183213db287fe",
+        "test_constant_table_mutable_default": "abcd13cd06441f34ccbe7fa16f9c54d91f3185902cb4dcbcdc9a4797ef688272",
+        "test_constant_default_cannot_be_reset": "c366b15845ea320fffdea49349e427f78c0a1809c7fff93b653ac279ad1409da",
+        "test_scope_is_different_from_membership": "ef95cb9d3cb13755658ed0b8e244dd6684f8785a71ec91260dbbda68ca8d4216",
+        "test_group_requires_selector": "2ba806008dcec679fb93e55d85bfbe02bf96011539512bd3a9ee48a14f07430d",
+        "test_unknown_member_is_target_state": "c33fb5f7097283696fe65950db8881f6711ccc080fae36bcb69140b5a201ee65",
+        "test_default_normalization_changes_only_key_fields": "6ad16fc2b503af278402e7998b097020b0b4c1628ea857658e35541c3ffe6692",
+        "test_full_state_contains_nine_defaults_and_entries": "d6bfd56d8c9f4fe7a6e6635c83c8cf2c2a04e83c0370c406a727d4fa3366ace9",
+        "test_priorities_distinguish_entry_keys": "6d498f4af90cbcd2599ae01a147902dac5bb26f4485d911ec084c4a7be7584a0",
+        "test_negative_ternary_priority_is_missing_key_not_schema_error": "ecdcf354114df6e2eeec4dae5e1cba6426140fbd4cc0c6ccbda699eca334e5b8",
+        "test_explicit_zero_ttl_and_reset_action": "6731adba5f7f5b71179166f165d8d3d9289c85ffcea8abc9e220c0ead16d7bf3"
+      }
+    },
+    "scripts/input_checks/baseline.py": {
+      "source_file": "results/bmv2-pilot/live-20261017/analysis-source/analyze_live.py",
+      "source_sha256": "7c1402c2e2a1702a6f87ae8e7ec5e64fffac79eaea07ab6ce9ae0fa418a33e62",
+      "export_sha256": "0d88d96311a8520d4f2fc52b9d09e76d8b350a95ce662500f298fb11cec7f482",
+      "unchanged": false,
+      "adaptation": "Adapt wildcard-readback normalization to an explicit P4Info argument. Add verification of the selected baseline requests, recorded counts and matched repetitions."
+    }
+  }
+}

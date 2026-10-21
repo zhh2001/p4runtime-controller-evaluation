@@ -1,0 +1,355 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 39315171
+    name: "MyIngress.t_w1"
+    alias: "t_w1"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w1"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21502751
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 38896853
+    name: "MyIngress.t_w7"
+    alias: "t_w7"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w7"
+    bitwidth: 7
+    match_type: EXACT
+  }
+  action_refs {
+    id: 24769956
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 48946695
+    name: "MyIngress.t_w8"
+    alias: "t_w8"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w8"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21254457
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 35699312
+    name: "MyIngress.t_w9"
+    alias: "t_w9"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w9"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 29639228
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 39651481
+    name: "MyIngress.t_w16"
+    alias: "t_w16"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w16"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 30150753
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 42169123
+    name: "MyIngress.t_w32"
+    alias: "t_w32"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w32"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  action_refs {
+    id: 30886439
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 39966576
+    name: "MyIngress.t_w48"
+    alias: "t_w48"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w48"
+    bitwidth: 48
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27672575
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 49558742
+    name: "MyIngress.t_w64"
+    alias: "t_w64"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w64"
+    bitwidth: 64
+    match_type: EXACT
+  }
+  action_refs {
+    id: 23477290
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 48109991
+    name: "MyIngress.t_w128"
+    alias: "t_w128"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w128"
+    bitwidth: 128
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20454319
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 43840291
+    name: "MyIngress.t_w129"
+    alias: "t_w129"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w129"
+    bitwidth: 129
+    match_type: EXACT
+  }
+  action_refs {
+    id: 23393289
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 21502751
+    name: "MyIngress.a_w1"
+    alias: "a_w1"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 1
+  }
+}
+actions {
+  preamble {
+    id: 24769956
+    name: "MyIngress.a_w7"
+    alias: "a_w7"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 7
+  }
+}
+actions {
+  preamble {
+    id: 21254457
+    name: "MyIngress.a_w8"
+    alias: "a_w8"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 8
+  }
+}
+actions {
+  preamble {
+    id: 29639228
+    name: "MyIngress.a_w9"
+    alias: "a_w9"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 30150753
+    name: "MyIngress.a_w16"
+    alias: "a_w16"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 16
+  }
+}
+actions {
+  preamble {
+    id: 30886439
+    name: "MyIngress.a_w32"
+    alias: "a_w32"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 32
+  }
+}
+actions {
+  preamble {
+    id: 27672575
+    name: "MyIngress.a_w48"
+    alias: "a_w48"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 48
+  }
+}
+actions {
+  preamble {
+    id: 23477290
+    name: "MyIngress.a_w64"
+    alias: "a_w64"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 64
+  }
+}
+actions {
+  preamble {
+    id: 20454319
+    name: "MyIngress.a_w128"
+    alias: "a_w128"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 128
+  }
+}
+actions {
+  preamble {
+    id: 23393289
+    name: "MyIngress.a_w129"
+    alias: "a_w129"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 129
+  }
+}
+counters {
+  preamble {
+    id: 308887978
+    name: "MyIngress.c_idx"
+    alias: "c_idx"
+  }
+  spec {
+    unit: BOTH
+  }
+  size: 8
+}
+meters {
+  preamble {
+    id: 343581160
+    name: "MyIngress.m_idx"
+    alias: "m_idx"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 8
+}
+type_info {
+}

@@ -1,0 +1,4827 @@
+[
+  {
+    "id": "match-1-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-1-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-1-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u1",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 1,
+    "native_text": ""
+  },
+  {
+    "id": "match-1-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "01",
+    "key": "01",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-1-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "01",
+    "key": "01",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-1-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u1",
+    "index": 0,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 1,
+    "native_text": ""
+  },
+  {
+    "id": "match-1-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "02",
+    "key": "02",
+    "action_value": "01",
+    "expected": {
+      "key": 2,
+      "value": 1
+    },
+    "native": 2
+  },
+  {
+    "id": "param-1-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "02",
+    "key": "01",
+    "action_value": "02",
+    "expected": {
+      "key": 1,
+      "value": 2
+    },
+    "native": 2
+  },
+  {
+    "id": "uint-1-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u1",
+    "index": 0,
+    "data": {
+      "bitstring": "Ag=="
+    },
+    "native": 2,
+    "expected": 2,
+    "width": 1,
+    "native_text": ""
+  },
+  {
+    "id": "match-1-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-1-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 1,
+    "table": "MyIngress.t_w1",
+    "action": "MyIngress.a_w1",
+    "field": "h.key.w1",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-1-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u1",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 1,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-1-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s1",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 1,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-1-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s1",
+    "index": 0,
+    "data": {
+      "bitstring": "/w=="
+    },
+    "native": -1,
+    "expected": -1,
+    "width": 1,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-1-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s1",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 1,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-1-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s1",
+    "index": 0,
+    "data": {
+      "bitstring": "/g=="
+    },
+    "native": -2,
+    "expected": -2,
+    "width": 1,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-1-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s1",
+    "index": 0,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 1,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-1-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s1",
+    "index": 0,
+    "data": {
+      "bitstring": "////"
+    },
+    "native": -1,
+    "expected": -1,
+    "width": 1,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-7-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-7-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-7-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u7",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 7,
+    "native_text": ""
+  },
+  {
+    "id": "match-7-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "7f",
+    "key": "7f",
+    "action_value": "01",
+    "expected": {
+      "key": 127,
+      "value": 1
+    },
+    "native": 127
+  },
+  {
+    "id": "param-7-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "7f",
+    "key": "01",
+    "action_value": "7f",
+    "expected": {
+      "key": 1,
+      "value": 127
+    },
+    "native": 127
+  },
+  {
+    "id": "uint-7-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u7",
+    "index": 0,
+    "data": {
+      "bitstring": "fw=="
+    },
+    "native": 127,
+    "expected": 127,
+    "width": 7,
+    "native_text": ""
+  },
+  {
+    "id": "match-7-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "80",
+    "key": "80",
+    "action_value": "01",
+    "expected": {
+      "key": 128,
+      "value": 1
+    },
+    "native": 128
+  },
+  {
+    "id": "param-7-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "80",
+    "key": "01",
+    "action_value": "80",
+    "expected": {
+      "key": 1,
+      "value": 128
+    },
+    "native": 128
+  },
+  {
+    "id": "uint-7-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u7",
+    "index": 0,
+    "data": {
+      "bitstring": "gA=="
+    },
+    "native": 128,
+    "expected": 128,
+    "width": 7,
+    "native_text": ""
+  },
+  {
+    "id": "match-7-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-7-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 7,
+    "table": "MyIngress.t_w7",
+    "action": "MyIngress.a_w7",
+    "field": "h.key.w7",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-7-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u7",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 7,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-7-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s7",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 7,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-7-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s7",
+    "index": 0,
+    "data": {
+      "bitstring": "wA=="
+    },
+    "native": -64,
+    "expected": -64,
+    "width": 7,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-7-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s7",
+    "index": 0,
+    "data": {
+      "bitstring": "Pw=="
+    },
+    "native": 63,
+    "expected": 63,
+    "width": 7,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-7-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s7",
+    "index": 0,
+    "data": {
+      "bitstring": "vw=="
+    },
+    "native": -65,
+    "expected": -65,
+    "width": 7,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-7-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s7",
+    "index": 0,
+    "data": {
+      "bitstring": "QA=="
+    },
+    "native": 64,
+    "expected": 64,
+    "width": 7,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-7-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s7",
+    "index": 0,
+    "data": {
+      "bitstring": "///A"
+    },
+    "native": -64,
+    "expected": -64,
+    "width": 7,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-8-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-8-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-8-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u8",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 8,
+    "native_text": ""
+  },
+  {
+    "id": "match-8-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "ff",
+    "key": "ff",
+    "action_value": "01",
+    "expected": {
+      "key": 255,
+      "value": 1
+    },
+    "native": 255
+  },
+  {
+    "id": "param-8-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "ff",
+    "key": "01",
+    "action_value": "ff",
+    "expected": {
+      "key": 1,
+      "value": 255
+    },
+    "native": 255
+  },
+  {
+    "id": "uint-8-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u8",
+    "index": 0,
+    "data": {
+      "bitstring": "/w=="
+    },
+    "native": 255,
+    "expected": 255,
+    "width": 8,
+    "native_text": ""
+  },
+  {
+    "id": "match-8-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "0100",
+    "key": "0100",
+    "action_value": "01",
+    "expected": {
+      "key": 256,
+      "value": 1
+    },
+    "native": 256
+  },
+  {
+    "id": "param-8-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "0100",
+    "key": "01",
+    "action_value": "0100",
+    "expected": {
+      "key": 1,
+      "value": 256
+    },
+    "native": 256
+  },
+  {
+    "id": "uint-8-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u8",
+    "index": 0,
+    "data": {
+      "bitstring": "AQA="
+    },
+    "native": 256,
+    "expected": 256,
+    "width": 8,
+    "native_text": ""
+  },
+  {
+    "id": "match-8-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-8-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 8,
+    "table": "MyIngress.t_w8",
+    "action": "MyIngress.a_w8",
+    "field": "h.key.w8",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-8-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u8",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 8,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-8-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s8",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 8,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-8-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s8",
+    "index": 0,
+    "data": {
+      "bitstring": "gA=="
+    },
+    "native": -128,
+    "expected": -128,
+    "width": 8,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-8-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s8",
+    "index": 0,
+    "data": {
+      "bitstring": "fw=="
+    },
+    "native": 127,
+    "expected": 127,
+    "width": 8,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-8-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s8",
+    "index": 0,
+    "data": {
+      "bitstring": "/38="
+    },
+    "native": -129,
+    "expected": -129,
+    "width": 8,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-8-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s8",
+    "index": 0,
+    "data": {
+      "bitstring": "AIA="
+    },
+    "native": 128,
+    "expected": 128,
+    "width": 8,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-8-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s8",
+    "index": 0,
+    "data": {
+      "bitstring": "//+A"
+    },
+    "native": -128,
+    "expected": -128,
+    "width": 8,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-9-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-9-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-9-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u9",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 9,
+    "native_text": ""
+  },
+  {
+    "id": "match-9-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "01ff",
+    "key": "01ff",
+    "action_value": "01",
+    "expected": {
+      "key": 511,
+      "value": 1
+    },
+    "native": 511
+  },
+  {
+    "id": "param-9-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "01ff",
+    "key": "01",
+    "action_value": "01ff",
+    "expected": {
+      "key": 1,
+      "value": 511
+    },
+    "native": 511
+  },
+  {
+    "id": "uint-9-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u9",
+    "index": 0,
+    "data": {
+      "bitstring": "Af8="
+    },
+    "native": 511,
+    "expected": 511,
+    "width": 9,
+    "native_text": ""
+  },
+  {
+    "id": "match-9-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "0200",
+    "key": "0200",
+    "action_value": "01",
+    "expected": {
+      "key": 512,
+      "value": 1
+    },
+    "native": 512
+  },
+  {
+    "id": "param-9-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "0200",
+    "key": "01",
+    "action_value": "0200",
+    "expected": {
+      "key": 1,
+      "value": 512
+    },
+    "native": 512
+  },
+  {
+    "id": "uint-9-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u9",
+    "index": 0,
+    "data": {
+      "bitstring": "AgA="
+    },
+    "native": 512,
+    "expected": 512,
+    "width": 9,
+    "native_text": ""
+  },
+  {
+    "id": "match-9-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-9-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 9,
+    "table": "MyIngress.t_w9",
+    "action": "MyIngress.a_w9",
+    "field": "h.key.w9",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-9-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u9",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 9,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-9-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s9",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 9,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-9-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s9",
+    "index": 0,
+    "data": {
+      "bitstring": "/wA="
+    },
+    "native": -256,
+    "expected": -256,
+    "width": 9,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-9-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s9",
+    "index": 0,
+    "data": {
+      "bitstring": "AP8="
+    },
+    "native": 255,
+    "expected": 255,
+    "width": 9,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-9-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s9",
+    "index": 0,
+    "data": {
+      "bitstring": "/v8="
+    },
+    "native": -257,
+    "expected": -257,
+    "width": 9,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-9-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s9",
+    "index": 0,
+    "data": {
+      "bitstring": "AQA="
+    },
+    "native": 256,
+    "expected": 256,
+    "width": 9,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-9-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s9",
+    "index": 0,
+    "data": {
+      "bitstring": "////AA=="
+    },
+    "native": -256,
+    "expected": -256,
+    "width": 9,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-16-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-16-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-16-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u16",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 16,
+    "native_text": ""
+  },
+  {
+    "id": "match-16-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "ffff",
+    "key": "ffff",
+    "action_value": "01",
+    "expected": {
+      "key": 65535,
+      "value": 1
+    },
+    "native": 65535
+  },
+  {
+    "id": "param-16-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "ffff",
+    "key": "01",
+    "action_value": "ffff",
+    "expected": {
+      "key": 1,
+      "value": 65535
+    },
+    "native": 65535
+  },
+  {
+    "id": "uint-16-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u16",
+    "index": 0,
+    "data": {
+      "bitstring": "//8="
+    },
+    "native": 65535,
+    "expected": 65535,
+    "width": 16,
+    "native_text": ""
+  },
+  {
+    "id": "match-16-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "010000",
+    "key": "010000",
+    "action_value": "01",
+    "expected": {
+      "key": 65536,
+      "value": 1
+    },
+    "native": 65536
+  },
+  {
+    "id": "param-16-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "010000",
+    "key": "01",
+    "action_value": "010000",
+    "expected": {
+      "key": 1,
+      "value": 65536
+    },
+    "native": 65536
+  },
+  {
+    "id": "uint-16-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u16",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAA"
+    },
+    "native": 65536,
+    "expected": 65536,
+    "width": 16,
+    "native_text": ""
+  },
+  {
+    "id": "match-16-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-16-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 16,
+    "table": "MyIngress.t_w16",
+    "action": "MyIngress.a_w16",
+    "field": "h.key.w16",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-16-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u16",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 16,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-16-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s16",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 16,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-16-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s16",
+    "index": 0,
+    "data": {
+      "bitstring": "gAA="
+    },
+    "native": -32768,
+    "expected": -32768,
+    "width": 16,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-16-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s16",
+    "index": 0,
+    "data": {
+      "bitstring": "f/8="
+    },
+    "native": 32767,
+    "expected": 32767,
+    "width": 16,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-16-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s16",
+    "index": 0,
+    "data": {
+      "bitstring": "/3//"
+    },
+    "native": -32769,
+    "expected": -32769,
+    "width": 16,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-16-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s16",
+    "index": 0,
+    "data": {
+      "bitstring": "AIAA"
+    },
+    "native": 32768,
+    "expected": 32768,
+    "width": 16,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-16-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s16",
+    "index": 0,
+    "data": {
+      "bitstring": "//+AAA=="
+    },
+    "native": -32768,
+    "expected": -32768,
+    "width": 16,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-32-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-32-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-32-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u32",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 32,
+    "native_text": ""
+  },
+  {
+    "id": "match-32-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "ffffffff",
+    "key": "ffffffff",
+    "action_value": "01",
+    "expected": {
+      "key": 4294967295,
+      "value": 1
+    },
+    "native": 4294967295
+  },
+  {
+    "id": "param-32-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "ffffffff",
+    "key": "01",
+    "action_value": "ffffffff",
+    "expected": {
+      "key": 1,
+      "value": 4294967295
+    },
+    "native": 4294967295
+  },
+  {
+    "id": "uint-32-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u32",
+    "index": 0,
+    "data": {
+      "bitstring": "/////w=="
+    },
+    "native": 4294967295,
+    "expected": 4294967295,
+    "width": 32,
+    "native_text": ""
+  },
+  {
+    "id": "match-32-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "0100000000",
+    "key": "0100000000",
+    "action_value": "01",
+    "expected": {
+      "key": 4294967296,
+      "value": 1
+    },
+    "native": 4294967296
+  },
+  {
+    "id": "param-32-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "0100000000",
+    "key": "01",
+    "action_value": "0100000000",
+    "expected": {
+      "key": 1,
+      "value": 4294967296
+    },
+    "native": 4294967296
+  },
+  {
+    "id": "uint-32-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u32",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAAAAA="
+    },
+    "native": 4294967296,
+    "expected": 4294967296,
+    "width": 32,
+    "native_text": ""
+  },
+  {
+    "id": "match-32-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-32-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 32,
+    "table": "MyIngress.t_w32",
+    "action": "MyIngress.a_w32",
+    "field": "h.key.w32",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-32-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u32",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 32,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-32-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s32",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 32,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-32-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s32",
+    "index": 0,
+    "data": {
+      "bitstring": "gAAAAA=="
+    },
+    "native": -2147483648,
+    "expected": -2147483648,
+    "width": 32,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-32-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s32",
+    "index": 0,
+    "data": {
+      "bitstring": "f////w=="
+    },
+    "native": 2147483647,
+    "expected": 2147483647,
+    "width": 32,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-32-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s32",
+    "index": 0,
+    "data": {
+      "bitstring": "/3////8="
+    },
+    "native": -2147483649,
+    "expected": -2147483649,
+    "width": 32,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-32-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s32",
+    "index": 0,
+    "data": {
+      "bitstring": "AIAAAAA="
+    },
+    "native": 2147483648,
+    "expected": 2147483648,
+    "width": 32,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-32-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s32",
+    "index": 0,
+    "data": {
+      "bitstring": "//+AAAAA"
+    },
+    "native": -2147483648,
+    "expected": -2147483648,
+    "width": 32,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-48-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-48-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-48-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u48",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 48,
+    "native_text": ""
+  },
+  {
+    "id": "match-48-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "ffffffffffff",
+    "key": "ffffffffffff",
+    "action_value": "01",
+    "expected": {
+      "key": 281474976710655,
+      "value": 1
+    },
+    "native": 281474976710655
+  },
+  {
+    "id": "param-48-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "ffffffffffff",
+    "key": "01",
+    "action_value": "ffffffffffff",
+    "expected": {
+      "key": 1,
+      "value": 281474976710655
+    },
+    "native": 281474976710655
+  },
+  {
+    "id": "uint-48-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u48",
+    "index": 0,
+    "data": {
+      "bitstring": "////////"
+    },
+    "native": 281474976710655,
+    "expected": 281474976710655,
+    "width": 48,
+    "native_text": ""
+  },
+  {
+    "id": "match-48-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "01000000000000",
+    "key": "01000000000000",
+    "action_value": "01",
+    "expected": {
+      "key": 281474976710656,
+      "value": 1
+    },
+    "native": 281474976710656
+  },
+  {
+    "id": "param-48-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "01000000000000",
+    "key": "01",
+    "action_value": "01000000000000",
+    "expected": {
+      "key": 1,
+      "value": 281474976710656
+    },
+    "native": 281474976710656
+  },
+  {
+    "id": "uint-48-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u48",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAAAAAAAA=="
+    },
+    "native": 281474976710656,
+    "expected": 281474976710656,
+    "width": 48,
+    "native_text": ""
+  },
+  {
+    "id": "match-48-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-48-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 48,
+    "table": "MyIngress.t_w48",
+    "action": "MyIngress.a_w48",
+    "field": "h.key.w48",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-48-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u48",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 48,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-48-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s48",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 48,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-48-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s48",
+    "index": 0,
+    "data": {
+      "bitstring": "gAAAAAAA"
+    },
+    "native": -140737488355328,
+    "expected": -140737488355328,
+    "width": 48,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-48-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s48",
+    "index": 0,
+    "data": {
+      "bitstring": "f///////"
+    },
+    "native": 140737488355327,
+    "expected": 140737488355327,
+    "width": 48,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-48-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s48",
+    "index": 0,
+    "data": {
+      "bitstring": "/3///////w=="
+    },
+    "native": -140737488355329,
+    "expected": -140737488355329,
+    "width": 48,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-48-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s48",
+    "index": 0,
+    "data": {
+      "bitstring": "AIAAAAAAAA=="
+    },
+    "native": 140737488355328,
+    "expected": 140737488355328,
+    "width": 48,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-48-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s48",
+    "index": 0,
+    "data": {
+      "bitstring": "//+AAAAAAAA="
+    },
+    "native": -140737488355328,
+    "expected": -140737488355328,
+    "width": 48,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-64-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-64-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-64-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u64",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 64,
+    "native_text": ""
+  },
+  {
+    "id": "match-64-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "ffffffffffffffff",
+    "key": "ffffffffffffffff",
+    "action_value": "01",
+    "expected": {
+      "key": 18446744073709551615,
+      "value": 1
+    },
+    "native": 18446744073709551615
+  },
+  {
+    "id": "param-64-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "ffffffffffffffff",
+    "key": "01",
+    "action_value": "ffffffffffffffff",
+    "expected": {
+      "key": 1,
+      "value": 18446744073709551615
+    },
+    "native": 18446744073709551615
+  },
+  {
+    "id": "uint-64-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u64",
+    "index": 0,
+    "data": {
+      "bitstring": "//////////8="
+    },
+    "native": 18446744073709551615,
+    "expected": 18446744073709551615,
+    "width": 64,
+    "native_text": ""
+  },
+  {
+    "id": "match-64-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "010000000000000000",
+    "key": "010000000000000000",
+    "action_value": "01",
+    "expected": {
+      "key": 18446744073709551616,
+      "value": 1
+    },
+    "native": 18446744073709551616
+  },
+  {
+    "id": "param-64-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "010000000000000000",
+    "key": "01",
+    "action_value": "010000000000000000",
+    "expected": {
+      "key": 1,
+      "value": 18446744073709551616
+    },
+    "native": 18446744073709551616
+  },
+  {
+    "id": "uint-64-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u64",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAAAAAAAAAA"
+    },
+    "native": 18446744073709551616,
+    "expected": 18446744073709551616,
+    "width": 64,
+    "native_text": ""
+  },
+  {
+    "id": "match-64-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-64-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 64,
+    "table": "MyIngress.t_w64",
+    "action": "MyIngress.a_w64",
+    "field": "h.key.w64",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-64-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u64",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 64,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-64-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s64",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 64,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-64-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s64",
+    "index": 0,
+    "data": {
+      "bitstring": "gAAAAAAAAAA="
+    },
+    "native": -9223372036854775808,
+    "expected": -9223372036854775808,
+    "width": 64,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-64-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s64",
+    "index": 0,
+    "data": {
+      "bitstring": "f/////////8="
+    },
+    "native": 9223372036854775807,
+    "expected": 9223372036854775807,
+    "width": 64,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-64-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s64",
+    "index": 0,
+    "data": {
+      "bitstring": "/3//////////"
+    },
+    "native": -9223372036854775809,
+    "expected": -9223372036854775809,
+    "width": 64,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-64-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s64",
+    "index": 0,
+    "data": {
+      "bitstring": "AIAAAAAAAAAA"
+    },
+    "native": 9223372036854775808,
+    "expected": 9223372036854775808,
+    "width": 64,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-64-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s64",
+    "index": 0,
+    "data": {
+      "bitstring": "//+AAAAAAAAAAA=="
+    },
+    "native": -9223372036854775808,
+    "expected": -9223372036854775808,
+    "width": 64,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-128-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-128-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-128-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u128",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 128,
+    "native_text": ""
+  },
+  {
+    "id": "match-128-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "ffffffffffffffffffffffffffffffff",
+    "key": "ffffffffffffffffffffffffffffffff",
+    "action_value": "01",
+    "expected": {
+      "key": 340282366920938463463374607431768211455,
+      "value": 1
+    },
+    "native": 340282366920938463463374607431768211455
+  },
+  {
+    "id": "param-128-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "ffffffffffffffffffffffffffffffff",
+    "key": "01",
+    "action_value": "ffffffffffffffffffffffffffffffff",
+    "expected": {
+      "key": 1,
+      "value": 340282366920938463463374607431768211455
+    },
+    "native": 340282366920938463463374607431768211455
+  },
+  {
+    "id": "uint-128-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u128",
+    "index": 0,
+    "data": {
+      "bitstring": "/////////////////////w=="
+    },
+    "native": 340282366920938463463374607431768211455,
+    "expected": 340282366920938463463374607431768211455,
+    "width": 128,
+    "native_text": ""
+  },
+  {
+    "id": "match-128-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "0100000000000000000000000000000000",
+    "key": "0100000000000000000000000000000000",
+    "action_value": "01",
+    "expected": {
+      "key": 340282366920938463463374607431768211456,
+      "value": 1
+    },
+    "native": 340282366920938463463374607431768211456
+  },
+  {
+    "id": "param-128-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "0100000000000000000000000000000000",
+    "key": "01",
+    "action_value": "0100000000000000000000000000000000",
+    "expected": {
+      "key": 1,
+      "value": 340282366920938463463374607431768211456
+    },
+    "native": 340282366920938463463374607431768211456
+  },
+  {
+    "id": "uint-128-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u128",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAAAAAAAAAAAAAAAAAAAAA="
+    },
+    "native": 340282366920938463463374607431768211456,
+    "expected": 340282366920938463463374607431768211456,
+    "width": 128,
+    "native_text": ""
+  },
+  {
+    "id": "match-128-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-128-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 128,
+    "table": "MyIngress.t_w128",
+    "action": "MyIngress.a_w128",
+    "field": "h.key.w128",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-128-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u128",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 128,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-128-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s128",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 128,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-128-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s128",
+    "index": 0,
+    "data": {
+      "bitstring": "gAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "native": -170141183460469231731687303715884105728,
+    "expected": -170141183460469231731687303715884105728,
+    "width": 128,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-128-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s128",
+    "index": 0,
+    "data": {
+      "bitstring": "f////////////////////w=="
+    },
+    "native": 170141183460469231731687303715884105727,
+    "expected": 170141183460469231731687303715884105727,
+    "width": 128,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-128-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s128",
+    "index": 0,
+    "data": {
+      "bitstring": "/3////////////////////8="
+    },
+    "native": -170141183460469231731687303715884105729,
+    "expected": -170141183460469231731687303715884105729,
+    "width": 128,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-128-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s128",
+    "index": 0,
+    "data": {
+      "bitstring": "AIAAAAAAAAAAAAAAAAAAAAA="
+    },
+    "native": 170141183460469231731687303715884105728,
+    "expected": 170141183460469231731687303715884105728,
+    "width": 128,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-128-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s128",
+    "index": 0,
+    "data": {
+      "bitstring": "//+AAAAAAAAAAAAAAAAAAAAA"
+    },
+    "native": -170141183460469231731687303715884105728,
+    "expected": -170141183460469231731687303715884105728,
+    "width": 128,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "match-129-zero",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "00",
+    "key": "00",
+    "action_value": "01",
+    "expected": {
+      "key": 0,
+      "value": 1
+    },
+    "native": 0
+  },
+  {
+    "id": "param-129-zero",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "00",
+    "key": "01",
+    "action_value": "00",
+    "expected": {
+      "key": 1,
+      "value": 0
+    },
+    "native": 0
+  },
+  {
+    "id": "uint-129-zero",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u129",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 129,
+    "native_text": ""
+  },
+  {
+    "id": "match-129-max",
+    "family": "wide_match",
+    "category": "valid",
+    "op": "write",
+    "kind": "match",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "01ffffffffffffffffffffffffffffffff",
+    "key": "01ffffffffffffffffffffffffffffffff",
+    "action_value": "01",
+    "expected": {
+      "key": 680564733841876926926749214863536422911,
+      "value": 1
+    },
+    "native": 680564733841876926926749214863536422911
+  },
+  {
+    "id": "param-129-max",
+    "family": "wide_param",
+    "category": "valid",
+    "op": "write",
+    "kind": "param",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "01ffffffffffffffffffffffffffffffff",
+    "key": "01",
+    "action_value": "01ffffffffffffffffffffffffffffffff",
+    "expected": {
+      "key": 1,
+      "value": 680564733841876926926749214863536422911
+    },
+    "native": 680564733841876926926749214863536422911
+  },
+  {
+    "id": "uint-129-max",
+    "family": "register_unsigned",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u129",
+    "index": 0,
+    "data": {
+      "bitstring": "Af////////////////////8="
+    },
+    "native": 680564733841876926926749214863536422911,
+    "expected": 680564733841876926926749214863536422911,
+    "width": 129,
+    "native_text": ""
+  },
+  {
+    "id": "match-129-overflow",
+    "family": "wide_match",
+    "category": "invalid",
+    "op": "write",
+    "kind": "match",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "0200000000000000000000000000000000",
+    "key": "0200000000000000000000000000000000",
+    "action_value": "01",
+    "expected": {
+      "key": 680564733841876926926749214863536422912,
+      "value": 1
+    },
+    "native": 680564733841876926926749214863536422912
+  },
+  {
+    "id": "param-129-overflow",
+    "family": "wide_param",
+    "category": "invalid",
+    "op": "write",
+    "kind": "param",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "0200000000000000000000000000000000",
+    "key": "01",
+    "action_value": "0200000000000000000000000000000000",
+    "expected": {
+      "key": 1,
+      "value": 680564733841876926926749214863536422912
+    },
+    "native": 680564733841876926926749214863536422912
+  },
+  {
+    "id": "uint-129-overflow",
+    "family": "register_unsigned",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u129",
+    "index": 0,
+    "data": {
+      "bitstring": "AgAAAAAAAAAAAAAAAAAAAAA="
+    },
+    "native": 680564733841876926926749214863536422912,
+    "expected": 680564733841876926926749214863536422912,
+    "width": 129,
+    "native_text": ""
+  },
+  {
+    "id": "match-129-padded",
+    "family": "wide_match",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "match",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "000001",
+    "key": "000001",
+    "action_value": "01",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "param-129-padded",
+    "family": "wide_param",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "param",
+    "width": 129,
+    "table": "MyIngress.t_w129",
+    "action": "MyIngress.a_w129",
+    "field": "h.key.w129",
+    "value": "000001",
+    "key": "01",
+    "action_value": "000001",
+    "expected": {
+      "key": 1,
+      "value": 1
+    },
+    "native": 1
+  },
+  {
+    "id": "uint-129-padded",
+    "family": "register_unsigned",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_u129",
+    "index": 0,
+    "data": {
+      "bitstring": "AAAB"
+    },
+    "native": 1,
+    "expected": 1,
+    "width": 129,
+    "native_text": "0x000001"
+  },
+  {
+    "id": "signed-129-zero",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s129",
+    "index": 0,
+    "data": {
+      "bitstring": "AA=="
+    },
+    "native": 0,
+    "expected": 0,
+    "width": 129,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-129-min",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s129",
+    "index": 0,
+    "data": {
+      "bitstring": "/wAAAAAAAAAAAAAAAAAAAAA="
+    },
+    "native": -340282366920938463463374607431768211456,
+    "expected": -340282366920938463463374607431768211456,
+    "width": 129,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-129-max",
+    "family": "register_signed",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s129",
+    "index": 0,
+    "data": {
+      "bitstring": "AP////////////////////8="
+    },
+    "native": 340282366920938463463374607431768211455,
+    "expected": 340282366920938463463374607431768211455,
+    "width": 129,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-129-underflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s129",
+    "index": 0,
+    "data": {
+      "bitstring": "/v////////////////////8="
+    },
+    "native": -340282366920938463463374607431768211457,
+    "expected": -340282366920938463463374607431768211457,
+    "width": 129,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-129-overflow",
+    "family": "register_signed",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s129",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAAAAAAAAAAAAAAAAAAAAA="
+    },
+    "native": 340282366920938463463374607431768211456,
+    "expected": 340282366920938463463374607431768211456,
+    "width": 129,
+    "native_unexpressible": []
+  },
+  {
+    "id": "signed-129-sign-extended",
+    "family": "register_signed",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_s129",
+    "index": 0,
+    "data": {
+      "bitstring": "////AAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "native": -340282366920938463463374607431768211456,
+    "expected": -340282366920938463463374607431768211456,
+    "width": 129,
+    "native_unexpressible": [
+      "finsy"
+    ]
+  },
+  {
+    "id": "index-counter-array-read--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": -2,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-read--1",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "read",
+    "index": -1,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-read-0",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "read",
+    "index": 0,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-read-7",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "read",
+    "index": 7,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-read-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": 8,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-read-9223372036854775807",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": 9223372036854775807,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-write--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": -2,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-write--1",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": -1,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-write-0",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "write",
+    "index": 0,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-write-7",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "write",
+    "index": 7,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-write-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": 8,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-array-write-9223372036854775807",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": 9223372036854775807,
+    "resource": "MyIngress.c_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": -2,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read--1",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "read",
+    "index": -1,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read-0",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": 0,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read-7",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": 7,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": 8,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read-10000",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "read",
+    "index": 10000,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read-10001",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "read",
+    "index": 10001,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-read-10002",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "read",
+    "index": 10002,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": -2,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write--1",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": -1,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write-0",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": 0,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write-7",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": 7,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": 8,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write-10000",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "write",
+    "index": 10000,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write-10001",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "counter",
+    "op": "write",
+    "index": 10001,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-counter-translated-write-10002",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "counter",
+    "op": "write",
+    "index": 10002,
+    "resource": "MyIngress.c_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-read--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": -2,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-read--1",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "read",
+    "index": -1,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-read-0",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "read",
+    "index": 0,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-read-7",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "read",
+    "index": 7,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-read-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": 8,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-read-9223372036854775807",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": 9223372036854775807,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-write--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": -2,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-write--1",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": -1,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-write-0",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "write",
+    "index": 0,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-write-7",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "write",
+    "index": 7,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-write-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": 8,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-array-write-9223372036854775807",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": 9223372036854775807,
+    "resource": "MyIngress.m_idx",
+    "translated": false,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": -2,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read--1",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "read",
+    "index": -1,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read-0",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": 0,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read-7",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": 7,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": 8,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read-10000",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "read",
+    "index": 10000,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read-10001",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "read",
+    "index": 10001,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-read-10002",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "read",
+    "index": 10002,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": -2,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write--1",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": -1,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write-0",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": 0,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write-7",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": 7,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": 8,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write-10000",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "write",
+    "index": 10000,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write-10001",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "meter",
+    "op": "write",
+    "index": 10001,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-meter-translated-write-10002",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "meter",
+    "op": "write",
+    "index": 10002,
+    "resource": "MyIngress.m_translated",
+    "translated": true,
+    "data": null,
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-read--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": -2,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-read--1",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "read",
+    "index": -1,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-read-0",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "read",
+    "index": 0,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-read-7",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "read",
+    "index": 7,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-read-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": 8,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-read-9223372036854775807",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": 9223372036854775807,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-write--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": -2,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-write--1",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": -1,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-write-0",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "write",
+    "index": 0,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-write-7",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "write",
+    "index": 7,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-write-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": 8,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-array-write-9223372036854775807",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": 9223372036854775807,
+    "resource": "MyIngress.r_u9",
+    "translated": false,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": -2,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read--1",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "read",
+    "index": -1,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read-0",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": 0,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read-7",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": 7,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": 8,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read-10000",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "read",
+    "index": 10000,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read-10001",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "read",
+    "index": 10001,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-read-10002",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "read",
+    "index": 10002,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write--2",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": -2,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write--1",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": -1,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write-0",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": 0,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write-7",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": 7,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write-8",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": 8,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write-10000",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "write",
+    "index": 10000,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write-10001",
+    "family": "resource_index",
+    "category": "valid",
+    "kind": "register",
+    "op": "write",
+    "index": 10001,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "index-register-translated-write-10002",
+    "family": "resource_index",
+    "category": "invalid",
+    "kind": "register",
+    "op": "write",
+    "index": 10002,
+    "resource": "MyIngress.r_idx",
+    "translated": true,
+    "data": {
+      "bitstring": "AQ=="
+    },
+    "native": 1,
+    "expected": 1
+  },
+  {
+    "id": "typed-tuple-valid",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_tuple",
+    "index": 0,
+    "data": {
+      "tuple": {
+        "members": [
+          {
+            "bitstring": "BQ=="
+          },
+          {
+            "bool": true
+          }
+        ]
+      }
+    },
+    "native": [
+      5,
+      true
+    ],
+    "expected": [
+      5,
+      true
+    ]
+  },
+  {
+    "id": "typed-tuple-missing",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_tuple",
+    "index": 0,
+    "data": {
+      "tuple": {
+        "members": [
+          {
+            "bitstring": "BQ=="
+          }
+        ]
+      }
+    },
+    "native": [
+      5
+    ],
+    "expected": [
+      5
+    ]
+  },
+  {
+    "id": "typed-tuple-extra",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_tuple",
+    "index": 0,
+    "data": {
+      "tuple": {
+        "members": [
+          {
+            "bitstring": "BQ=="
+          },
+          {
+            "bool": true
+          },
+          {
+            "bool": false
+          }
+        ]
+      }
+    },
+    "native": [
+      5,
+      true,
+      false
+    ],
+    "expected": [
+      5,
+      true,
+      false
+    ]
+  },
+  {
+    "id": "typed-tuple-overflow",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_tuple",
+    "index": 0,
+    "data": {
+      "tuple": {
+        "members": [
+          {
+            "bitstring": "AgA="
+          },
+          {
+            "bool": true
+          }
+        ]
+      }
+    },
+    "native": [
+      512,
+      true
+    ],
+    "expected": [
+      512,
+      true
+    ]
+  },
+  {
+    "id": "typed-struct-valid",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_struct",
+    "index": 0,
+    "data": {
+      "struct": {
+        "members": [
+          {
+            "bitstring": "BQ=="
+          },
+          {
+            "bool": true
+          }
+        ]
+      }
+    },
+    "native": {
+      "count": 5,
+      "flag": true
+    },
+    "expected": [
+      5,
+      true
+    ]
+  },
+  {
+    "id": "typed-struct-missing",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_struct",
+    "index": 0,
+    "data": {
+      "struct": {
+        "members": [
+          {
+            "bitstring": "BQ=="
+          }
+        ]
+      }
+    },
+    "native": {
+      "count": 5
+    },
+    "expected": [
+      5
+    ]
+  },
+  {
+    "id": "typed-struct-extra",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_struct",
+    "index": 0,
+    "data": {
+      "struct": {
+        "members": [
+          {
+            "bitstring": "BQ=="
+          },
+          {
+            "bool": true
+          },
+          {
+            "bool": false
+          }
+        ]
+      }
+    },
+    "native": {
+      "count": 5,
+      "flag": true,
+      "extra": false
+    },
+    "expected": [
+      5,
+      true,
+      false
+    ]
+  },
+  {
+    "id": "typed-struct-overflow",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_struct",
+    "index": 0,
+    "data": {
+      "struct": {
+        "members": [
+          {
+            "bitstring": "AgA="
+          },
+          {
+            "bool": true
+          }
+        ]
+      }
+    },
+    "native": {
+      "count": 512,
+      "flag": true
+    },
+    "expected": [
+      512,
+      true
+    ]
+  },
+  {
+    "id": "typed-alias-valid",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_alias",
+    "index": 0,
+    "data": {
+      "bitstring": "BQ=="
+    },
+    "native": 5,
+    "expected": 5
+  },
+  {
+    "id": "typed-alias-padded",
+    "family": "register_compound",
+    "category": "normalizable",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_alias",
+    "index": 0,
+    "data": {
+      "bitstring": "AAU="
+    },
+    "native": 5,
+    "expected": 5
+  },
+  {
+    "id": "typed-alias-overflow",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_alias",
+    "index": 0,
+    "data": {
+      "bitstring": "AgA="
+    },
+    "native": 512,
+    "expected": 512
+  },
+  {
+    "id": "typed-translated-max",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_translated",
+    "index": 0,
+    "data": {
+      "bitstring": "//8="
+    },
+    "native": 65535,
+    "expected": 65535
+  },
+  {
+    "id": "typed-translated-overflow",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_translated",
+    "index": 0,
+    "data": {
+      "bitstring": "AQAA"
+    },
+    "native": 65536,
+    "expected": 65536
+  },
+  {
+    "id": "typed-text-utf8",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_text",
+    "index": 0,
+    "data": {
+      "bitstring": "cG9ydC3OsQ=="
+    },
+    "native": "port-α",
+    "expected": {
+      "text_bytes": "706f72742dceb1"
+    }
+  },
+  {
+    "id": "typed-text-empty",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_text",
+    "index": 0,
+    "data": {
+      "bitstring": ""
+    },
+    "native": "",
+    "expected": {
+      "text_bytes": ""
+    }
+  },
+  {
+    "id": "typed-varbit-nine",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_varbit",
+    "index": 0,
+    "data": {
+      "varbit": {
+        "bitstring": "AQE=",
+        "bitwidth": 9
+      }
+    },
+    "native": [
+      257,
+      9
+    ],
+    "expected": {
+      "value": 257,
+      "bitwidth": 9
+    }
+  },
+  {
+    "id": "typed-varbit-sixteen",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_varbit",
+    "index": 0,
+    "data": {
+      "varbit": {
+        "bitstring": "gAE=",
+        "bitwidth": 16
+      }
+    },
+    "native": [
+      32769,
+      16
+    ],
+    "expected": {
+      "value": 32769,
+      "bitwidth": 16
+    }
+  },
+  {
+    "id": "typed-varbit-overflow",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_varbit",
+    "index": 0,
+    "data": {
+      "varbit": {
+        "bitstring": "AgE=",
+        "bitwidth": 9
+      }
+    },
+    "native": [
+      513,
+      9
+    ],
+    "expected": {
+      "value": 513,
+      "bitwidth": 9
+    }
+  },
+  {
+    "id": "typed-varbit-over-max",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_varbit",
+    "index": 0,
+    "data": {
+      "varbit": {
+        "bitstring": "AAAAAAE=",
+        "bitwidth": 33
+      }
+    },
+    "native": [
+      1,
+      33
+    ],
+    "expected": {
+      "value": 1,
+      "bitwidth": 33
+    }
+  },
+  {
+    "id": "typed-varbit-negative-width",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_varbit",
+    "index": 0,
+    "data": {
+      "varbit": {
+        "bitstring": "AQ==",
+        "bitwidth": -1
+      }
+    },
+    "native": [
+      1,
+      -1
+    ],
+    "expected": {
+      "value": 1,
+      "bitwidth": -1
+    }
+  },
+  {
+    "id": "typed-nested-valid",
+    "family": "register_compound",
+    "category": "valid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_nested",
+    "index": 0,
+    "data": {
+      "tuple": {
+        "members": [
+          {
+            "bitstring": "gAAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "struct": {
+              "members": [
+                {
+                  "bitstring": "Bw=="
+                },
+                {
+                  "bool": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "native": [
+      170141183460469231731687303715884105728,
+      {
+        "count": 7,
+        "flag": true
+      }
+    ],
+    "expected": [
+      170141183460469231731687303715884105728,
+      [
+        7,
+        true
+      ]
+    ]
+  },
+  {
+    "id": "typed-nested-overflow",
+    "family": "register_compound",
+    "category": "invalid",
+    "op": "write",
+    "kind": "register",
+    "resource": "MyIngress.r_nested",
+    "index": 0,
+    "data": {
+      "tuple": {
+        "members": [
+          {
+            "bitstring": "gAAAAAAAAAAAAAAAAAAAAA=="
+          },
+          {
+            "struct": {
+              "members": [
+                {
+                  "bitstring": "AgA="
+                },
+                {
+                  "bool": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "native": [
+      170141183460469231731687303715884105728,
+      {
+        "count": 512,
+        "flag": true
+      }
+    ],
+    "expected": [
+      170141183460469231731687303715884105728,
+      [
+        512,
+        true
+      ]
+    ]
+  }
+]

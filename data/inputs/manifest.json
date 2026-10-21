@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "created_local": "2026-10-21T14:04:12.423916+08:00",
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "repetitions": 2,
+  "observations": 6984,
+  "runs": [
+    {
+      "id": "baseline/controlled",
+      "group": "baseline",
+      "mode": "controlled",
+      "observations": 336,
+      "cases": 28,
+      "source_run": "minimal/run-20261017",
+      "source_manifest_sha256": "17e6656aab4a60edf62f42f34e5a025114b78a5fdd802fffb91d68a379aebcda"
+    },
+    {
+      "id": "baseline/bmv2",
+      "group": "baseline",
+      "mode": "bmv2",
+      "observations": 336,
+      "cases": 28,
+      "source_run": "bmv2-pilot/live-20261017",
+      "source_manifest_sha256": "198aeb5056661acf0f4fe0cbe4a8f81227a346b51f244104f884fac02e1a1494"
+    },
+    {
+      "id": "boundaries/controlled",
+      "group": "boundaries",
+      "mode": "controlled",
+      "observations": 3432,
+      "cases": 286,
+      "source_run": "boundaries/controlled-formal-20261019-110612",
+      "source_manifest_sha256": "c95715fb6e10695034b88069905f8ea478502067cbfc2f7eb2a6fb43c17f98d7"
+    },
+    {
+      "id": "boundaries/bmv2",
+      "group": "boundaries",
+      "mode": "bmv2",
+      "observations": 1248,
+      "cases": 104,
+      "source_run": "boundaries/bmv2-formal-20261019-110612",
+      "source_manifest_sha256": "8f5d826684fdd5c44a6c2f610b85c23f05e925700ecd4008260337e7e8f7f922"
+    },
+    {
+      "id": "constraints/controlled",
+      "group": "constraints",
+      "mode": "controlled",
+      "observations": 816,
+      "cases": 68,
+      "source_run": "table-constraints/controlled-formal-20261019-113625",
+      "source_manifest_sha256": "89445be49ed31adcc6a9e2ae3c500cf922190857e1211201794450ff5c905d76"
+    },
+    {
+      "id": "constraints/bmv2",
+      "group": "constraints",
+      "mode": "bmv2",
+      "observations": 816,
+      "cases": 68,
+      "source_run": "table-constraints/bmv2-formal-20261019-113629",
+      "source_manifest_sha256": "cc1bfe7985ee0f828d60b80ae0087c16a09c6ecff370ebf9e5e9dbd65b89e114"
+    }
+  ],
+  "files": {
+    "data/inputs/baseline/controlled/observations.jsonl.gz": {
+      "bytes": 10428,
+      "sha256": "f8ba9476491d90e9a323c53aac602276e0e915c9794547aa7d8235303631e174",
+      "transformation": "gzip, mtime=0 after selecting E1 records",
+      "uncompressed_bytes": 203340,
+      "uncompressed_sha256": "af4f6b8a1405b2154090f13e506b62a00f4663dab6927d764f1e6ceafe50aa3f",
+      "records": 336,
+      "source_file": "results/minimal/run-20261017/observations.jsonl",
+      "source_sha256": "0cbd60085940c310c4adf76d48e874a978487eeb0259e61ce179ef5da32716b9"
+    },
+    "data/inputs/baseline/controlled/rpc.jsonl.gz": {
+      "bytes": 6711,
+      "sha256": "f77bac5bc32bac5dbb80d28b18369c4fc365fafae9f90d83e1dab9475b0b8536",
+      "transformation": "gzip, mtime=0 after selecting E1 records",
+      "uncompressed_bytes": 132188,
+      "uncompressed_sha256": "7b2b1e9d81ca81ae10ceaf16e5ff3a40ae64b87443b9edf63a97e3452f0ed693",
+      "records": 274,
+      "source_file": "results/minimal/run-20261017/server.jsonl",
+      "source_sha256": "2de22a62f661ffb83c2bc359c41a38d44d91407bdd8194fe2b5d46547974779d"
+    },
+    "data/inputs/baseline/controlled/recorded-counts.csv": {
+      "bytes": 324,
+      "sha256": "dff5d4a0d5aa47f660db75d201a203a01a901d358bda6599ffefab426eeb7f8b",
+      "transformation": "original bytes",
+      "source_file": "results/minimal/run-20261017/e1-counts.csv",
+      "source_sha256": "dff5d4a0d5aa47f660db75d201a203a01a901d358bda6599ffefab426eeb7f8b"
+    },
+    "data/inputs/baseline/controlled/run.json": {
+      "bytes": 3166,
+      "sha256": "140c393a7cfe8ab8c25bb4c6e922e55ec49efa18a7bd039fd9b7017e2fd9e594",
+      "transformation": "select run fields, E1 cases and source inventories; omit local process paths",
+      "source_file": "results/minimal/run-20261017/manifest.json",
+      "source_sha256": "17e6656aab4a60edf62f42f34e5a025114b78a5fdd802fffb91d68a379aebcda"
+    },
+    "data/inputs/baseline/bmv2/observations.jsonl.gz": {
+      "bytes": 22799,
+      "sha256": "6edd1311976e2d8b66c5cbcf51fcbdfce4b7fd789dfd2e0959fe08f1c7c43969",
+      "transformation": "gzip, mtime=0 after selecting E1 records",
+      "uncompressed_bytes": 416479,
+      "uncompressed_sha256": "3e811a730f20682af891c3bd0a273b332e1f8104754a27ecefe573ad8e5b10ad",
+      "records": 336,
+      "source_file": "results/bmv2-pilot/live-20261017/observations.jsonl",
+      "source_sha256": "2a8a8b5a6d7d6a4f617968cde660c5fb90da51ec337d1b8ca08b1d6f0a3f5b2c"
+    },
+    "data/inputs/baseline/bmv2/rpc.jsonl.gz": {
+      "bytes": 10364,
+      "sha256": "e66005b208504d483c2c4bf7bb34139e71add9cbb1267a79a2083905d00a995d",
+      "transformation": "gzip, mtime=0 after selecting E1 records",
+      "uncompressed_bytes": 179832,
+      "uncompressed_sha256": "933e1714dc558594ec27f7f5d29fe3f89c6e8f179aca4fc4ca19df6eb23b50fe",
+      "records": 274,
+      "source_file": "results/bmv2-pilot/live-20261017/rpc.jsonl",
+      "source_sha256": "e4176ccc3d897f9929d28be05d94d4a6452c368d68b9b645667d7cdd229f033a"
+    },
+    "data/inputs/baseline/bmv2/readback-evaluation.jsonl.gz": {
+      "bytes": 1971,
+      "sha256": "04efdd471d9c14272c80eb86833a20513f3d3c33ee40b72bc966d69d417efb5b",
+      "transformation": "gzip, mtime=0 after selecting E1 records",
+      "uncompressed_bytes": 71668,
+      "uncompressed_sha256": "5faa7e68426614b63a6afb88d11efa7bded6c8e8a6ab95a8e65ea4f7aa3a8764",
+      "records": 336,
+      "source_file": "results/bmv2-pilot/live-20261017/readback-evaluation.jsonl",
+      "source_sha256": "ed7bdc2c54dae37273942703ae701679f7a614e666e1631d64a2ea204bff91f2"
+    },
+    "data/inputs/baseline/bmv2/recorded-counts.csv": {
+      "bytes": 1247,
+      "sha256": "1188046c2cd05ee0fd9118ecda03a02ee4320ed9f1c5d406aa5a3ec71e49d0cd",
+      "transformation": "select E1 rows, preserve header and row bytes",
+      "source_file": "results/bmv2-pilot/live-20261017/counts.csv",
+      "source_sha256": "9f15c4ea7831671f77bb889374734ad6b661ae594eec4151da0db44a3d173d9d"
+    },
+    "data/inputs/baseline/bmv2/run.json": {
+      "bytes": 2216,
+      "sha256": "a82f413ec980d74c96a3d889bb2574fa8c4e4ca1ff9eef54beeb967ad4432f7e",
+      "transformation": "select run fields, E1 cases and source inventories; omit local process paths",
+      "source_file": "results/bmv2-pilot/live-20261017/manifest.json",
+      "source_sha256": "198aeb5056661acf0f4fe0cbe4a8f81227a346b51f244104f884fac02e1a1494"
+    },
+    "data/inputs/boundaries/controlled/observations.jsonl.gz": {
+      "bytes": 117142,
+      "sha256": "fe31ae1bdefe6744fe680292c3d7c7616083c50d165b30f503ad7fd96c30c003",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 2118000,
+      "uncompressed_sha256": "dac2b8209a6813cfe1da1252ad26172f4aa2a8b8d8d1a2a099d5d680af08d77b",
+      "records": 3432,
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/observations.jsonl",
+      "source_sha256": "dac2b8209a6813cfe1da1252ad26172f4aa2a8b8d8d1a2a099d5d680af08d77b"
+    },
+    "data/inputs/boundaries/controlled/rpc.jsonl.gz": {
+      "bytes": 63425,
+      "sha256": "f437751836e0b556d741a413085c8589f34164919e604d2a15d4387300e2271b",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 1157308,
+      "uncompressed_sha256": "5a01684e637aeba7d17c556d717d081f6643dda6ec891ef37d276107b2e1da0d",
+      "records": 2452,
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/rpc.jsonl",
+      "source_sha256": "5a01684e637aeba7d17c556d717d081f6643dda6ec891ef37d276107b2e1da0d"
+    },
+    "data/inputs/boundaries/controlled/case-results.csv": {
+      "bytes": 263226,
+      "sha256": "b6d1b544f448f6ce523fddd9251981d5a157585f60d970ad2d21263f35e254b9",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/case-results.csv",
+      "source_sha256": "b6d1b544f448f6ce523fddd9251981d5a157585f60d970ad2d21263f35e254b9"
+    },
+    "data/inputs/boundaries/controlled/counts.csv": {
+      "bytes": 5209,
+      "sha256": "b942c83753a5b2445e3e1c13e79971c44608ded91caf1c8151c7c23bd085b7ba",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/counts.csv",
+      "source_sha256": "b942c83753a5b2445e3e1c13e79971c44608ded91caf1c8151c7c23bd085b7ba"
+    },
+    "data/inputs/boundaries/controlled/run.json": {
+      "bytes": 13959,
+      "sha256": "6d8e1a5778ddee8c169ef6d228628beafc770eaa0eb49e56480718c64481464b",
+      "transformation": "select run fields, E1 cases and source inventories; omit local process paths",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/manifest.json",
+      "source_sha256": "c95715fb6e10695034b88069905f8ea478502067cbfc2f7eb2a6fb43c17f98d7"
+    },
+    "data/inputs/boundaries/bmv2/observations.jsonl.gz": {
+      "bytes": 194444,
+      "sha256": "4fac83660cad8a4091208108d305f494e4b55cbb68fdcb9b25067d19b762c2b7",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 18085962,
+      "uncompressed_sha256": "3dd1847ad3d81d57c050fbcb2ae087178d1dcdee36f80031c9827ca8372c9f94",
+      "records": 1248,
+      "source_file": "results/boundaries/bmv2-formal-20261019-110612/observations.jsonl",
+      "source_sha256": "3dd1847ad3d81d57c050fbcb2ae087178d1dcdee36f80031c9827ca8372c9f94"
+    },
+    "data/inputs/boundaries/bmv2/rpc.jsonl.gz": {
+      "bytes": 25533,
+      "sha256": "bf0b38f5e25d63c9aebf26535443587b4d771c68539b35315161187615d3d95f",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 517350,
+      "uncompressed_sha256": "cf9d3388e4ea076ddc8e45a715914e693e353459e8e8d1fded56cc0003e76da1",
+      "records": 1104,
+      "source_file": "results/boundaries/bmv2-formal-20261019-110612/rpc.jsonl",
+      "source_sha256": "cf9d3388e4ea076ddc8e45a715914e693e353459e8e8d1fded56cc0003e76da1"
+    },
+    "data/inputs/boundaries/bmv2/case-results.csv": {
+      "bytes": 88618,
+      "sha256": "eff1598bbb7f148aa3c9d6f9270d1fdd47f5bcde1055830d83bfd580ce9756a6",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/bmv2-formal-20261019-110612/case-results.csv",
+      "source_sha256": "eff1598bbb7f148aa3c9d6f9270d1fdd47f5bcde1055830d83bfd580ce9756a6"
+    },
+    "data/inputs/boundaries/bmv2/counts.csv": {
+      "bytes": 2318,
+      "sha256": "4f77548b9a1d35e4345a1d6c6e5b520ffb11bca18cb3c39c78c7e8ec6c3dc927",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/bmv2-formal-20261019-110612/counts.csv",
+      "source_sha256": "4f77548b9a1d35e4345a1d6c6e5b520ffb11bca18cb3c39c78c7e8ec6c3dc927"
+    },
+    "data/inputs/boundaries/bmv2/run.json": {
+      "bytes": 8605,
+      "sha256": "0ccd23cbd30deaaf8d434a4883819baece6d227a2438773f8104eaec34640913",
+      "transformation": "select run fields, E1 cases and source inventories; omit local process paths",
+      "source_file": "results/boundaries/bmv2-formal-20261019-110612/manifest.json",
+      "source_sha256": "8f5d826684fdd5c44a6c2f610b85c23f05e925700ecd4008260337e7e8f7f922"
+    },
+    "data/inputs/constraints/controlled/observations.jsonl.gz": {
+      "bytes": 78160,
+      "sha256": "79325fcda1fb37a1f646ea3ee32d8dd0960218f4f00f084022ca145b9ca2bde0",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 5554930,
+      "uncompressed_sha256": "3d43d9bcc381f814fcdaa9b79c9f561b4b8d69ea8ace8fa34ffe3ec5ba63b919",
+      "records": 816,
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/observations.jsonl",
+      "source_sha256": "3d43d9bcc381f814fcdaa9b79c9f561b4b8d69ea8ace8fa34ffe3ec5ba63b919"
+    },
+    "data/inputs/constraints/controlled/rpc.jsonl.gz": {
+      "bytes": 17198,
+      "sha256": "0afaedf038dca597f640d62b56458f3ea4caf650297edb557e82ec0b2bb04fff",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 373990,
+      "uncompressed_sha256": "8c11de1b2ba191095b3dcf103f18551d97bdc047792c69a225e0e11982aa6c91",
+      "records": 708,
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/rpc.jsonl",
+      "source_sha256": "8c11de1b2ba191095b3dcf103f18551d97bdc047792c69a225e0e11982aa6c91"
+    },
+    "data/inputs/constraints/controlled/case-results.csv": {
+      "bytes": 67713,
+      "sha256": "572a30265051168a9adfc654c02e88b4a75968f7dbcd8804e84524c8f2bdbfc3",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/case-results.csv",
+      "source_sha256": "572a30265051168a9adfc654c02e88b4a75968f7dbcd8804e84524c8f2bdbfc3"
+    },
+    "data/inputs/constraints/controlled/counts.csv": {
+      "bytes": 5589,
+      "sha256": "98353e9286441c4a7381df814ea61ba26c9871cb648d075c4ccb347015347474",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/counts.csv",
+      "source_sha256": "98353e9286441c4a7381df814ea61ba26c9871cb648d075c4ccb347015347474"
+    },
+    "data/inputs/constraints/controlled/findings.json": {
+      "bytes": 4539,
+      "sha256": "3afd14b70c43a27d05cce732bf6dfa4a1c2518e4bc04c01dcef89cdcd4bef57a",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/findings.json",
+      "source_sha256": "3afd14b70c43a27d05cce732bf6dfa4a1c2518e4bc04c01dcef89cdcd4bef57a"
+    },
+    "data/inputs/constraints/controlled/run.json": {
+      "bytes": 8240,
+      "sha256": "93a4c7199ca4697b397fc121fa6fbf0ddcd8c153aad319f657420d55c05dcb03",
+      "transformation": "select run fields, E1 cases and source inventories; omit local process paths",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/manifest.json",
+      "source_sha256": "89445be49ed31adcc6a9e2ae3c500cf922190857e1211201794450ff5c905d76"
+    },
+    "data/inputs/constraints/bmv2/observations.jsonl.gz": {
+      "bytes": 97214,
+      "sha256": "0916d09e0d048b7aa47cbf68f156ec1695adf7836f8cc9577ccb37d1fc513d9d",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 7132726,
+      "uncompressed_sha256": "f6d66f48900f4ec72b5e93275cdb16736e808769554cfdefdf0c4ceee9a83e9a",
+      "records": 816,
+      "source_file": "results/table-constraints/bmv2-formal-20261019-113629/observations.jsonl",
+      "source_sha256": "f6d66f48900f4ec72b5e93275cdb16736e808769554cfdefdf0c4ceee9a83e9a"
+    },
+    "data/inputs/constraints/bmv2/rpc.jsonl.gz": {
+      "bytes": 12971,
+      "sha256": "bc0e00e18bdee01fb0a893272940089d25bfc879cd40e8de1b769192a6d45eb3",
+      "transformation": "gzip, mtime=0",
+      "uncompressed_bytes": 328234,
+      "uncompressed_sha256": "7f0db48e4839d711811e9bff6fb7934e23c858a755c828aaf639d5f6108b1ce6",
+      "records": 708,
+      "source_file": "results/table-constraints/bmv2-formal-20261019-113629/rpc.jsonl",
+      "source_sha256": "7f0db48e4839d711811e9bff6fb7934e23c858a755c828aaf639d5f6108b1ce6"
+    },
+    "data/inputs/constraints/bmv2/case-results.csv": {
+      "bytes": 71339,
+      "sha256": "0c9480e56ab147a921190309164e7de6a20e686e4223df7a40dcf7517dcd1614",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/bmv2-formal-20261019-113629/case-results.csv",
+      "source_sha256": "0c9480e56ab147a921190309164e7de6a20e686e4223df7a40dcf7517dcd1614"
+    },
+    "data/inputs/constraints/bmv2/counts.csv": {
+      "bytes": 5983,
+      "sha256": "2e6635eaebd3a7ad16a0640a35640eedb99cbb400ac176b51bd8c75d60204018",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/bmv2-formal-20261019-113629/counts.csv",
+      "source_sha256": "2e6635eaebd3a7ad16a0640a35640eedb99cbb400ac176b51bd8c75d60204018"
+    },
+    "data/inputs/constraints/bmv2/findings.json": {
+      "bytes": 39887,
+      "sha256": "c46fec31352748dc0a5d7bf41cb873e848eb00299277886359b3e1b189fdfd4c",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/bmv2-formal-20261019-113629/findings.json",
+      "source_sha256": "c46fec31352748dc0a5d7bf41cb873e848eb00299277886359b3e1b189fdfd4c"
+    },
+    "data/inputs/constraints/bmv2/run.json": {
+      "bytes": 8228,
+      "sha256": "c78f6c67d807f80043245e1d3561beda43bf3a0b68ed6aad9df3f3bf73733bd4",
+      "transformation": "select run fields, E1 cases and source inventories; omit local process paths",
+      "source_file": "results/table-constraints/bmv2-formal-20261019-113629/manifest.json",
+      "source_sha256": "cc1bfe7985ee0f828d60b80ae0087c16a09c6ecff370ebf9e5e9dbd65b89e114"
+    },
+    "data/inputs/baseline/fixtures/cases.json": {
+      "bytes": 9561,
+      "sha256": "432ee367cf7a222a10231236c664802395cce8c11c75798c91a4b1057436d73b",
+      "transformation": "select 28 E1 cases from the combined E1/E4 corpus",
+      "source_file": "experiments/minimal/fixtures/cases.json",
+      "source_sha256": "0f9eab69f39dad303eb8a9bf66cdee524552d458e0eec77ea88a7064c1b15b7d"
+    },
+    "data/inputs/baseline/fixtures/controlled.p4info.txt": {
+      "bytes": 2036,
+      "sha256": "5c6244e2b49b7344d5c4c532c3d540ce69ade9477af5d139cdcec91b823ede5c",
+      "transformation": "original bytes",
+      "source_file": "experiments/minimal/fixtures/table_keys.p4info.txt",
+      "source_sha256": "5c6244e2b49b7344d5c4c532c3d540ce69ade9477af5d139cdcec91b823ede5c"
+    },
+    "data/inputs/baseline/fixtures/bmv2.p4info.txt": {
+      "bytes": 2253,
+      "sha256": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f",
+      "transformation": "original bytes",
+      "source_file": "results/bmv2-pilot/live-20261017/source/fixtures/keys.p4info.txt",
+      "source_sha256": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f"
+    },
+    "data/inputs/baseline/fixtures/tables.p4": {
+      "bytes": 2104,
+      "sha256": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53",
+      "transformation": "original bytes",
+      "source_file": "results/bmv2-pilot/live-20261017/source/fixtures/keys.p4",
+      "source_sha256": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53"
+    },
+    "data/inputs/boundaries/fixtures/cases.json": {
+      "bytes": 101154,
+      "sha256": "a02ceb95f2f9c81988d3fc88288dafdacbeb156c1cb3446cd7625d86a2159d82",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/fixtures/cases.json",
+      "source_sha256": "a02ceb95f2f9c81988d3fc88288dafdacbeb156c1cb3446cd7625d86a2159d82"
+    },
+    "data/inputs/boundaries/fixtures/controlled.p4info.txt": {
+      "bytes": 11448,
+      "sha256": "a93aa618e426799d8c5328d48bd4bc15608eb8c5af16d47576ad6f1f87353110",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/fixtures/controlled.p4info.txt",
+      "source_sha256": "a93aa618e426799d8c5328d48bd4bc15608eb8c5af16d47576ad6f1f87353110"
+    },
+    "data/inputs/boundaries/fixtures/target.p4info.txt": {
+      "bytes": 4646,
+      "sha256": "4cbd42d20931a1d1ccc3d9f16e031bedd36378a488cb8add00dbfe391e99f0eb",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/fixtures/target.p4info.txt",
+      "source_sha256": "4cbd42d20931a1d1ccc3d9f16e031bedd36378a488cb8add00dbfe391e99f0eb"
+    },
+    "data/inputs/boundaries/fixtures/boundaries.p4": {
+      "bytes": 3441,
+      "sha256": "123d7b26673f5dc59e324bf97b163b7ac3ec67f1dd46b96c9e06c8d9c06f770d",
+      "transformation": "original bytes",
+      "source_file": "results/boundaries/controlled-formal-20261019-110612/source/experiments/boundaries/fixtures/boundaries.p4",
+      "source_sha256": "123d7b26673f5dc59e324bf97b163b7ac3ec67f1dd46b96c9e06c8d9c06f770d"
+    },
+    "data/inputs/boundaries/plan.json": {
+      "bytes": 2181,
+      "sha256": "0aec02ae2eda00aff74f9c897ad3ccf16b3f07938f9ad98d17cce292930b0eab",
+      "transformation": "original bytes",
+      "source_file": "experiments/boundaries/formal-plan.json",
+      "source_sha256": "0aec02ae2eda00aff74f9c897ad3ccf16b3f07938f9ad98d17cce292930b0eab"
+    },
+    "data/inputs/constraints/fixtures/cases.json": {
+      "bytes": 33367,
+      "sha256": "6f91c16bafe9b11e37897d6b42abb18139bcda33820925c7b39ecf2d0bd25b0d",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/fixtures/cases.json",
+      "source_sha256": "6f91c16bafe9b11e37897d6b42abb18139bcda33820925c7b39ecf2d0bd25b0d"
+    },
+    "data/inputs/constraints/fixtures/target.p4info.txt": {
+      "bytes": 4192,
+      "sha256": "7d1c8230faf0c8482a689d0bdbfc28f0580e8d1cf62aa022cfc4006d4ce7e90d",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/fixtures/target.p4info.txt",
+      "source_sha256": "7d1c8230faf0c8482a689d0bdbfc28f0580e8d1cf62aa022cfc4006d4ce7e90d"
+    },
+    "data/inputs/constraints/fixtures/schema.json": {
+      "bytes": 4019,
+      "sha256": "2f0f1e030e8224359024ad8abcdf278466c52dd7e1f754d0fe6c305c93194c48",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/fixtures/schema.json",
+      "source_sha256": "2f0f1e030e8224359024ad8abcdf278466c52dd7e1f754d0fe6c305c93194c48"
+    },
+    "data/inputs/constraints/fixtures/tables.p4": {
+      "bytes": 2868,
+      "sha256": "b688b9744bb35917ec98096856b6101683c8bcf9e04e2a7d326150d370a7dd9d",
+      "transformation": "original bytes",
+      "source_file": "results/table-constraints/controlled-formal-20261019-113625/source/experiments/table-constraints/fixtures/tables.p4",
+      "source_sha256": "b688b9744bb35917ec98096856b6101683c8bcf9e04e2a7d326150d370a7dd9d"
+    },
+    "data/inputs/constraints/plan.json": {
+      "bytes": 793,
+      "sha256": "8bf640cbe20a2e69c053b9b5a3cf7a79e80a2ed4a8e67e1811e5a9f58aba6935",
+      "transformation": "original bytes",
+      "source_file": "experiments/table-constraints/formal-plan.json",
+      "source_sha256": "8bf640cbe20a2e69c053b9b5a3cf7a79e80a2ed4a8e67e1811e5a9f58aba6935"
+    }
+  },
+  "software": {
+    "sdk_tag": "v2.0.1",
+    "source_commits": {
+      "p4runtime-go-controller": "3f2def2b28c098961078ce64e9d86ab3c79e6ccb",
+      "p4runtime-go-client": "de3748d9d85953f1fa7093ca441aca53dfc9008b",
+      "finsy": "491a6e2ac67473ec2ee9a94601f6107ae5d76e7b",
+      "p4runtime-shell": "5641d39c1778c79f726da7e216b2c7e134af4a47"
+    },
+    "go_toolchain": "go1.26.9",
+    "python": {
+      "finsy": {
+        "python": "3.12.3",
+        "grpc": "1.81.1",
+        "protobuf": "6.33.6",
+        "backend": "upb"
+      },
+      "shell": {
+        "python": "3.12.3",
+        "grpc": "1.84.0",
+        "protobuf": "3.20.3",
+        "backend": "python"
+      }
+    },
+    "bmv2": "1.15.0-2bdd0b7b",
+    "evidence": {
+      "results/bmv2-pilot/live-20261017/environment.json": "d886cea2a4abe093e9ac7ba291aa89e04392f6efb30c82f843e0f69ec93eb211",
+      "results/boundaries/environment-20261019-1110/environment.json": "476386f5e4438e5deb036804c304ba463ddb918855b97b048d26158abd1d857e"
+    }
+  }
+}

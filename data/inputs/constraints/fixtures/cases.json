@@ -1,0 +1,1753 @@
+[
+  {
+    "id": "default-modify",
+    "family": "default",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "default-reset",
+    "family": "default",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "none",
+    "action": "MyIngress.common",
+    "params": []
+  },
+  {
+    "id": "default-insert",
+    "family": "default",
+    "category": "invalid",
+    "op": "write",
+    "update": "INSERT",
+    "table": "MyIngress.direct",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "default-delete",
+    "family": "default",
+    "category": "invalid",
+    "op": "write",
+    "update": "DELETE",
+    "table": "MyIngress.direct",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "default-stale-match",
+    "family": "default",
+    "category": "policy",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "default-stale-priority",
+    "family": "default",
+    "category": "policy",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": true,
+    "priority": 10,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ordinary-insert",
+    "family": "ordinary",
+    "category": "valid",
+    "op": "write",
+    "update": "INSERT",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ordinary-modify",
+    "family": "ordinary",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ordinary-delete",
+    "family": "ordinary",
+    "category": "valid",
+    "op": "write",
+    "update": "DELETE",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "none",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "delete-ignored-action-ttl",
+    "family": "ordinary",
+    "category": "valid",
+    "op": "write",
+    "update": "DELETE",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": -1,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.default_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "ffff"
+      }
+    ]
+  },
+  {
+    "id": "ordinary-missing-action",
+    "family": "ordinary",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "none",
+    "action": "MyIngress.common",
+    "params": []
+  },
+  {
+    "id": "ordinary-exact-priority",
+    "family": "priority",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 10,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ordinary-negative-priority",
+    "family": "priority",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": -1,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "constant-default-ordinary",
+    "family": "constant_default",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_default",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "00"
+      }
+    ]
+  },
+  {
+    "id": "constant-default-same-action",
+    "family": "constant_default",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_default",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "00"
+      }
+    ]
+  },
+  {
+    "id": "constant-default-other-action",
+    "family": "constant_default",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_default",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "NoAction",
+    "params": []
+  },
+  {
+    "id": "constant-default-reset",
+    "family": "constant_default",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_default",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "none",
+    "action": "MyIngress.common",
+    "params": []
+  },
+  {
+    "id": "constant-entry-modify",
+    "family": "constant_table",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_entries",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "constant-entry-insert",
+    "family": "constant_table",
+    "category": "invalid",
+    "op": "write",
+    "update": "INSERT",
+    "table": "MyIngress.const_entries",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "constant-entry-delete",
+    "family": "constant_table",
+    "category": "invalid",
+    "op": "write",
+    "update": "DELETE",
+    "table": "MyIngress.const_entries",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "constant-table-default-modify",
+    "family": "constant_table",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_entries",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "constant-table-default-reset",
+    "family": "constant_table",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.const_entries",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "none",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "scope-table_action-ordinary",
+    "family": "action_scope",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.scoped",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.table_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "scope-table_action-default",
+    "family": "action_scope",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.scoped",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.table_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "scope-default_action-default",
+    "family": "action_scope",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.scoped",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.default_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "scope-default_action-ordinary",
+    "family": "action_scope",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.scoped",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.default_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "scope-common-ordinary",
+    "family": "action_scope",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.scoped",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "scope-common-default",
+    "family": "action_scope",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.scoped",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "action-not-in-table",
+    "family": "action_scope",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.default_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "indirect-member-1",
+    "family": "indirect",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "indirect-member-0",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 0
+  },
+  {
+    "id": "indirect-member-99",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 99
+  },
+  {
+    "id": "indirect-group-1",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "indirect-group-0",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 0
+  },
+  {
+    "id": "indirect-group-99",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 99
+  },
+  {
+    "id": "indirect-direct-1",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.indirect",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "selected-member-1",
+    "family": "indirect",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.selected",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "selected-member-0",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.selected",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 0
+  },
+  {
+    "id": "selected-member-99",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.selected",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 99
+  },
+  {
+    "id": "selected-group-1",
+    "family": "indirect",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.selected",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "selected-group-0",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.selected",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 0
+  },
+  {
+    "id": "selected-group-99",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.selected",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 99
+  },
+  {
+    "id": "direct-with-member",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "member",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "direct-with-group",
+    "family": "indirect",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "group",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ],
+    "reference": 1
+  },
+  {
+    "id": "ttl-direct-0",
+    "family": "idle_timeout",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-direct--1",
+    "family": "idle_timeout",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": -1,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-direct-1",
+    "family": "idle_timeout",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 1,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-direct-60000000000",
+    "family": "idle_timeout",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.direct",
+    "default": false,
+    "priority": 0,
+    "ttl": 60000000000,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-idle-0",
+    "family": "idle_timeout",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-idle--1",
+    "family": "idle_timeout",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": false,
+    "priority": 0,
+    "ttl": -1,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-idle-1",
+    "family": "idle_timeout",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": false,
+    "priority": 0,
+    "ttl": 1,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-idle-60000000000",
+    "family": "idle_timeout",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": false,
+    "priority": 0,
+    "ttl": 60000000000,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-default-0",
+    "family": "idle_timeout",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": true,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-default--1",
+    "family": "idle_timeout",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": true,
+    "priority": 0,
+    "ttl": -1,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ttl-default-1",
+    "family": "idle_timeout",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.idle",
+    "default": true,
+    "priority": 0,
+    "ttl": 1,
+    "matches": [],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ternary-priority-10",
+    "family": "priority",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.ternary_table",
+    "default": false,
+    "priority": 10,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "mask": "ff",
+        "kind": "ternary"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ternary-priority-0",
+    "family": "priority",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.ternary_table",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "mask": "ff",
+        "kind": "ternary"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "ternary-priority--1",
+    "family": "priority",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.ternary_table",
+    "default": false,
+    "priority": -1,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "mask": "ff",
+        "kind": "ternary"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.common",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "sparse-normal",
+    "family": "sparse_ids",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      },
+      {
+        "name": "tag",
+        "value": "09"
+      }
+    ]
+  },
+  {
+    "id": "sparse-zero",
+    "family": "sparse_ids",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "00"
+      },
+      {
+        "name": "tag",
+        "value": "00"
+      }
+    ]
+  },
+  {
+    "id": "sparse-max",
+    "family": "sparse_ids",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "01ff"
+      },
+      {
+        "name": "tag",
+        "value": "ff"
+      }
+    ]
+  },
+  {
+    "id": "sparse-padded",
+    "family": "sparse_ids",
+    "category": "normalizable",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "000007"
+      },
+      {
+        "name": "tag",
+        "value": "0009"
+      }
+    ]
+  },
+  {
+    "id": "sparse-reverse",
+    "family": "sparse_ids",
+    "category": "valid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "tag",
+        "value": "09"
+      },
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "sparse-missing-param",
+    "family": "sparse_ids",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      }
+    ]
+  },
+  {
+    "id": "sparse-no-params",
+    "family": "sparse_ids",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": []
+  },
+  {
+    "id": "sparse-extra-param",
+    "family": "sparse_ids",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      },
+      {
+        "name": "tag",
+        "value": "09"
+      },
+      {
+        "name": "typo",
+        "value": "01"
+      }
+    ]
+  },
+  {
+    "id": "sparse-missing-field",
+    "family": "sparse_ids",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      },
+      {
+        "name": "tag",
+        "value": "09"
+      }
+    ]
+  },
+  {
+    "id": "sparse-unknown-field",
+    "family": "sparse_ids",
+    "category": "invalid",
+    "op": "write",
+    "update": "MODIFY",
+    "table": "MyIngress.sparse",
+    "default": false,
+    "priority": 0,
+    "ttl": 0,
+    "matches": [
+      {
+        "name": "h.key.x",
+        "value": "01",
+        "kind": "exact"
+      },
+      {
+        "name": "h.key.y",
+        "value": "02",
+        "kind": "exact"
+      },
+      {
+        "name": "typo",
+        "value": "01",
+        "kind": "exact"
+      }
+    ],
+    "action_kind": "direct",
+    "action": "MyIngress.sparse_action",
+    "params": [
+      {
+        "name": "port",
+        "value": "07"
+      },
+      {
+        "name": "tag",
+        "value": "09"
+      }
+    ]
+  }
+]

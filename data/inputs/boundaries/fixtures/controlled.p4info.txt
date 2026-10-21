@@ -1,0 +1,877 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 39315171
+    name: "MyIngress.t_w1"
+    alias: "t_w1"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w1"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21502751
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 38896853
+    name: "MyIngress.t_w7"
+    alias: "t_w7"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w7"
+    bitwidth: 7
+    match_type: EXACT
+  }
+  action_refs {
+    id: 24769956
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 48946695
+    name: "MyIngress.t_w8"
+    alias: "t_w8"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w8"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21254457
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 35699312
+    name: "MyIngress.t_w9"
+    alias: "t_w9"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w9"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 29639228
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 39651481
+    name: "MyIngress.t_w16"
+    alias: "t_w16"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w16"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 30150753
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 42169123
+    name: "MyIngress.t_w32"
+    alias: "t_w32"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w32"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  action_refs {
+    id: 30886439
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 39966576
+    name: "MyIngress.t_w48"
+    alias: "t_w48"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w48"
+    bitwidth: 48
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27672575
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 49558742
+    name: "MyIngress.t_w64"
+    alias: "t_w64"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w64"
+    bitwidth: 64
+    match_type: EXACT
+  }
+  action_refs {
+    id: 23477290
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 48109991
+    name: "MyIngress.t_w128"
+    alias: "t_w128"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w128"
+    bitwidth: 128
+    match_type: EXACT
+  }
+  action_refs {
+    id: 20454319
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+tables {
+  preamble {
+    id: 43840291
+    name: "MyIngress.t_w129"
+    alias: "t_w129"
+  }
+  match_fields {
+    id: 1
+    name: "h.key.w129"
+    bitwidth: 129
+    match_type: EXACT
+  }
+  action_refs {
+    id: 23393289
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 16
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 21502751
+    name: "MyIngress.a_w1"
+    alias: "a_w1"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 1
+  }
+}
+actions {
+  preamble {
+    id: 24769956
+    name: "MyIngress.a_w7"
+    alias: "a_w7"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 7
+  }
+}
+actions {
+  preamble {
+    id: 21254457
+    name: "MyIngress.a_w8"
+    alias: "a_w8"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 8
+  }
+}
+actions {
+  preamble {
+    id: 29639228
+    name: "MyIngress.a_w9"
+    alias: "a_w9"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 30150753
+    name: "MyIngress.a_w16"
+    alias: "a_w16"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 16
+  }
+}
+actions {
+  preamble {
+    id: 30886439
+    name: "MyIngress.a_w32"
+    alias: "a_w32"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 32
+  }
+}
+actions {
+  preamble {
+    id: 27672575
+    name: "MyIngress.a_w48"
+    alias: "a_w48"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 48
+  }
+}
+actions {
+  preamble {
+    id: 23477290
+    name: "MyIngress.a_w64"
+    alias: "a_w64"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 64
+  }
+}
+actions {
+  preamble {
+    id: 20454319
+    name: "MyIngress.a_w128"
+    alias: "a_w128"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 128
+  }
+}
+actions {
+  preamble {
+    id: 23393289
+    name: "MyIngress.a_w129"
+    alias: "a_w129"
+  }
+  params {
+    id: 1
+    name: "value"
+    bitwidth: 129
+  }
+}
+counters {
+  preamble {
+    id: 308887978
+    name: "MyIngress.c_idx"
+    alias: "c_idx"
+  }
+  spec {
+    unit: BOTH
+  }
+  size: 8
+}
+counters {
+  preamble {
+    id: 301989889
+    name: "MyIngress.c_translated"
+    alias: "c_translated"
+  }
+  spec {
+    unit: BOTH
+  }
+  size: 8
+  index_type_name {
+    name: "PortIndex"
+  }
+}
+meters {
+  preamble {
+    id: 343581160
+    name: "MyIngress.m_idx"
+    alias: "m_idx"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 8
+}
+meters {
+  preamble {
+    id: 335544321
+    name: "MyIngress.m_translated"
+    alias: "m_translated"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 8
+  index_type_name {
+    name: "PortIndex"
+  }
+}
+registers {
+  preamble {
+    id: 369098753
+    name: "MyIngress.r_u1"
+    alias: "r_u1"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 1
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098754
+    name: "MyIngress.r_s1"
+    alias: "r_s1"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 1
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098755
+    name: "MyIngress.r_u7"
+    alias: "r_u7"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 7
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098756
+    name: "MyIngress.r_s7"
+    alias: "r_s7"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 7
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098757
+    name: "MyIngress.r_u8"
+    alias: "r_u8"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 8
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098758
+    name: "MyIngress.r_s8"
+    alias: "r_s8"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 8
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098759
+    name: "MyIngress.r_u9"
+    alias: "r_u9"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 9
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098760
+    name: "MyIngress.r_s9"
+    alias: "r_s9"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 9
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098761
+    name: "MyIngress.r_u16"
+    alias: "r_u16"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 16
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098762
+    name: "MyIngress.r_s16"
+    alias: "r_s16"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 16
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098763
+    name: "MyIngress.r_u32"
+    alias: "r_u32"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098764
+    name: "MyIngress.r_s32"
+    alias: "r_s32"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098765
+    name: "MyIngress.r_u48"
+    alias: "r_u48"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 48
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098766
+    name: "MyIngress.r_s48"
+    alias: "r_s48"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 48
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098767
+    name: "MyIngress.r_u64"
+    alias: "r_u64"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 64
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098768
+    name: "MyIngress.r_s64"
+    alias: "r_s64"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 64
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098769
+    name: "MyIngress.r_u128"
+    alias: "r_u128"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 128
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098770
+    name: "MyIngress.r_s128"
+    alias: "r_s128"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 128
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098771
+    name: "MyIngress.r_u129"
+    alias: "r_u129"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 129
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098772
+    name: "MyIngress.r_s129"
+    alias: "r_s129"
+  }
+  type_spec {
+    bitstring {
+      int {
+        bitwidth: 129
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098773
+    name: "MyIngress.r_tuple"
+    alias: "r_tuple"
+  }
+  type_spec {
+    tuple {
+      members {
+        bitstring {
+          bit {
+            bitwidth: 9
+          }
+        }
+      }
+      members {
+        bool {
+        }
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098774
+    name: "MyIngress.r_struct"
+    alias: "r_struct"
+  }
+  type_spec {
+    struct {
+      name: "Pair"
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098775
+    name: "MyIngress.r_alias"
+    alias: "r_alias"
+  }
+  type_spec {
+    new_type {
+      name: "Alias"
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098776
+    name: "MyIngress.r_translated"
+    alias: "r_translated"
+  }
+  type_spec {
+    new_type {
+      name: "SdnBits"
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098777
+    name: "MyIngress.r_text"
+    alias: "r_text"
+  }
+  type_spec {
+    new_type {
+      name: "SdnText"
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098778
+    name: "MyIngress.r_varbit"
+    alias: "r_varbit"
+  }
+  type_spec {
+    bitstring {
+      varbit {
+        max_bitwidth: 32
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098779
+    name: "MyIngress.r_nested"
+    alias: "r_nested"
+  }
+  type_spec {
+    tuple {
+      members {
+        bitstring {
+          bit {
+            bitwidth: 128
+          }
+        }
+      }
+      members {
+        struct {
+          name: "Pair"
+        }
+      }
+    }
+  }
+  size: 8
+}
+registers {
+  preamble {
+    id: 369098780
+    name: "MyIngress.r_idx"
+    alias: "r_idx"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 9
+      }
+    }
+  }
+  size: 8
+  index_type_name {
+    name: "PortIndex"
+  }
+}
+type_info {
+  structs {
+    key: "Pair"
+    value {
+      members {
+        name: "count"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 9
+            }
+          }
+        }
+      }
+      members {
+        name: "flag"
+        type_spec {
+          bool {
+          }
+        }
+      }
+    }
+  }
+  new_types {
+    key: "Alias"
+    value {
+      original_type {
+        bitstring {
+          bit {
+            bitwidth: 9
+          }
+        }
+      }
+    }
+  }
+  new_types {
+    key: "PortIndex"
+    value {
+      translated_type {
+        uri: "example.org/e1/index"
+        sdn_bitwidth: 32
+      }
+    }
+  }
+  new_types {
+    key: "SdnBits"
+    value {
+      translated_type {
+        uri: "example.org/e1/bits"
+        sdn_bitwidth: 16
+      }
+    }
+  }
+  new_types {
+    key: "SdnText"
+    value {
+      translated_type {
+        uri: "example.org/e1/text"
+        sdn_string {
+        }
+      }
+    }
+  }
+}
