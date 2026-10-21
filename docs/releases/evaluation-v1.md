@@ -33,8 +33,8 @@ The manifest records every source-snapshot file's size, SHA-256 hash, Git blob I
 
 ## Citation and license
 
-For a fixed source citation, use:
+For a versioned citation, use:
 
-Zhang H, Yang T, Chen J. P4Runtime Controller Evaluation. 2026. GitHub. Snapshot edbb75d. [Source permalink](https://github.com/zhh2001/p4runtime-controller-evaluation/tree/edbb75d7b83d27dce6a3138aa01122921773f7ab).
+Zhang H, Yang T, Chen J. P4Runtime Controller Evaluation. 2026. GitHub. Version evaluation-v1. [Release permalink](https://github.com/zhh2001/p4runtime-controller-evaluation/releases/tag/evaluation-v1).
 
 Source code, tests, configuration and documentation use Apache-2.0. Experimental data and derived figures use CC BY 4.0. See [LICENSE.md](https://github.com/zhh2001/p4runtime-controller-evaluation/blob/edbb75d7b83d27dce6a3138aa01122921773f7ab/LICENSE.md) for the file scopes and attribution.
