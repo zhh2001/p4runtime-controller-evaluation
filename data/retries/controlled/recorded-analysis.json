@@ -1,0 +1,1518 @@
+{
+  "passed": true,
+  "counts": {
+    "write_requests": 218,
+    "update_attempts": 540,
+    "successful_updates": 386,
+    "failed_updates": 154,
+    "trials": 120,
+    "completed": 100,
+    "blocked": 10,
+    "application_reads": 58,
+    "watchdog_timeout": 10
+  },
+  "profile_outcomes": {
+    "sdk:completed": 18,
+    "sdk:blocked": 2,
+    "raw-current:completed": 18,
+    "raw-current:blocked": 2,
+    "legacy:completed": 18,
+    "legacy:blocked": 2,
+    "raw-legacy:completed": 18,
+    "raw-legacy:blocked": 2,
+    "finsy:completed": 18,
+    "finsy:blocked": 2,
+    "shell:completed": 10,
+    "shell:watchdog_timeout": 10
+  },
+  "trials": [
+    {
+      "token": "1|sdk|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|sdk|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|sdk|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|raw-current|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-current|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|legacy|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|legacy|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|raw-legacy|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|raw-legacy|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|finsy|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|finsy|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|shell|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|shell|transient-first",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|shell|transient-rebased",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|shell|all-transient",
+      "outcome": "watchdog_timeout",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|shell|permanent-error",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|shell|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|shell|wrong-detail-type",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "1|shell|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|shell|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "1|shell|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|sdk|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|sdk|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|raw-current|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-current|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|legacy|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|legacy|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|raw-legacy|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|raw-legacy|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|transient-first",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|transient-rebased",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|all-transient",
+      "outcome": "completed",
+      "writes": 3,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 3
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|permanent-error",
+      "outcome": "blocked",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|finsy|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|wrong-detail-type",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|finsy|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|shell|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|shell|transient-first",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|shell|transient-rebased",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|shell|all-transient",
+      "outcome": "watchdog_timeout",
+      "writes": 2,
+      "reads": 0,
+      "attempts": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|shell|permanent-error",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|shell|short-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|shell|wrong-detail-type",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": false
+    },
+    {
+      "token": "2|shell|missing-details",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|shell|transport-partial",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    },
+    {
+      "token": "2|shell|transport-complete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "attempts": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "final_state_matches_desired": true
+    }
+  ]
+}

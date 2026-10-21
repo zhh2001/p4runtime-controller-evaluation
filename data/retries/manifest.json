@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "experiment": "E4 application retries",
+  "trials": 192,
+  "repetitions": 2,
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "modes": [
+    "controlled",
+    "bmv2"
+  ],
+  "runs": [
+    {
+      "mode": "controlled",
+      "trials": 120,
+      "source_directory": "results/batch-retry/controlled-formal-20261019-140944",
+      "source_manifest_sha256": "78ff6c728b175e031bad73e6c2b6e6b2eea1a8783055e276ed0721fc33e4f052"
+    },
+    {
+      "mode": "bmv2",
+      "trials": 72,
+      "source_directory": "results/batch-retry/bmv2-formal-20261019-141153",
+      "source_manifest_sha256": "f1880c0e8a731413b59feefd59a5bed051261ebf5b74f41be002f263e67283d5"
+    }
+  ],
+  "files": {
+    "data/retries/controlled/observations.jsonl.gz": {
+      "bytes": 16592,
+      "sha256": "44fd9c5ca3244ae302dbb087ba1c4b0f03eee9742e1c756ae0a1759cf3a580f1",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/observations.jsonl",
+      "source_sha256": "73061aa4985d2a8ee78f9de71dd68ceba033dae4f01b1c8237b818613255b6c6",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 560230,
+      "uncompressed_sha256": "73061aa4985d2a8ee78f9de71dd68ceba033dae4f01b1c8237b818613255b6c6",
+      "records": 120
+    },
+    "data/retries/controlled/rpc.jsonl.gz": {
+      "bytes": 4717,
+      "sha256": "1fcfd4725e003a00f8fbbfef03ff5147d335d128c6bca73521466bfeec5a595f",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/rpc.jsonl",
+      "source_sha256": "05eaa0f2041906bbc34869b57debca2def2d9d78d01de7e94d367f4c99952e8a",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 281802,
+      "uncompressed_sha256": "05eaa0f2041906bbc34869b57debca2def2d9d78d01de7e94d367f4c99952e8a",
+      "records": 276
+    },
+    "data/retries/controlled/run.json": {
+      "bytes": 22026,
+      "sha256": "78ff6c728b175e031bad73e6c2b6e6b2eea1a8783055e276ed0721fc33e4f052",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/manifest.json",
+      "source_sha256": "78ff6c728b175e031bad73e6c2b6e6b2eea1a8783055e276ed0721fc33e4f052"
+    },
+    "data/retries/controlled/source-artifact-hashes.json": {
+      "bytes": 45064,
+      "sha256": "7e66b6922b7c59e9d0594f2c6dad2a0224a3d4e1b0dde176f562e357ef7e87da",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/artifact-hashes.json",
+      "source_sha256": "7e66b6922b7c59e9d0594f2c6dad2a0224a3d4e1b0dde176f562e357ef7e87da"
+    },
+    "data/retries/controlled/recorded-analysis.json": {
+      "bytes": 30441,
+      "sha256": "88137bd954e987e07c95cbd3ef02ddcd393813bee09b1ed272d32db703f5d8ae",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/analysis.json",
+      "source_sha256": "88137bd954e987e07c95cbd3ef02ddcd393813bee09b1ed272d32db703f5d8ae"
+    },
+    "data/retries/controlled/recorded-independent.json": {
+      "bytes": 25371,
+      "sha256": "830e7fb12e8ca8f49933e481f059f77837186b1cdf5b339a12bec781c8cbe74d",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/independent-verification.json",
+      "source_sha256": "830e7fb12e8ca8f49933e481f059f77837186b1cdf5b339a12bec781c8cbe74d"
+    },
+    "data/retries/controlled/driver-logs.jsonl.gz": {
+      "bytes": 11539,
+      "sha256": "c66d245146dfae487b3264fcd998ac9317fa84708019e4c42a6fda94302cc482",
+      "transformation": "Collect original driver stdout and stderr bytes as UTF-8 text in filename order. Preserve each original SHA-256.",
+      "uncompressed_bytes": 144844,
+      "uncompressed_sha256": "9cb014f859266b31f12cc4759214dde6fc1400b4ddab4de9be0f05f278dc20b8",
+      "records": 240
+    },
+    "data/retries/bmv2/observations.jsonl.gz": {
+      "bytes": 9392,
+      "sha256": "e3e6e605b8893a23216e423ea68b8260bc6824cf5a7086f1bd31ddd2f54232cc",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/observations.jsonl",
+      "source_sha256": "6ece489b407b57d56844be6711b3476d47f9c0fa455cd3cce256a7413f95fc62",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 375818,
+      "uncompressed_sha256": "6ece489b407b57d56844be6711b3476d47f9c0fa455cd3cce256a7413f95fc62",
+      "records": 72
+    },
+    "data/retries/bmv2/rpc.jsonl.gz": {
+      "bytes": 4127,
+      "sha256": "472b34db03672d5fc4b2bbb454e1484fa4adf3d7e4957166257a1e98a15bcb74",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/rpc.jsonl",
+      "source_sha256": "439df32e421817994bb6f42a2b094dea03db9e14748fef6f05f3562054a08478",
+      "transformation": "Original JSONL bytes in gzip with timestamp zero.",
+      "uncompressed_bytes": 190606,
+      "uncompressed_sha256": "439df32e421817994bb6f42a2b094dea03db9e14748fef6f05f3562054a08478",
+      "records": 170
+    },
+    "data/retries/bmv2/run.json": {
+      "bytes": 21922,
+      "sha256": "f1880c0e8a731413b59feefd59a5bed051261ebf5b74f41be002f263e67283d5",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/manifest.json",
+      "source_sha256": "f1880c0e8a731413b59feefd59a5bed051261ebf5b74f41be002f263e67283d5"
+    },
+    "data/retries/bmv2/source-artifact-hashes.json": {
+      "bytes": 28656,
+      "sha256": "64de58f0cd34079a6900dd9a8184e9cfc6bc7502184d7e0a4e2ae922d14210df",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/artifact-hashes.json",
+      "source_sha256": "64de58f0cd34079a6900dd9a8184e9cfc6bc7502184d7e0a4e2ae922d14210df"
+    },
+    "data/retries/bmv2/recorded-analysis.json": {
+      "bytes": 18638,
+      "sha256": "9d659bcd22c69339d85e66bc975edcfe892ee0799e24697f6cc595595d770cd2",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/analysis.json",
+      "source_sha256": "9d659bcd22c69339d85e66bc975edcfe892ee0799e24697f6cc595595d770cd2"
+    },
+    "data/retries/bmv2/recorded-independent.json": {
+      "bytes": 15333,
+      "sha256": "d868e2226a409ce6ffe9ded5cc452ab2c71e5d73624fa45e5e1b64f4ca83458d",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/independent-verification.json",
+      "source_sha256": "d868e2226a409ce6ffe9ded5cc452ab2c71e5d73624fa45e5e1b64f4ca83458d"
+    },
+    "data/retries/bmv2/driver-logs.jsonl.gz": {
+      "bytes": 8292,
+      "sha256": "b9159a19408b29d744d60684fbc044276f7626aaaf672a71a00593cd0e392c12",
+      "transformation": "Collect original driver stdout and stderr bytes as UTF-8 text in filename order. Preserve each original SHA-256.",
+      "uncompressed_bytes": 108210,
+      "uncompressed_sha256": "c169eb2754bd294875e680e0066646f007d6de3226374efb36b84ad3ec3ff70c",
+      "records": 144
+    },
+    "data/retries/bmv2/target-processes.json": {
+      "bytes": 501,
+      "sha256": "fc55ce5c412a16795511ae111da9c6d11f0328021174b424fc0660e26b42ae0f",
+      "source_file": "results/batch-retry/bmv2-formal-20261019-141153/target-processes.json",
+      "source_sha256": "fc55ce5c412a16795511ae111da9c6d11f0328021174b424fc0660e26b42ae0f"
+    },
+    "data/retries/fixtures/keys.p4": {
+      "bytes": 2104,
+      "sha256": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/bmv2-pilot/fixtures/keys.p4",
+      "source_sha256": "9218ec2e10d20884895a6da7475027144327a261a5a7b027008e62ee84ce0b53"
+    },
+    "data/retries/fixtures/keys.p4info.txt": {
+      "bytes": 2253,
+      "sha256": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/bmv2-pilot/fixtures/keys.p4info.txt",
+      "source_sha256": "16c825711444b43341b1731aafa6f0c89f3c141aa0a291ce50801fa229eaa44f"
+    },
+    "data/retries/fixtures/cases.json": {
+      "bytes": 12862,
+      "sha256": "7e02dba03326b038bc5be55b3c985c5e9fc0cf89b0c17d42c38e0e7ff41f50dd",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/cases.json",
+      "source_sha256": "7e02dba03326b038bc5be55b3c985c5e9fc0cf89b0c17d42c38e0e7ff41f50dd"
+    },
+    "data/retries/plan.json": {
+      "bytes": 406,
+      "sha256": "410a92b09b2e5c25637f205776583e9d03350d5f37adccc32a97e5dc0e981222",
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/formal-plan.json",
+      "source_sha256": "410a92b09b2e5c25637f205776583e9d03350d5f37adccc32a97e5dc0e981222"
+    },
+    "data/retries/selection.json": {
+      "bytes": 137,
+      "sha256": "5b7a91464faef8ff3da09065c705aef4a6a54342adb3eab5ff093e1c1cd902b7",
+      "source_file": "experiments/batch-retry/selected-runs.json",
+      "source_sha256": "5b7a91464faef8ff3da09065c705aef4a6a54342adb3eab5ff093e1c1cd902b7"
+    },
+    "data/retries/counts.csv": {
+      "bytes": 208,
+      "sha256": "428effd6b56ebb290daf87f1195bba2e36fc5c76e7e681df8a0fb422138b0123",
+      "transformation": "Derived from archived trial observations and checked primary reports by scripts/verify_retries.py."
+    },
+    "data/retries/profile-outcomes.csv": {
+      "bytes": 320,
+      "sha256": "1843e03f2e9c4a0dfe005b0dae6ae3df293f8e085140196a10edbfe1177667eb",
+      "transformation": "Derived from archived trial observations and checked primary reports by scripts/verify_retries.py."
+    },
+    "data/retries/trials.csv": {
+      "bytes": 10709,
+      "sha256": "19e418f9975fe8324625b3f78c84f64b75cf64058e9a013ff985bb2e3aca336f",
+      "transformation": "Derived from archived trial observations and checked primary reports by scripts/verify_retries.py."
+    }
+  }
+}

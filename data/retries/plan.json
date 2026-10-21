@@ -1,0 +1,17 @@
+{
+  "repetitions": 2,
+  "profiles": [
+    "sdk",
+    "raw-current",
+    "legacy",
+    "raw-legacy",
+    "finsy",
+    "shell"
+  ],
+  "controlled_cases": 10,
+  "bmv2_cases": 6,
+  "watchdog_seconds": 6,
+  "max_attempts": 4,
+  "cases_sha256": "7e02dba03326b038bc5be55b3c985c5e9fc0cf89b0c17d42c38e0e7ff41f50dd",
+  "interpretation": "Functional scenario repetitions. No reliability-rate or latency inference."
+}

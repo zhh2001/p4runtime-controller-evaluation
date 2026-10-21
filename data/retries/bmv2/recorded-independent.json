@@ -1,0 +1,835 @@
+{
+  "passed": true,
+  "method": "Python standard library only. Independent protobuf wire decoding and retry/state reconstruction.",
+  "counts": {
+    "write_requests": 116,
+    "update_attempts": 342,
+    "successful_updates": 234,
+    "failed_updates": 108,
+    "trials": 72,
+    "completed": 66,
+    "application_reads": 54,
+    "watchdog_timeout": 6
+  },
+  "profile_outcomes": {
+    "sdk:completed": 12,
+    "raw-current:completed": 12,
+    "legacy:completed": 12,
+    "raw-legacy:completed": 12,
+    "finsy:completed": 12,
+    "shell:completed": 6,
+    "shell:watchdog_timeout": 6
+  },
+  "trials": [
+    {
+      "token": "1|sdk|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|sdk|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|sdk|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "1|sdk|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "1|sdk|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "1|sdk|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "1|raw-current|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|raw-current|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|raw-current|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "1|raw-current|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "1|raw-current|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "1|raw-current|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "1|legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|legacy|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|legacy|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "1|legacy|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "1|legacy|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "1|legacy|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "1|raw-legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|raw-legacy|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|raw-legacy|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "1|raw-legacy|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "1|raw-legacy|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "1|raw-legacy|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "1|finsy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|finsy|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|finsy|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "1|finsy|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "1|finsy|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "1|finsy|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "1|shell|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|shell|duplicate-middle",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "1|shell|mixed-conflicts",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "token": "1|shell|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "1|shell|missing-delete",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "1|shell|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "2|sdk|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|sdk|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|sdk|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "2|sdk|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "2|sdk|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "2|sdk|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "2|raw-current|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|raw-current|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|raw-current|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "2|raw-current|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "2|raw-current|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "2|raw-current|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "2|legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|legacy|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|legacy|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "2|legacy|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "2|legacy|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "2|legacy|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "2|raw-legacy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|raw-legacy|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|raw-legacy|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "2|raw-legacy|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "2|raw-legacy|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "2|raw-legacy|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "2|finsy|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|finsy|duplicate-middle",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|finsy|mixed-conflicts",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "token": "2|finsy|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "2|finsy|missing-delete",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "2|finsy|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    },
+    {
+      "token": "2|shell|all-ok",
+      "outcome": "completed",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|shell|duplicate-middle",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "token": "2|shell|mixed-conflicts",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "token": "2|shell|all-duplicates",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "token": "2|shell|missing-delete",
+      "outcome": "watchdog_timeout",
+      "writes": 1,
+      "reads": 0,
+      "successful_original_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "token": "2|shell|single-duplicate",
+      "outcome": "completed",
+      "writes": 2,
+      "reads": 1,
+      "successful_original_indices": [
+        0
+      ]
+    }
+  ]
+}

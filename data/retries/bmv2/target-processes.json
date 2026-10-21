@@ -1,0 +1,27 @@
+[
+  {
+    "generation": 1,
+    "pid": 566981,
+    "command": [
+      "simple_switch_grpc",
+      "--no-p4",
+      "--device-id",
+      "1",
+      "--thrift-port",
+      "45045",
+      "--notifications-addr",
+      "ipc:///tmp/p4paper-130034719104352-1.ipc",
+      "--log-console",
+      "-L",
+      "info",
+      "--",
+      "--grpc-server-addr",
+      "127.0.0.1:36197",
+      "--cpu-port",
+      "255"
+    ],
+    "start_ns": 71294569004603,
+    "stop_ns": 71339623340144,
+    "exit_code": -15
+  }
+]

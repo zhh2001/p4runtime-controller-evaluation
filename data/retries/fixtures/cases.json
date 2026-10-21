@@ -1,0 +1,673 @@
+{
+  "controlled": [
+    {
+      "id": "all-ok",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "transient-first",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        },
+        {
+          "original_index": 3,
+          "key": 4,
+          "type": "INSERT",
+          "port": 14,
+          "metadata": "desired-3"
+        },
+        {
+          "original_index": 4,
+          "key": 5,
+          "type": "INSERT",
+          "port": 15,
+          "metadata": "desired-4"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "transient-rebased",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        },
+        {
+          "original_index": 3,
+          "key": 4,
+          "type": "INSERT",
+          "port": 14,
+          "metadata": "desired-3"
+        },
+        {
+          "original_index": 4,
+          "key": 5,
+          "type": "INSERT",
+          "port": 15,
+          "metadata": "desired-4"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          14,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "all-transient",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          14,
+          8,
+          14
+        ],
+        [
+          0,
+          0,
+          14
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "permanent-error",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "short-details",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          14,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "short"
+    },
+    {
+      "id": "wrong-detail-type",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          14,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "wrong_type"
+    },
+    {
+      "id": "missing-details",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          14,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "missing"
+    },
+    {
+      "id": "transport-partial",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          14,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "transport"
+    },
+    {
+      "id": "transport-complete",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [],
+      "schedule": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "response": "transport"
+    }
+  ],
+  "bmv2": [
+    {
+      "id": "all-ok",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        },
+        {
+          "original_index": 3,
+          "key": 4,
+          "type": "INSERT",
+          "port": 14,
+          "metadata": "desired-3"
+        },
+        {
+          "original_index": 4,
+          "key": 5,
+          "type": "INSERT",
+          "port": 15,
+          "metadata": "desired-4"
+        }
+      ],
+      "seeds": [],
+      "response": "normal"
+    },
+    {
+      "id": "duplicate-middle",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        },
+        {
+          "original_index": 3,
+          "key": 4,
+          "type": "INSERT",
+          "port": 14,
+          "metadata": "desired-3"
+        },
+        {
+          "original_index": 4,
+          "key": 5,
+          "type": "INSERT",
+          "port": 15,
+          "metadata": "desired-4"
+        }
+      ],
+      "seeds": [
+        {
+          "key": 3,
+          "port": 1,
+          "metadata": "seed"
+        }
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "mixed-conflicts",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "MODIFY",
+          "port": 13,
+          "metadata": "desired-2"
+        },
+        {
+          "original_index": 3,
+          "key": 4,
+          "type": "DELETE",
+          "port": 14,
+          "metadata": "desired-3"
+        },
+        {
+          "original_index": 4,
+          "key": 5,
+          "type": "MODIFY",
+          "port": 15,
+          "metadata": "desired-4"
+        }
+      ],
+      "seeds": [
+        {
+          "key": 2,
+          "port": 1,
+          "metadata": "seed"
+        },
+        {
+          "key": 5,
+          "port": 1,
+          "metadata": "seed"
+        }
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "all-duplicates",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "INSERT",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "INSERT",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [
+        {
+          "key": 1,
+          "port": 1,
+          "metadata": "seed"
+        },
+        {
+          "key": 2,
+          "port": 1,
+          "metadata": "seed"
+        },
+        {
+          "key": 3,
+          "port": 1,
+          "metadata": "seed"
+        }
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "missing-delete",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "DELETE",
+          "port": 11,
+          "metadata": "desired-0"
+        },
+        {
+          "original_index": 1,
+          "key": 2,
+          "type": "DELETE",
+          "port": 12,
+          "metadata": "desired-1"
+        },
+        {
+          "original_index": 2,
+          "key": 3,
+          "type": "DELETE",
+          "port": 13,
+          "metadata": "desired-2"
+        }
+      ],
+      "seeds": [
+        {
+          "key": 1,
+          "port": 1,
+          "metadata": "seed"
+        },
+        {
+          "key": 3,
+          "port": 1,
+          "metadata": "seed"
+        }
+      ],
+      "response": "normal"
+    },
+    {
+      "id": "single-duplicate",
+      "updates": [
+        {
+          "original_index": 0,
+          "key": 1,
+          "type": "INSERT",
+          "port": 11,
+          "metadata": "desired-0"
+        }
+      ],
+      "seeds": [
+        {
+          "key": 1,
+          "port": 1,
+          "metadata": "seed"
+        }
+      ],
+      "response": "normal"
+    }
+  ]
+}

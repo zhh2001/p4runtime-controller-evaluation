@@ -10,6 +10,8 @@ The input-validation dataset contains 382 fixed cases and 6,984 trials on a cont
 
 The session and stream dataset contains 840 trials across 28 configurations and 30 repetitions. It includes recovery and mastership on BMv2, controlled cancellation and close scenarios, slow-consumer events, 62 statistical summaries, and PDF and PNG figures.
 
+The batch-retry dataset contains 192 application trials across six profiles, sixteen target-specific scenarios and two repetitions. It includes original-index retry decisions, binary requests, driver outputs and complete state snapshots, checked by two independent decoders.
+
 ## Recompute the statistics
 
 Use Python 3.12:
@@ -56,6 +58,9 @@ Run the analysis tests with:
 | Session observations, events and statistical results | [data/sessions](data/sessions) |
 | Session setup, execution and checks | [Run the session and stream comparison](docs/running-sessions.md) |
 | Session drivers, controlled service and scheduler | [experiments/sessions](experiments/sessions) |
+| Batch-write retry policy, scenarios and outcomes | [Batch-retry method](docs/retries.md) |
+| Retry observations, requests, driver outputs and results | [data/retries](data/retries) |
+| Retry fields and summary counts | [Batch-retry data dictionary](docs/retry-data.md) |
 
 ## Recompute construction results
 
@@ -127,7 +132,17 @@ The verifier checks all 6,984 trials, their associated requests and repeated out
 
 Verification checks all 840 trials, 108,000 emitted PacketIn IDs and 510 actual Write results. It reproduces per-trial outputs and all 62 statistical rows, with independent event decoding and NumPy checks of 496 summary values. It uses archived records without a target or Go toolchain. See the [session and stream method](docs/sessions.md).
 
-The repository supports statistical reanalysis, archived input, request and session verification, new RPC and construction measurements, and live input, session and stream experiments. Failed-update retry records and verification will follow in a subsequent batch.
+## Verify batch-write retry results
+
+```sh
+.venv/bin/python -m pip install --require-hashes --only-binary=:all: --no-deps -r config/requirements-retries.txt
+.venv/bin/python scripts/verify_retries.py --output results/retries
+.venv/bin/python -m unittest discover -s tests/retries -v
+```
+
+The verifier checks all 192 trials, 334 Writes, 882 update attempts and 112 application Reads. Protobuf and independent standard-library decoders reconstruct retry subsets and target state, then reproduce the historical reports and saved CSV files byte for byte. The retry policy belongs to the experiment application. See the [batch-retry method](docs/retries.md).
+
+The repository supports statistical reanalysis, archived input, request, session and retry verification, new RPC and construction measurements, and live input, session and stream experiments. Live batch-retry drivers will follow in a subsequent batch.
 
 ## License
 

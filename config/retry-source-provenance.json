@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "files": {
+    "scripts/retry_checks/analyze.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/analyze.py",
+      "source_sha256": "2d199282b40c27096f6e396119e7932d76fc27c990881e7662d3dccfc1fdbd7d",
+      "export_sha256": "75eae5039a695e4e9257bb8657b93acde0938e0bc2f52e8ee4440f5f53e9e13a",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "decode": "a76ec72274cc0d3057c55cc56aaae3c37ad490fa56210571d2b8115e8dd6cdfe",
+        "apply": "443c910209f2172b608be98a8ec20250b7cbd67d7246b166ec697aabcb032b69"
+      },
+      "adaptation": "Use a package-local model import. Check recorded target stop and exit fields instead of checking historical IPC paths on the analysis host. The archive wrapper checks original source hashes and prepares a reduced offline fixture inventory."
+    },
+    "scripts/retry_checks/secondary.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/verify.py",
+      "source_sha256": "1509b38861bd778912f8c8470743d0489fac5bfd4a4db147df630e1ba43bb2db",
+      "export_sha256": "1509b38861bd778912f8c8470743d0489fac5bfd4a4db147df630e1ba43bb2db",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "varint": "2d8aeeb45b5d5b81503d5e6bf07da2a9ee37720c1e09321577ac7c5709c46910",
+        "fields": "25d32389f0e2e6ba6181c38b843c57d716836e30942d87d0ac6ace32d33eef7c",
+        "one": "aad5cb5a5c1b2b0852954ea3cced6fd02a70dc883f49abffd0742e641b436fb8",
+        "b64": "71c55e4e76ee5b741a9b2d1d68a5bb40f930093b10a35422ca40419ccd9cdeb0",
+        "entity": "0956d9e7ff6fbcbbbae33311e0444fe5c72f7337496441bb0ef07c2a26f7fdbf",
+        "json_entity": "a916a38e22015ffcab3d7f34025c6d8edde56f3ff176289dd393cec442989000",
+        "semantics": "ca3d563220e565cc55a9e45016dc54579c84f7ef9e836f35ad3a2dad19a31a8b",
+        "snapshot": "be8d185b698bd0672d61596d85978d07c5f7f7896cb2af3d6149e509a2f63456",
+        "status_codes": "aaf5d14d00c66e45ef12da7c126a75b4faaac01f7e9d2f649c1261ac418a9b49",
+        "expected_timeout": "bb5e36a4665fdc09026aa340191dbaea06f50efe6de2b7869a77c99870f4970b",
+        "verify": "f1d0036d89f74903db2de518d7811e3b0ac7beca1fc6a7d3c5588c9470492181"
+      }
+    },
+    "scripts/retry_checks/model.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/model.py",
+      "source_sha256": "3e074f79a1af784415dbf3c259bd85c60fd8c660fd33270eaf865f17626e7022",
+      "export_sha256": "3e074f79a1af784415dbf3c259bd85c60fd8c660fd33270eaf865f17626e7022",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "operation": "7a7d23bc17e329368aeeeb67501b7ac685d3a7f28b69a2ccf286b1a1b4ca2033",
+        "cases": "29af6d694aef50f8d11ad106d7b902a7beedfe976807c14d5ee118b713396dd5",
+        "semantic": "e130287f2c42eb346b7e39821d4a70b301da615fa8f101feae6eb25b9b066519",
+        "state_map": "7d1d526664e1220a58cbfeb4da5d4ab8fed1b3c5fb33a83b97a2349c86c69c4f",
+        "reconcile": "065d2e0803b1667e0a1575ac59248e415737a925a91fe9ae51c712d535dcbcfb",
+        "retry_plan": "3a53ee60e6c0ce0e768ded37312ccdaa94697732b8b72da6106402f0acaf38fe"
+      }
+    },
+    "scripts/retry_checks/policy.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/policy.py",
+      "source_sha256": "d76a4cb3ae7a99ccea5ac8a1d4f20ca70e594aea476a8c676a511c6eef1f3f2c",
+      "export_sha256": "d76a4cb3ae7a99ccea5ac8a1d4f20ca70e594aea476a8c676a511c6eef1f3f2c",
+      "unchanged": true,
+      "unchanged_functions_sha256": {
+        "complete_codes": "9e81b800c986544ddbdfc711916e5c413f7fb199c2858d1c4e24d7b4ad444c1c"
+      }
+    },
+    "tests/retries/test_policy.py": {
+      "source_file": "results/batch-retry/controlled-formal-20261019-140944/source/experiments/batch-retry/tests/test_policy.py",
+      "source_sha256": "ea760818b390e24fe5633fa01009ade7c488f9433a18f45d38ff490ab4db0f68",
+      "export_sha256": "0b9445d80064a0524b264b5e00723f6693d0ce343be1d2ec7b64222af57a5dc0",
+      "unchanged": false,
+      "unchanged_functions_sha256": {
+        "status_row": "548135dfe063ab60c88a86ae1efb9c6722b2fb09378fa40cf478c9dc2d2cf39b",
+        "RetryPolicy.test_original_indices_survive_second_subset": "ee0fbdfffca14c3ba4a79ceb6ef1f96470d44e6fc8c0e971f6caf20797aff47f",
+        "RetryPolicy.test_does_not_replay_success_or_permanent_failure": "be299aceb85954d03ee40dd8f37b17a06603d25a534152d8775b3ef7590e949f",
+        "RetryPolicy.test_conflicts_require_read": "2c70fd6c377546f7b2b1d8dee28269164c076a0271801e968be699abc799f170",
+        "RetryPolicy.test_conflicts_follow_desired_state": "c3f8c0eebb961fd89be56f5a9a3d3e54aaa5093be679d38436596a89c4a3af34",
+        "RetryPolicy.test_unknown_outcome_omits_already_applied": "076c79bce120c5542584ad93e58a59930b9c703645ebb5377abaf95948689404",
+        "RetryPolicy.test_policy_does_not_mutate_inputs": "2971fd436625c05820938781d2ea2de3a9e208527c96fd5627f66aeeb970e9f0",
+        "StatusGuard.test_sdk_uses_only_public_results": "7a3218744d60d05be3ba4be5c0039ca9e1f57dc4e21ce9a8766c9a63c914d28f",
+        "StatusGuard.test_native_failure_map": "93f8b3586e603d81a04c49f477b4ac555b6d6804e7f51d6ecd459a4c559f0c46",
+        "StatusGuard.test_short_status_is_not_a_complete_failure_map": "566ccadba6906557ff59e6caa2d64b69f4a450e34dac6367b35968c534757be5",
+        "StatusGuard.test_wrong_type_rejected": "e464bd2a16cdb4413374a03a44f20a656c8ced5bc335bd30729e0b23bee80a9d",
+        "StatusGuard.test_missing_all_ok_and_out_of_range_rejected": "b6d381a585391eeca9cef58d488afa6187e041b636eda47b8aa9a6018cf068a9",
+        "StatusGuard.test_transport_error_needs_read": "78468a632848967616e6b6dbc8aa7c323ac975ee387d297ba9fd823df72f6d5a",
+        "StatusGuard.test_success_infers_all_successful": "61c10b65fa703eb6572bdbb5048b5eb3c361bace7a5b4652c59a11fd8d4efbbd"
+      },
+      "adaptation": "Use public package imports. Retain all original test function bodies."
+    }
+  }
+}

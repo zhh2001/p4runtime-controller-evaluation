@@ -1,0 +1,2 @@
+# Archived E4 verification uses the same protobuf definitions as E1.
+-r requirements-inputs.txt
