@@ -8,7 +8,8 @@ Use Python 3.12. This analysis uses only the Python standard library:
 
 ```sh
 python3 scripts/verify_dataplane.py --output results/dataplane
-python3 -m unittest discover -s tests/dataplane -v
+python3 -m unittest discover -s tests/dataplane -p test_archive.py -v
+python3 -m unittest discover -s tests/dataplane -p test_frames.py -v
 ```
 
 The output directory must be new. Verification checks the complete file and archive-member inventories, compressed and uncompressed hashes, the randomized schedule, case coverage and original-source correspondence. It reconstructs the expected frames and checks complete payloads, identifiers and receiving ports. It reproduces `case-results.csv` and `cli-invocations.csv` byte for byte, including the documented command-path replacement.

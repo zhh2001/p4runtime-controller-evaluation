@@ -14,6 +14,8 @@ The batch-retry dataset contains 192 application trials across six profiles, six
 
 The data-plane dataset contains 130 Mininet/BMv2 cases, all 520 PCAP files and 2,420 case files. It covers reactive forwarding, batched table updates, counter collection, application recovery and p4ctl, with 27,170 received frames and independent offline verification.
 
+The [reproduction guide](docs/reproducing-results.md) brings together offline verification, RPC trace downloads, test suites and live execution for all six datasets.
+
 ## Recompute the statistics
 
 Use Python 3.12:
@@ -173,12 +175,13 @@ The verifier checks all 192 trials, 334 Writes, 882 update attempts and 112 appl
 
 ```sh
 python3 scripts/verify_dataplane.py --output results/dataplane
-python3 -m unittest discover -s tests/dataplane -v
+python3 -m unittest discover -s tests/dataplane -p test_archive.py -v
+python3 -m unittest discover -s tests/dataplane -p test_frames.py -v
 ```
 
 The verifier uses only the Python standard library. It checks all 130 cases, 520 captures, 360 counter checkpoints, 2,040 periodic samples and sixty target restarts. It reproduces both original CSV files and independently cross-checks frames, ports, table state, raw counter replies and CLI calls. See the [data-plane method](docs/dataplane.md).
 
-The repository supports statistical reanalysis and archived input, request, session, retry and data-plane verification. Live runners cover RPC and construction measurements, input validation, sessions, streams and batch retries. Live data-plane case-study runners will follow in a subsequent batch.
+The repository supports statistical reanalysis and archived input, request, session, retry and data-plane verification. Live runners cover RPC and construction measurements, input validation, sessions, streams, batch retries and Mininet/BMv2 data-plane cases.
 
 ## License
 
