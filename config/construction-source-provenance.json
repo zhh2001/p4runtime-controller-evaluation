@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "source_run": "formal-20261019-103524",
+  "source_manifest_sha256": "e30211115bd96f858afd6c1db325ffee31edab2c9589922b1899566c8f9d49a1",
+  "files": {
+    "analyze.py": {
+      "source_file": "analysis-source/analyze.py",
+      "formal_sha256": "744ff5c790477718e2ff42c095176fcbfc2660af8fc692447c346d283fb8bb46",
+      "export_sha256": "94753e4253cd6b278d86cd5ea800c3b3a4fe203e303e23802c980453f0646898",
+      "unchanged": false
+    },
+    "bench_test.go": {
+      "source_file": "source/experiments/construction/bench_test.go",
+      "formal_sha256": "9a6854de8844b010e00fe63b93278dbcd74131173d55cb4364c16c4437de233c",
+      "export_sha256": "9a6854de8844b010e00fe63b93278dbcd74131173d55cb4364c16c4437de233c",
+      "unchanged": true
+    },
+    "components_test.go": {
+      "source_file": "source/experiments/construction/components_test.go",
+      "formal_sha256": "96d0fd3c6954450ef67a7ab6004c2804f80eac28f2fb470f6f9a96cadd89a5c6",
+      "export_sha256": "96d0fd3c6954450ef67a7ab6004c2804f80eac28f2fb470f6f9a96cadd89a5c6",
+      "unchanged": true
+    },
+    "fixture.py": {
+      "source_file": "source/experiments/construction/fixture.py",
+      "formal_sha256": "1bb2260aa1523d1401f9f81ccb98f6a80fe2df53718c0a7039b8f7d765669f75",
+      "export_sha256": "1bb2260aa1523d1401f9f81ccb98f6a80fe2df53718c0a7039b8f7d765669f75",
+      "unchanged": true
+    },
+    "fixtures/construct.p4info.txt": {
+      "source_file": "source/experiments/construction/fixtures/construct.p4info.txt",
+      "formal_sha256": "fa71bb77d0ec9839de849b6376a1fff285262d9a7d6511f0cc7f9ecd713fabd2",
+      "export_sha256": "fa71bb77d0ec9839de849b6376a1fff285262d9a7d6511f0cc7f9ecd713fabd2",
+      "unchanged": true
+    },
+    "fixtures/inputs.json": {
+      "source_file": "source/experiments/construction/fixtures/inputs.json",
+      "formal_sha256": "c379db5dc7d61f9f9563826aba0819536df52bea1367a760d6e3f67d703f5b02",
+      "export_sha256": "c379db5dc7d61f9f9563826aba0819536df52bea1367a760d6e3f67d703f5b02",
+      "unchanged": true
+    },
+    "formal-plan.json": {
+      "source_file": "source/experiments/construction/formal-plan.json",
+      "formal_sha256": "1df54284820397a85f5d648f4a4a8e0d03d0f9ca7a13325a0b45ee72f70117bd",
+      "export_sha256": "1df54284820397a85f5d648f4a4a8e0d03d0f9ca7a13325a0b45ee72f70117bd",
+      "unchanged": true
+    },
+    "go-legacy/bench_test.go": {
+      "source_file": "source/experiments/construction/go-legacy/bench_test.go",
+      "formal_sha256": "9a6854de8844b010e00fe63b93278dbcd74131173d55cb4364c16c4437de233c",
+      "export_sha256": "9a6854de8844b010e00fe63b93278dbcd74131173d55cb4364c16c4437de233c",
+      "unchanged": true
+    },
+    "go-legacy/go.mod": {
+      "source_file": "source/experiments/construction/go-legacy/go.mod",
+      "formal_sha256": "07091e6917ca1c3f81c3c0a96ced507c929e1ccc8a3ec5d81ff6181525aaf59d",
+      "export_sha256": "8414d47d040a78664bbb4c822df4ac792002de15b2bd0a415f0277b01b41329b",
+      "unchanged": false
+    },
+    "go-legacy/go.sum": {
+      "source_file": "source/experiments/construction/go-legacy/go.sum",
+      "formal_sha256": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+      "export_sha256": "9f3a0950b7041bf03b8c6d22ebde028a439d70e4f669e58d1dc086208eceea5b",
+      "unchanged": true
+    },
+    "go-legacy/native_test.go": {
+      "source_file": "source/experiments/construction/go-legacy/native_test.go",
+      "formal_sha256": "1cc55c4a0ea81e60ebfd3f7fb7b8c1665121de876aa2b67815b52ce52cf15291",
+      "export_sha256": "1cc55c4a0ea81e60ebfd3f7fb7b8c1665121de876aa2b67815b52ce52cf15291",
+      "unchanged": true
+    },
+    "go-sdk/bench_test.go": {
+      "source_file": "source/experiments/construction/go-sdk/bench_test.go",
+      "formal_sha256": "9a6854de8844b010e00fe63b93278dbcd74131173d55cb4364c16c4437de233c",
+      "export_sha256": "9a6854de8844b010e00fe63b93278dbcd74131173d55cb4364c16c4437de233c",
+      "unchanged": true
+    },
+    "go-sdk/components_test.go": {
+      "source_file": "source/experiments/construction/go-sdk/components_test.go",
+      "formal_sha256": "96d0fd3c6954450ef67a7ab6004c2804f80eac28f2fb470f6f9a96cadd89a5c6",
+      "export_sha256": "96d0fd3c6954450ef67a7ab6004c2804f80eac28f2fb470f6f9a96cadd89a5c6",
+      "unchanged": true
+    },
+    "go-sdk/go.mod": {
+      "source_file": "source/experiments/construction/go-sdk/go.mod",
+      "formal_sha256": "7e383f6ae1ef5b29679894b1d3c7657aef1d6660fb84db2eccc8606cf06ac609",
+      "export_sha256": "372a384f43f0a11f0f2e5fe761b8411c2922760c441b86b2920256f0003b52c2",
+      "unchanged": false
+    },
+    "go-sdk/go.sum": {
+      "source_file": "source/experiments/construction/go-sdk/go.sum",
+      "formal_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "export_sha256": "d267adc84372666e966ef9deb3630b93212ba88eead1a0f7eda66b2c811c2245",
+      "unchanged": true
+    },
+    "go-sdk/native_test.go": {
+      "source_file": "source/experiments/construction/go-sdk/native_test.go",
+      "formal_sha256": "9a15628da6fbe8ea39f9ff29a675d7a368ade79a4bbcdc18702695d7ce10673c",
+      "export_sha256": "9a15628da6fbe8ea39f9ff29a675d7a368ade79a4bbcdc18702695d7ce10673c",
+      "unchanged": true
+    },
+    "legacy.go": {
+      "source_file": "source/experiments/construction/legacy.go",
+      "formal_sha256": "1cc55c4a0ea81e60ebfd3f7fb7b8c1665121de876aa2b67815b52ce52cf15291",
+      "export_sha256": "1cc55c4a0ea81e60ebfd3f7fb7b8c1665121de876aa2b67815b52ce52cf15291",
+      "unchanged": true
+    },
+    "oracle.py": {
+      "source_file": "source/experiments/construction/oracle.py",
+      "formal_sha256": "45a5eeac715c407c818299ac658d5887161660b6f00d10e1b873f98b20ea93a6",
+      "export_sha256": "45a5eeac715c407c818299ac658d5887161660b6f00d10e1b873f98b20ea93a6",
+      "unchanged": true
+    },
+    "prepare.py": {
+      "source_file": "source/experiments/construction/prepare.py",
+      "formal_sha256": "ec13a94ad6354d9d8c485424ae6a8561db1b27c254eb3f15a858896b654c39ab",
+      "export_sha256": "99e09efb27d3220377fb91873bdb9f32c5bcc0d73ca399d2c656e5a68a729004",
+      "unchanged": false
+    },
+    "python_driver.py": {
+      "source_file": "source/experiments/construction/python_driver.py",
+      "formal_sha256": "07797d32a64808365cc2c8c0774b13f952ae1bef91dfb56518f2b90298eff242",
+      "export_sha256": "07797d32a64808365cc2c8c0774b13f952ae1bef91dfb56518f2b90298eff242",
+      "unchanged": true
+    },
+    "run.py": {
+      "source_file": "source/experiments/construction/run.py",
+      "formal_sha256": "4c65f13233056f4f2d43db9177bbaf6aef35f13e34b124d770bded07f31ff823",
+      "export_sha256": "eaa369ac3af21a75acea599d58914ffc7750b9d53b082150a472ca24d77ed04c",
+      "unchanged": false
+    },
+    "sdk.go": {
+      "source_file": "source/experiments/construction/sdk.go",
+      "formal_sha256": "9a15628da6fbe8ea39f9ff29a675d7a368ade79a4bbcdc18702695d7ce10673c",
+      "export_sha256": "9a15628da6fbe8ea39f9ff29a675d7a368ade79a4bbcdc18702695d7ce10673c",
+      "unchanged": true
+    },
+    "tests/test_oracle.py": {
+      "source_file": "source/experiments/construction/tests/test_oracle.py",
+      "formal_sha256": "3c6e202d7106e7faed3e7f81703a339bf02d81ca36a49e65e09e03daa038b1f5",
+      "export_sha256": "f7fbc003b4b4e713194f750bcfce6abb26924ddde2354e1f949ca199aee5d2dc",
+      "unchanged": false
+    },
+    "verify_statistics.py": {
+      "source_file": "source/experiments/construction/verify_statistics.py",
+      "formal_sha256": "de1d32adc6189becc45db01d192030af0417adc9523bfacaf50f21015a8385b0",
+      "export_sha256": "de1d32adc6189becc45db01d192030af0417adc9523bfacaf50f21015a8385b0",
+      "unchanged": true
+    }
+  },
+  "unchanged_functions_sha256": {
+    "run.py:jobs": "23acb2c185f121e81fcefbc3a75d0aa0ec8eb71a7cc181db261ec39a30281f88",
+    "run.py:run_job": "4ddab3ee7547d9d991876d0f5a4afb81ca5db7cea85fbdc6ac94bb97f8b44392",
+    "analyze.py:digest": "0c153efd315b6d514b51e4fdfbd501b14cbc416267b0f7e9a79cbe6a14700a83",
+    "analyze.py:write_csv": "80bbc569241eb7dc864ab9545d97a9614b51099a6bd8dcc19dc5c9961ba01400",
+    "analyze.py:key": "1e1866a01c7ac20a66148aae512320f7ff206d516b22aa90e0ac59f176722498",
+    "analyze.py:recompute": "acf4234191579fd47e311451dd5e8880d3362a9cf145db1a0b67d59bb3b56f34",
+    "analyze.py:summarize": "808f61de11ac8d69d693b8ea66636cccffdd8299ab00ed400b09de8e892f0ce2"
+  },
+  "adaptations": {
+    "go-sdk/go.mod": "Resolve the pinned SDK from the repository-local source directory.",
+    "go-legacy/go.mod": "Resolve the pinned legacy client from the repository-local source directory.",
+    "prepare.py": "Build the included modules and use the archived fixtures and repository-local environments. Save preflight outputs under results.",
+    "run.py": "Verify archive inventories instead of Git checkouts, select repository-local environments and snapshot the setup inventory. The schedule and measurement functions are unchanged.",
+    "analyze.py": "Use the analysis source saved with the original statistics. Omit the manuscript report and plotting, add strict output parsing and a guard against disabled assertions. Statistical calculations are unchanged. The independent crosscheck report maintains its own input hashes and is excluded from the analysis output inventory.",
+    "tests/test_oracle.py": "Read the current preflight samples from an explicit environment variable. The nine test cases are unchanged."
+  }
+}

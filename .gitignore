@@ -8,3 +8,5 @@ __pycache__/
 /experiments/performance/fixtures/control.p4info.txt
 /experiments/performance/fixtures/control.compiler.txtpb
 /experiments/performance/fixtures/compatibility.json
+/experiments/construction/bin/
+/experiments/construction/preflight.json

@@ -16,6 +16,8 @@ The script verifies all 282 data and figure files, checks the execution order, r
 
 Reanalysis needs Python and NumPy. It uses the archived outputs and does not run a controller or switch.
 
+To collect new measurements, use the [construction benchmark runners](running-construction.md). Setup installs the pinned clients and validates complete results and ownership before execution. The launcher supports a short run of all 27 conditions and the full ten-round comparison, with source snapshots and independent statistical checks.
+
 ## Workloads and timing
 
 The [P4Info](../data/construction/fixtures/construct.p4info.txt) defines two tables and two actions. Each workload cycles through 256 [input samples](../data/construction/fixtures/inputs.json), including zero-valued OPTIONAL matches.

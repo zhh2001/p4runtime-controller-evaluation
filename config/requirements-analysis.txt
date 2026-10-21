@@ -1,0 +1,2 @@
+# CPython 3.12, Linux x86_64 wheel.
+numpy==1.26.4 --hash=sha256:675d61ffbfa78604709862923189bad94014bef562cc35cf61d3a07bba02a7ed

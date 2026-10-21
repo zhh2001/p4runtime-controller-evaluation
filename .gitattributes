@@ -1,4 +1,9 @@
 data/**/*.csv -text whitespace=cr-at-eol
 data/rpc/traces/* -text
 data/construction/** -text
+experiments/performance/** -text
+experiments/construction/** -text
+scripts/*.py text eol=lf
+config/*.json text eol=lf
+config/requirements-*.txt text eol=lf
 LICENSES/* -text -whitespace
